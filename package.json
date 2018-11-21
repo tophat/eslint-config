@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "description": "Top Hat's shareable eslint configuration",
   "main": "index.js",
+  "files": [
+    "react.js",
+    "jest.js"
+  ],
   "repository": "git@github.com:tophat/eslint-config.git",
   "author": "Top Hat Monocle Corp. <opensource@tophat.com>",
   "license": "Apache-2.0",
