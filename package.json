@@ -20,11 +20,6 @@
     "eslint-plugin-prettier": ">=3.0.0",
     "prettier": ">=1.0.0"
   },
-  "optionalDependencies": {
-    "eslint-plugin-jest": "^22.0.0",
-    "eslint-plugin-jsx-a11y": "^6.1.2",
-    "eslint-plugin-react": "^7.11.1"
-  },
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/preset-env": "^7.1.6",
