@@ -39,7 +39,7 @@ and extend the React configuration as well:
 
 ```javascript
 module.exports = {
-    extends: ['@tophat', '@tophat/react']
+    extends: ['@tophat', '@tophat/eslint-config/react']
 }
 ```
 
@@ -55,6 +55,6 @@ and extend the Jest configuration:
 
 ```javascript
 module.exports = {
-    extends: ['@tophat', '@tophat/jest']
+    extends: ['@tophat', '@tophat/eslint-config/jest']
 }
 ```
