@@ -63,9 +63,10 @@ module.exports = {
 
 ## Making changes to this config
 
-This eslint config is for Top Hat's open source and internal use, so we won't be accepting external contributions.
-Nevertheless, feel free to extend this config and make your own based off of it!
-You can view the eslint docs for [creating shareable configs](https://eslint.org/docs/developer-guide/shareable-configs).
+This eslint config is for Top Hat's open source and internal use, so we generally won't be accepting external contributions.
+If you are an external contributor and you have a rule that you really feel should be included in our global config, feel free to make a suggestion, but please don't take it personally if we decide not to adopt the rule.
+Eslint configs are really easy to extend, so feel free to do exactly that with this one and make your own based off of it!
+You can learn more from the eslint docs for [creating shareable configs](https://eslint.org/docs/developer-guide/shareable-configs).
 
 ### Semantic versioning
 
