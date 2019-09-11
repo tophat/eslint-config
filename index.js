@@ -24,6 +24,12 @@ module.exports = {
         camelcase: ['error', { properties: 'never' }],
         'dot-notation': 'error',
         eqeqeq: 'error',
+        "no-console": [
+            2,
+            {
+                "allow": ["warn"]
+            }
+        ],
         'no-duplicate-imports': 'error',
         'no-nested-ternary': 'error',
         'no-useless-computed-key': 'error',
