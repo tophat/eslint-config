@@ -3,7 +3,6 @@
 [![npm](https://img.shields.io/npm/v/@tophat/eslint-config.svg)](https://www.npmjs.com/package/@tophat/eslint-config)
 [![CircleCI build](https://img.shields.io/circleci/project/github/tophat/eslint-config/master.svg)](https://circleci.com/gh/tophat/eslint-config)
 [![npm downloads](https://img.shields.io/npm/dm/@tophat/eslint-config.svg)](https://npm-stat.com/charts.html?package=%40tophat%2Feslint-config)
-[![Greenkeeper badge](https://badges.greenkeeper.io/tophat/eslint-config.svg)](https://greenkeeper.io/)
 
 :shark: Top Hat's shareable eslint configuration
 
