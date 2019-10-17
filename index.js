@@ -30,5 +30,6 @@ module.exports = {
         'no-var': 'error',
         'prefer-const': 'error',
         'prefer-template': 'error',
+        'sort-imports': 'error',
     },
 }
