@@ -30,6 +30,7 @@ module.exports = {
         'no-var': 'error',
         'prefer-const': 'error',
         'prefer-template': 'error',
+        /* require-atomic-updates broken per https://github.com/eslint/eslint/issues/11899 */
         'require-atomic-updates': 'off',
         'sort-imports': 'error',
     },
