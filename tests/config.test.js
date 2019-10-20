@@ -1,6 +1,6 @@
-import prettierRules from 'eslint-config-prettier'
-import prettierReactRules from 'eslint-config-prettier/react'
 import { CLIEngine } from 'eslint'
+import prettierReactRules from 'eslint-config-prettier/react'
+import prettierRules from 'eslint-config-prettier'
 
 const allPrettierRules = Object.keys(prettierRules.rules).concat(
     Object.keys(prettierReactRules.rules),

@@ -31,5 +31,6 @@ module.exports = {
         'prefer-const': 'error',
         'prefer-template': 'error',
         'require-atomic-updates': 'off',
+        'sort-imports': 'error',
     },
 }
