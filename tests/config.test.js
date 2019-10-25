@@ -15,6 +15,13 @@ const configs = [
 `,
     },
     {
+        file: 'base.js',
+        codeExample: `export default function(a, b) {
+    return a + b
+}
+`,
+    },
+    {
         file: 'react.js',
         codeExample: `
 var React = require('react')

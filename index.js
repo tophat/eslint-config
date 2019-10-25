@@ -4,4 +4,5 @@ module.exports = {
         ecmaVersion: 9,
         sourceType: 'module',
     },
+    rules: {},
 }
