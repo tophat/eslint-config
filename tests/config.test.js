@@ -16,9 +16,11 @@ const configs = [
     },
     {
         file: 'base.js',
-        codeExample: `export default function(a, b) {
+        codeExample: `function foo(a, b) {
     return a + b
 }
+
+foo(1, 2)
 `,
     },
     {
