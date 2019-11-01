@@ -71,6 +71,75 @@ Each config requires certain peer dependencies:
 
 You only have to install the dependencies for the configs which you are using.
 
+## Upgrading this package
+
+### From 0.1.4 to 0.2.0
+
+The following rules were added and will now cause linter failures:
+
+- [**no-console**](https://eslint.org/docs/rules/no-console) (#24, #40)
+- [**sort-imports**](https://eslint.org/docs/rules/sort-imports) (#33)
+
+0.2.0 moved the base rules out of the default config (index.js) and into the base config (base.js). The default config now enables the "base", "react", "jest", and "web" configs automatically.
+
+If you were previously extending all the configs, you only have to extend the default config now:
+
+Before:
+
+```javascript
+modules.exports = {
+    // ...
+    extends: [
+        '@tophat',
+        '@tophat/eslint-config/react',
+        '@tophat/eslint-config/jest',
+        //...
+    ],
+    // ...
+}
+```
+
+After:
+
+```javascript
+modules.exports = {
+    // ...
+    extends: [
+        '@tophat',
+        //...
+    ],
+    // ...
+}
+```
+
+If you were previously extending the base config and want to maintain existing behaviour, make the following change to your eslintrc:
+
+Before:
+
+```javascript
+modules.exports = {
+    // ...
+    extends: [
+        '@tophat',
+        //...
+    ],
+    // ...
+}
+```
+
+After:
+
+```javascript
+modules.exports = {
+    // ...
+    extends: [
+        '@tophat/eslint-config/base',
+        //...
+    ],
+    // ...
+}
+```
+
 ## Making changes to this package
 
 This eslint config is for Top Hat's open source and internal use, so we generally won't be accepting external contributions.
