@@ -2,6 +2,8 @@ import { CLIEngine } from 'eslint'
 import prettierReactRules from 'eslint-config-prettier/react'
 import prettierRules from 'eslint-config-prettier'
 
+const packageJson = require('../package.json')
+
 const allPrettierRules = Object.keys(prettierRules.rules).concat(
     Object.keys(prettierReactRules.rules),
 )
@@ -76,6 +78,10 @@ configs.forEach(({ file, codeExample }) => {
             const cli = new CLIEngine({ useEslintrc: false, configFile: file })
             const result = cli.executeOnText(codeExample)
             expect(result.results[0].messages).toEqual([])
+        })
+
+        it('is listed in package.json', () => {
+            expect(packageJson.files).toContain(file)
         })
     })
 })
