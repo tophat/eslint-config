@@ -4,8 +4,11 @@
   "description": "Top Hat's shareable eslint configuration",
   "main": "index.js",
   "files": [
+    "index.js",
+    "base.js",
+    "jest.js",
     "react.js",
-    "jest.js"
+    "web.js"
   ],
   "repository": "git@github.com:tophat/eslint-config.git",
   "author": "Top Hat Monocle Corp. <opensource@tophat.com>",
