@@ -48,6 +48,15 @@ describe('Some suite', function() {
 })
         `,
     },
+    {
+        file: 'web.js',
+        codeExample: `
+var React = require('react')
+var ReactDOM = require('react-dom')
+var element = document.getElementById('dawg')
+ReactDOM.render(React.createElement('div'), element)
+        `,
+    },
 ]
 
 configs.forEach(({ file, codeExample }) => {

@@ -9,7 +9,14 @@
 
 ## Usage
 
-The default config includes a set of base rules, rules for React apps, and rules for Jest tests. Extend the default config by first installing all the required dependencies:
+The default config includes the following:
+
+- A set of base eslint rules for all JavaScript projects
+- Rules for React apps
+- Rules for Jest tests
+- Rules for web apps
+
+Extend the default config by first installing all the required dependencies:
 
 ```bash
 yarn add --dev \
@@ -26,7 +33,7 @@ yarn add --dev \
 or
 
 ```bash
-npm install --save-dev # ...
+npm install --save-dev # etc ...
 ```
 
 Then update your eslint config (for example, .eslintrc.js):
@@ -48,6 +55,7 @@ module.exports = {
         '@tophat/eslint-config/base',
         '@tophat/eslint-config/react',
         '@tophat/eslint-config/jest',
+        '@tophat/eslint-config/web',
     ]
 }
 ```
@@ -59,6 +67,7 @@ Each config requires certain peer dependencies:
 - **base**: eslint, prettier, eslint-config-prettier, eslint-plugin-prettier
 - **react**: eslint-plugin-react, eslint-plugin-jsx-a11y
 - **jest**: eslint-plugin-jest
+- **web**: (none)
 
 You only have to install the dependencies for the configs which you are using.
 
