@@ -15,6 +15,15 @@ const configs = [
 `,
     },
     {
+        file: 'base.js',
+        codeExample: `function foo(a, b) {
+    return a + b
+}
+
+foo(1, 2)
+`,
+    },
+    {
         file: 'react.js',
         codeExample: `
 var React = require('react')

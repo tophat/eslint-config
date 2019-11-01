@@ -9,19 +9,27 @@
 
 ## Usage
 
-### Base config
+The default config includes a set of base rules, rules for React apps, and rules for Jest tests. Extend the default config by first installing all the required dependencies:
 
-```
-yarn add --dev @tophat/eslint-config eslint prettier eslint-config-prettier eslint-plugin-prettier
+```bash
+yarn add --dev \
+    @tophat/eslint-config \
+    eslint \
+    prettier \
+    eslint-config-prettier \
+    eslint-plugin-prettier \
+    eslint-plugin-react \
+    eslint-plugin-jsx-a11y \
+    eslint-plugin-jest
 ```
 
 or
 
-```
-npm install --save-dev @tophat/eslint-config eslint prettier eslint-config-prettier eslint-plugin-prettier
+```bash
+npm install --save-dev # ...
 ```
 
-In your eslint config (for example .eslintrc.js):
+Then update your eslint config (for example, .eslintrc.js):
 
 ```javascript
 module.exports = {
@@ -29,39 +37,32 @@ module.exports = {
 }
 ```
 
-### React config
+## Picking and choosing certain configs
 
-If you are using React in your project, you can install the relevant plugins:
-
-```
-yarn add --dev eslint-plugin-react eslint-plugin-jsx-a11y # or npm install --save-dev ...
-```
-
-and extend the React configuration as well:
+You can extend each of the configs separately by specifying them in your eslint config:
 
 ```javascript
 module.exports = {
-    extends: ['@tophat', '@tophat/eslint-config/react']
+    extends: [
+        // Pick and choose from the following list of configs
+        '@tophat/eslint-config/base',
+        '@tophat/eslint-config/react',
+        '@tophat/eslint-config/jest',
+    ]
 }
 ```
 
-### Jest config
+## Peer dependencies per config
 
-Similarly for jest, you can install the relevant plugins:
+Each config requires certain peer dependencies:
 
-```
-yarn add --dev eslint-plugin-jest # or npm install --save-dev ...
-```
+- **base**: eslint, prettier, eslint-config-prettier, eslint-plugin-prettier
+- **react**: eslint-plugin-react, eslint-plugin-jsx-a11y
+- **jest**: eslint-plugin-jest
 
-and extend the Jest configuration:
+You only have to install the dependencies for the configs which you are using.
 
-```javascript
-module.exports = {
-    extends: ['@tophat', '@tophat/eslint-config/jest']
-}
-```
-
-## Making changes to this config
+## Making changes to this package
 
 This eslint config is for Top Hat's open source and internal use, so we generally won't be accepting external contributions.
 If you are an external contributor and you have a rule that you really feel should be included in our global config, feel free to make a suggestion, but please don't take it personally if we decide not to adopt the rule.
