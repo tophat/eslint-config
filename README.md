@@ -132,6 +132,11 @@ After:
 ```javascript
 modules.exports = {
     // ...
+    parserOptions: {
+      ecmaVersion: 9,
+      sourceType: 'module',
+      // ...
+    },
     extends: [
         '@tophat/eslint-config/base',
         //...
