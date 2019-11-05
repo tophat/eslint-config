@@ -31,6 +31,6 @@ module.exports = {
             there is no auto fixer for the order of declarations, but this keeps
             named imports sort alphabetically
         */
-        'sort-imports': ['error', { ignoreDeclarationSort: 'true' }], 
+        'sort-imports': ['error', { ignoreDeclarationSort: true }],
     },
 }
