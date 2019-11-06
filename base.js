@@ -27,10 +27,32 @@ module.exports = {
         'prefer-template': 'error',
         /* require-atomic-updates broken per https://github.com/eslint/eslint/issues/11899 */
         'require-atomic-updates': 'off',
-        /*
-            there is no auto fixer for the order of declarations, but this keeps
-            named imports sort alphabetically
-        */
+        // no autofixer on declaration sort of sort-imports, so we use import/order for declaration sort
         'sort-imports': ['error', { ignoreDeclarationSort: true }],
+        "import/default": "error",
+        "import/export": "error",
+        "import/exports-last": "warn",
+        "import/group-exports": "warn",
+        "import/named": "error",
+        "import/newline-after-import": "warn",
+        "import/no-absolute-path": "error",
+        "import/no-duplicates": "warn",
+        "import/no-mutable-exports": "error",
+        "import/no-named-as-default": "warn",
+        "import/no-self-import": "error",
+        "import/no-useless-path-segments": "warn",
+        "import/no-unresolved": "error",
+        "import/order": ["error", {
+            "newlines-between": "always",
+            "groups": [
+                "unknown",
+                "builtin",
+                "external",
+                "internal",
+                "parent",
+                "sibling",
+                "index"
+            ]
+        }],
     },
 }
