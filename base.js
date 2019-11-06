@@ -32,7 +32,6 @@ module.exports = {
         "import/default": "error",
         "import/export": "error",
         "import/exports-last": "warn",
-        "import/group-exports": "warn",
         "import/named": "error",
         "import/newline-after-import": "warn",
         "import/no-absolute-path": "error",
