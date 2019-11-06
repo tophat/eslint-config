@@ -4,7 +4,7 @@ module.exports = {
         es6: true,
     },
     extends: ['eslint:recommended', 'prettier'],
-    plugins: ['prettier'],
+    plugins: ['import', 'prettier'],
     rules: {
         'prettier/prettier': [
             'error',
