@@ -64,7 +64,7 @@ module.exports = {
 
 Each config requires certain peer dependencies:
 
-- **base**: eslint, prettier, eslint-config-prettier, eslint-plugin-prettier
+- **base**: eslint, prettier, eslint-config-prettier, eslint-plugin-import, eslint-plugin-prettier
 - **react**: eslint-plugin-react, eslint-plugin-jsx-a11y
 - **jest**: eslint-plugin-jest
 - **web**: (none)
