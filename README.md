@@ -74,7 +74,61 @@ You only have to install the dependencies for the configs which you are using.
 
 ## Upgrading this package
 
-### From 0.1.4 to 0.2.0
+### From 0.2.x to 0.3.x
+
+The following rules were added and will now cause linter failures:
+
+- [**import/default**](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/default.md) (#44)
+- [**import/export**](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/export.md) (#44)
+- [**import/exports-last**](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/exports-last.md) (#44)
+- [**import/named**](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/named.md) (#44)
+- [**import/newline-after-import**](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/newline-after-import.md) (#44)
+- [**import/no-absolute-path**](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-absolute-path.md) (#44)
+- [**import/no-duplicates**](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-duplicates.md) (#44)
+- [**import/no-mutable-exports**](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-mutable-exports.md) (#44)
+- [**import/no-self-import**](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-self-import.md) (#44)
+- [**import/no-useless-path-segments**](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-useless-path-segments.md) (#44)
+- [**import/no-unresolved**](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-unresolved.md) (#44)
+- [**import/order**](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/order.md) (#44)
+
+The following rules were loosened and will provide fewer errors:
+
+- [**sort-imports**](https://eslint.org/docs/rules/sort-imports) (#44)
+
+The included `parserOptions` config was moved back to the base config (#46). If you are extending the base config separately you no longer need to specify parser options (unless you want to set your own):
+
+Before:
+
+```javascript
+modules.exports = {
+    // ...
+    parserOptions: {
+      ecmaVersion: 9,
+      sourceType: 'module',
+      // ...
+    },
+    extends: [
+        '@tophat/eslint-config/base',
+        //...
+    ],
+    // ...
+}
+```
+
+After:
+
+```javascript
+modules.exports = {
+    // ...
+    extends: [
+        '@tophat/eslint-config/base',
+        //...
+    ],
+    // ...
+}
+```
+
+### From 0.1.x to 0.2.x
 
 The following rules were added and will now cause linter failures:
 
