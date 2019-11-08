@@ -4,7 +4,7 @@ module.exports = {
         es6: true,
     },
     extends: ['eslint:recommended', 'prettier'],
-    plugins: ['prettier'],
+    plugins: ['import', 'prettier'],
     rules: {
         'prettier/prettier': [
             'error',
@@ -27,6 +27,33 @@ module.exports = {
         'prefer-template': 'error',
         /* require-atomic-updates broken per https://github.com/eslint/eslint/issues/11899 */
         'require-atomic-updates': 'off',
-        'sort-imports': 'error',
+        // no autofixer on declaration sort of sort-imports, so we use import/order for declaration sort
+        'sort-imports': ['error', { ignoreDeclarationSort: true }],
+        'import/default': 'error',
+        'import/export': 'error',
+        'import/exports-last': 'error',
+        'import/named': 'error',
+        'import/newline-after-import': 'error',
+        'import/no-absolute-path': 'error',
+        'import/no-duplicates': 'error',
+        'import/no-mutable-exports': 'error',
+        'import/no-self-import': 'error',
+        'import/no-useless-path-segments': 'error',
+        'import/no-unresolved': 'error',
+        'import/order': [
+            'error',
+            {
+                'newlines-between': 'always',
+                groups: [
+                    'unknown',
+                    'builtin',
+                    'external',
+                    'internal',
+                    'parent',
+                    'sibling',
+                    'index',
+                ],
+            },
+        ],
     },
 }
