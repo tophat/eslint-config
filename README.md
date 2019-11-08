@@ -27,7 +27,8 @@ yarn add --dev \
     eslint-plugin-prettier \
     eslint-plugin-react \
     eslint-plugin-jsx-a11y \
-    eslint-plugin-jest
+    eslint-plugin-jest \
+    eslint-plugin-import
 ```
 
 or
