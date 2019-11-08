@@ -35,7 +35,6 @@ module.exports = {
         'sort-imports': ['error', { ignoreDeclarationSort: true }],
         'import/default': 'error',
         'import/export': 'error',
-        'import/exports-last': 'error',
         'import/named': 'error',
         'import/newline-after-import': 'error',
         'import/no-absolute-path': 'error',
