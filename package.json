@@ -18,24 +18,27 @@
     "lint": "eslint . --max-warnings 0"
   },
   "peerDependencies": {
-    "eslint": ">=5.0.0",
-    "eslint-config-prettier": ">=3.0.0",
-    "eslint-plugin-import": ">=2.0.0",
+    "eslint": ">=6.0.0",
+    "eslint-config-prettier": ">=6.0.0",
+    "eslint-plugin-import": ">=2.18.0",
+    "eslint-plugin-jest": ">=23.0.0",
+    "eslint-plugin-jsx-a11y": ">=6.0.0",
     "eslint-plugin-prettier": ">=3.0.0",
+    "eslint-plugin-react": ">=7.0.0",
     "prettier": ">=1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.7.4",
-    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-env": "^7.7.4",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.6.0",
-    "eslint": "^6.0.0",
-    "eslint-config-prettier": "^6.5.0",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.7.2",
+    "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-import": "^2.18.2",
-    "eslint-plugin-jest": "^22.6.3",
+    "eslint-plugin-jest": "^23.1.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.1",
-    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react": "^7.17.0",
     "jest": "^24.9.0",
     "prettier": "^1.19.1"
   }
