@@ -18,9 +18,7 @@
     "lint": "eslint . --max-warnings 0"
   },
   "peerDependencies": {
-    "eslint": ">=6.0.0"
-  },
-  "optionalDependencies": {
+    "eslint": ">=6.0.0",
     "eslint-config-prettier": ">=6.0.0",
     "eslint-plugin-import": ">=2.18.0",
     "eslint-plugin-jest": ">=23.0.0",
