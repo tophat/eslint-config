@@ -1,12 +1,21 @@
 # Changelog
 
-### From 0.3.0 to 0.3.1
+## From 0.3.x to 0.4.x
+
+Minimum peer dependency versions were bumped. (#55)
+
+The following rules were changed and will cause fewer linter failures:
+
+- [**jest/expect-expect**](https://github.com/jest-community/eslint-plugin-jest/blob/master/docs/rules/expect-expect.md)
+    - Whitelist `testSaga` and `expectSaga` as valid expectations (#54)
+
+## From 0.3.0 to 0.3.1
 
 The following rules were **removed** and will no longer cause linter failures:
 
 - [**import/exports-last**](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/exports-last.md) (#48)
 
-### From 0.2.x to 0.3.x
+## From 0.2.x to 0.3.x
 
 The following rules were added and will now cause linter failures:
 
@@ -60,7 +69,7 @@ modules.exports = {
 }
 ```
 
-### From 0.1.x to 0.2.x
+## From 0.1.x to 0.2.x
 
 The following rules were added and will now cause linter failures:
 
