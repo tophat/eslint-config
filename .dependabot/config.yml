@@ -6,3 +6,7 @@ update_configs:
     version_requirement_updates: "increase_versions"
     commit_message:
       prefix: "chore"
+    automerged_updates:
+      - match:
+          dependency_type: "development"
+          update_type: "in_range"
