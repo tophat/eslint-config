@@ -66,7 +66,12 @@ configs.forEach(({ file, codeExample }) => {
 
     describe(`${file} config`, () => {
         it("doesn't include any rules superseded by prettier", () => {
-            const baseRules = Object.keys(config.rules)
+            const prettierConflictWhitelist = ['quotes']
+
+            const baseRules = Object.keys(config.rules).filter(
+                rule => !prettierConflictWhitelist.includes(rule),
+            )
+
             baseRules.forEach(baseRule => {
                 expect(allPrettierRules).not.toContain(baseRule)
             })
