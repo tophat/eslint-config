@@ -29,6 +29,7 @@ module.exports = {
         'no-var': 'error',
         'prefer-const': 'error',
         'prefer-template': 'error',
+        quotes: ['error', 'single', { avoidEscape: true }],
         /* require-atomic-updates broken per https://github.com/eslint/eslint/issues/11899 */
         'require-atomic-updates': 'off',
         // no autofixer on declaration sort of sort-imports, so we use import/order for declaration sort
