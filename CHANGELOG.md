@@ -1,5 +1,12 @@
 # Changelog
 
+## From 0.4.x to 0.5.x
+
+The following rules were added and will cause new linter failures:
+
+- [**quotes**](https://eslint.org/docs/rules/quotes)
+    - Enabled to complement prettier's quotes settings in order to disable unnecessary template literals (#67)
+
 ## From 0.3.x to 0.4.x
 
 Minimum peer dependency versions were bumped. (#55)
