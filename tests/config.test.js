@@ -32,6 +32,15 @@ var React = require('react')
 var PropTypes = require('prop-types')
 
 function MyComponent(props) {
+    var toggleState = React.useState(true)
+    React.useEffect(function (){
+        if (toggleState[0]) {
+            toggleState[1](false)
+        }
+    }, [props, toggleState])
+    if (!toggleState[0]) {
+        return
+    }
     return <div>Hi, {props.name}!</div>
 }
 
@@ -39,6 +48,28 @@ MyComponent.propTypes = {
     name: PropTypes.string.isRequired
 }
         `,
+        badCodeExample: `
+var React = require('react')
+var PropTypes = require('prop-types')
+
+function MyComponent(props) {
+    var toggleState = React.useState(true)
+    if (!toggleState[0]) {
+        return
+    }
+    React.useEffect(function (){
+        if (toggleState[0]) {
+            toggleState[1](false)
+        }
+    }, [props])
+    return <div>Hi, {props.name}!</div>
+}
+
+MyComponent.propTypes = {
+    name: PropTypes.string.isRequired
+}
+        `,
+        badCodeMessageCount: 2,
     },
     {
         file: 'jest.js',
@@ -61,32 +92,53 @@ ReactDOM.render(React.createElement('div'), element)
     },
 ]
 
-configs.forEach(({ file, codeExample }) => {
-    const config = require(`../${file}`)
+configs.forEach(
+    ({ file, codeExample, badCodeMessageCount, badCodeExample }) => {
+        const config = require(`../${file}`)
 
-    describe(`${file} config`, () => {
-        it("doesn't include any rules superseded by prettier", () => {
-            const prettierConflictWhitelist = ['quotes']
+        describe(`${file} config`, () => {
+            it("doesn't include any rules superseded by prettier", () => {
+                const prettierConflictWhitelist = ['quotes']
 
-            const baseRules = Object.keys(config.rules).filter(
-                rule => !prettierConflictWhitelist.includes(rule),
-            )
+                const baseRules = Object.keys(config.rules).filter(
+                    rule => !prettierConflictWhitelist.includes(rule),
+                )
 
-            baseRules.forEach(baseRule => {
-                expect(allPrettierRules).not.toContain(baseRule)
+                baseRules.forEach(baseRule => {
+                    expect(allPrettierRules).not.toContain(baseRule)
+                })
+            })
+
+            it('has no errors', () => {
+                // Run eslint on a minimal code example to make sure all rules
+                // are named and configured correctly
+                const cli = new CLIEngine({
+                    useEslintrc: false,
+                    configFile: file,
+                })
+                const result = cli.executeOnText(codeExample)
+                expect(result.results[0].messages).toEqual([])
+            })
+
+            it('has errors', () => {
+                if (!badCodeExample) {
+                    return
+                }
+                // Run eslint on a bad code example to make sure all rules
+                // will trigger on errors correctly
+                const cli = new CLIEngine({
+                    useEslintrc: false,
+                    configFile: file,
+                })
+                const result = cli.executeOnText(badCodeExample)
+                expect(result.results[0].messages).toHaveLength(
+                    badCodeMessageCount,
+                )
+            })
+
+            it('is listed in package.json', () => {
+                expect(packageJson.files).toContain(file)
             })
         })
-
-        it('has no errors', () => {
-            // Run eslint on a minimal code example to make sure all rules
-            // are named and configured correctly
-            const cli = new CLIEngine({ useEslintrc: false, configFile: file })
-            const result = cli.executeOnText(codeExample)
-            expect(result.results[0].messages).toEqual([])
-        })
-
-        it('is listed in package.json', () => {
-            expect(packageJson.files).toContain(file)
-        })
-    })
-})
+    },
+)
