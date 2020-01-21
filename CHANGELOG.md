@@ -1,5 +1,12 @@
 # Changelog
 
+## From 0.5.x to 0.6.x
+
+The following rules were added and will cause new linter failures:
+
+- [**react-hooks/rules-of-hooks**](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks) (#71)
+- [**react-hooks/exhaustive-deps**](https://github.com/facebook/react/tree/master/packages/eslint-plugin-react-hooks) (#71)
+
 ## From 0.4.x to 0.5.x
 
 The following rules were added and will cause new linter failures:
