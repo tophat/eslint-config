@@ -38,7 +38,7 @@ function MyComponent(props) {
             toggleState[1](false)
         }
     }, [props, toggleState])
-    if (!toggleState[0]) {
+    if (toggleState[0]) {
         return
     }
     return <div>Hi, {props.name}!</div>
