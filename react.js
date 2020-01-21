@@ -4,7 +4,7 @@ module.exports = {
             jsx: true,
         },
     },
-    plugins: ['react', 'jsx-a11y'],
+    plugins: ['react', 'react-hooks', 'jsx-a11y'],
     extends: ['plugin:react/recommended', 'prettier/react'],
     rules: {
         'jsx-a11y/aria-props': 'error',
@@ -15,6 +15,8 @@ module.exports = {
         'react/default-props-match-prop-types': 'error',
         'react/require-default-props': 'error',
         'react/display-name': 'off',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn',
     },
     settings: {
         react: {
