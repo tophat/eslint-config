@@ -112,10 +112,7 @@ configs.forEach(params => {
         it('has no errors', () => {
             // Run eslint on a minimal code example to make sure all rules
             // are named and configured correctly
-            const cli = new CLIEngine({
-                useEslintrc: false,
-                configFile: file,
-            })
+            const cli = new CLIEngine({ useEslintrc: false, configFile: file })
             const result = cli.executeOnText(codeExample)
             expect(result.results[0].messages).toEqual([])
         })
