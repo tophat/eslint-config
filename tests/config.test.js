@@ -11,7 +11,7 @@ const allPrettierRules = Object.keys(prettierRules.rules).concat(
 const configs = [
     {
         file: 'index.js',
-        codeExample: `export default function(a, b) {
+        codeExample: `export default function (a, b) {
     return a + b
 }
 `,
