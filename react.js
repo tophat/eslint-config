@@ -8,7 +8,7 @@ module.exports = {
     extends: ['plugin:react/recommended', 'prettier/react'],
     rules: {
         'jsx-a11y/aria-props': 'error',
-        'jsx-a11y/label-has-for': 'error',
+        'jsx-a11y/label-has-associated-control': 'error',
         'jsx-a11y/mouse-events-have-key-events': 'error',
         'jsx-a11y/role-has-required-aria-props': 'error',
         'jsx-a11y/role-supports-aria-props': 'error',
