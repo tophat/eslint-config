@@ -1,5 +1,11 @@
 # Changelog
 
+## From 0.6.x to 0.7.x
+
+The following deprecated rule was replaced (no new failures should be caused):
+
+- [**jsx-a11y/label-has-for**](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md) was replaced with [**jsx-a11y/label-has-associated-control**](https://github.com/jsx-eslint/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-associated-control.md)
+
 ## From 0.5.x to 0.6.x
 
 The following rules were added and will cause new linter failures:
