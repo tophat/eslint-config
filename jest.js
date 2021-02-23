@@ -3,14 +3,13 @@ module.exports = {
         jest: true,
     },
     plugins: ['jest'],
-    extends: 'plugin:jest/recommended',
+    extends: ['plugin:jest/recommended', 'plugin:jest/style'],
     rules: {
-        'jest/prefer-to-be-null': 'error',
-        'jest/prefer-to-be-undefined': 'error',
-        'jest/prefer-to-have-length': 'error',
         'jest/expect-expect': [
             'error',
             { assertFunctionNames: ['expect', 'testSaga', 'expectSaga'] },
         ],
+        'jest/no-done-callback': 'off',
+        'jest/no-large-snapshots': 'error',
     },
 }
