@@ -92,7 +92,7 @@ ReactDOM.render(React.createElement('div'), element)
     },
 ]
 
-configs.forEach(params => {
+configs.forEach((params) => {
     const { file, codeExample, badCodeMessageCount, badCodeExample } = params
     const config = require(`../${file}`)
 
@@ -101,10 +101,10 @@ configs.forEach(params => {
             const prettierConflictWhitelist = ['quotes']
 
             const baseRules = Object.keys(config.rules).filter(
-                rule => !prettierConflictWhitelist.includes(rule),
+                (rule) => !prettierConflictWhitelist.includes(rule),
             )
 
-            baseRules.forEach(baseRule => {
+            baseRules.forEach((baseRule) => {
                 expect(allPrettierRules).not.toContain(baseRule)
             })
         })
