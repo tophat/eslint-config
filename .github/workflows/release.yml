@@ -28,5 +28,5 @@ jobs:
               env:
                   NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
               run:
-                  echo ${GITHUB_REF#/refs/*/}
+                  echo ${GITHUB_REF#refs/*/}
                   #yarn publish --access public --tag latest --new-version ${{
