@@ -1,0 +1,22 @@
+name: Tophat Eslint Release
+
+on:
+    push:
+        tags: 
+            - 'v*'
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: install
+              run: yarn
+            - name: get tag
+              id: get_tag
+              run: echo ::set-output name=tag::${GITHUB_REF#refs/*/}
+            - name: deploy
+              env:
+                  NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+              run:
+                  yarn publish --access public --tag latest --new-version ${{steps.get_tag.outputs.tag}}
