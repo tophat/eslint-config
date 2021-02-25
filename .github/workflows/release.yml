@@ -1,0 +1,32 @@
+name: Tophat Eslint Config CI
+
+#on:
+#    push:
+#        tags: 
+#            - 'v.*'
+
+on: [push]
+
+jobs:
+    test_and_lint:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: install
+              run: yarn
+            - name: lint
+              run: yarn lint
+            - name: test
+              run: yarn test
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: install
+              run: yarn
+            - name: deploy
+              env:
+                  NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+              run:
+                  echo ${GITHUB_REF#/ref/*/}
+                  #yarn publish --access public --tag latest --new-version ${{
