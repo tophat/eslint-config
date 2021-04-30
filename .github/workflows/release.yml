@@ -50,7 +50,7 @@ jobs:
             yarn dedupe
             if ! git diff-index --quiet HEAD -- CHANGELOG.md; then
               git push --tags \
-                && git add yarn.lock CHANGELOG.md "packages/**/package.json" \
+                && git add yarn.lock CHANGELOG.md "package.json" \
                 && git commit -m "chore: release eslint import resolver require [skip ci]" \
                 && git push
             fi
