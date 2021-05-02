@@ -1,12 +1,11 @@
-import { CLIEngine } from 'eslint'
-import prettierReactRules from 'eslint-config-prettier/react'
+import 'regenerator-runtime'
+
+import { ESLint } from 'eslint'
 import prettierRules from 'eslint-config-prettier'
 
 const packageJson = require('../package.json')
 
-const allPrettierRules = Object.keys(prettierRules.rules).concat(
-    Object.keys(prettierReactRules.rules),
-)
+const allPrettierRules = Object.keys(prettierRules.rules)
 
 const configs = [
     {
@@ -109,26 +108,29 @@ configs.forEach((params) => {
             })
         })
 
-        it('has no errors', () => {
+        it('has no errors', async () => {
             // Run eslint on a minimal code example to make sure all rules
             // are named and configured correctly
-            const cli = new CLIEngine({ useEslintrc: false, configFile: file })
-            const result = cli.executeOnText(codeExample)
-            expect(result.results[0].messages).toEqual([])
+            const cli = new ESLint({
+                useEslintrc: false,
+                overrideConfigFile: file,
+            })
+            const result = await cli.lintText(codeExample)
+            expect(result[0].messages).toEqual([])
         })
 
-        it('has errors', () => {
+        it('has errors', async () => {
             if (!badCodeExample) {
                 return
             }
             // Run eslint on a bad code example to make sure all rules
             // will trigger on errors correctly
-            const cli = new CLIEngine({
+            const cli = new ESLint({
                 useEslintrc: false,
-                configFile: file,
+                overrideConfigFile: file,
             })
-            const result = cli.executeOnText(badCodeExample)
-            expect(result.results[0].messages).toHaveLength(badCodeMessageCount)
+            const result = await cli.lintText(badCodeExample)
+            expect(result[0].messages).toHaveLength(badCodeMessageCount)
         })
 
         it('is listed in package.json', () => {
