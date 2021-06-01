@@ -17,7 +17,7 @@
     "test": "jest --config jest.config.js",
     "lint": "eslint . --max-warnings 0",
     "test:ci": "run test",
-    "lint:ci": "run lint"
+    "lint:ci": "run lint --debug"
   },
   "peerDependencies": {
     "eslint": ">=7.0.0",
