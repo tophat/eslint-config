@@ -35,6 +35,7 @@
     "@babel/preset-env": "^7.14.4",
     "@monodeploy/plugin-github": "^0.2.1",
     "@tophat/conventional-changelog-config": "^0.5.8",
+    "@tophat/eslint-import-resolver-require": "^0.1.2",
     "@yarnpkg/pnpify": "^3.0.0-rc.3",
     "babel-jest": "^27.0.2",
     "eslint": "^7.27.0",

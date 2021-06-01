@@ -1856,6 +1856,7 @@ __metadata:
     "@babel/preset-env": ^7.14.4
     "@monodeploy/plugin-github": ^0.2.1
     "@tophat/conventional-changelog-config": ^0.5.8
+    "@tophat/eslint-import-resolver-require": ^0.1.2
     "@yarnpkg/pnpify": ^3.0.0-rc.3
     babel-jest: ^27.0.2
     eslint: ^7.27.0
@@ -1883,6 +1884,15 @@ __metadata:
     prettier: ">=2.0.0"
   languageName: unknown
   linkType: soft
+
+"@tophat/eslint-import-resolver-require@npm:^0.1.2":
+  version: 0.1.2
+  resolution: "@tophat/eslint-import-resolver-require@npm:0.1.2"
+  peerDependencies:
+    eslint-plugin-import: ">= 2.0.0"
+  checksum: d3a945a1adb8f978e41042bd46889434805da2de42842cd9b045931a8994b68948e79a36d919aa04f0bbe2746d3736700b1181c9545981f2a728e2bb4619ea1f
+  languageName: node
+  linkType: hard
 
 "@types/babel__core@npm:^7.0.0, @types/babel__core@npm:^7.1.14":
   version: 7.1.14
