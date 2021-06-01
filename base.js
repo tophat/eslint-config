@@ -1,11 +1,11 @@
 module.exports = {
     parserOptions: {
-        ecmaVersion: 9,
+        ecmaVersion: 2021,
         sourceType: 'module',
     },
     env: {
         node: true,
-        es6: true,
+        es2021: true,
     },
     extends: ['eslint:recommended', 'prettier'],
     plugins: ['import', 'prettier'],
@@ -60,5 +60,8 @@ module.exports = {
                 ],
             },
         ],
+    },
+    settings: {
+        'import/external-module-folders': ['node_modules', '.yarn'],
     },
 }

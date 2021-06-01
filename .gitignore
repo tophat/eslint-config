@@ -1,3 +1,20 @@
-*.sw*
+# dependency management
 node_modules
-yarn-error.log
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/versions
+!.yarn/sdks
+.pnp.*
+*.tmp
+# transient files
+*.log
+
+# build artifacts
+coverage
+lib
+artifacts
+*.junit.xml
+
+# this is configured via bootstrap script
+.vscode

@@ -1,5 +1,9 @@
 # Changelog
 
+All notable changes to this project will be documented using a format based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
+
+<!-- MONODEPLOY:BELOW -->
+
 ## From 0.6.x to 0.7.x
 
 The following deprecated rule was replaced (no new failures should be caused):
