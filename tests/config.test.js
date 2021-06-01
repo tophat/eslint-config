@@ -1,5 +1,4 @@
 import { ESLint } from 'eslint'
-
 import prettierRules from 'eslint-config-prettier'
 
 const packageJson = require('../package.json')

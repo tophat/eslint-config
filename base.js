@@ -61,4 +61,7 @@ module.exports = {
             },
         ],
     },
+    settings: {
+        'import/external-module-folders': ['node_modules', '.yarn'],
+    },
 }
