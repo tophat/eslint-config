@@ -4,6 +4,13 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [0.9.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@0.8.0...@tophat/eslint-config@0.9.0) "@tophat/eslint-config" (2021-06-01)<a name="0.9.0"></a>
+
+### Features
+
+* target prettier config v8, eslint v7, and node v14 (#186) ([af9ddcf](https://github.com/tophat/eslint-config/commits/af9ddcf))
+
+
 ## From 0.6.x to 0.7.x
 
 The following deprecated rule was replaced (no new failures should be caused):
