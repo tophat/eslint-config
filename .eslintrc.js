@@ -6,4 +6,5 @@ module.exports = {
             node: {},
         },
     },
+    ignorePatterns: ['/.yarn', '/.git', '/.github', '/.vscode', '/artifacts'],
 }

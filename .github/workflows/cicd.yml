@@ -67,8 +67,6 @@ jobs:
         - name: Install dependencies
           run: |
             yarn install --immutable
-        - name: Linting
-          run: yarn lint:ci
         - name: Set GitHub user for tests
           run: |
             git config --global user.email "opensource@tophat.com"
@@ -76,6 +74,8 @@ jobs:
             git config --global init.defaultBranch master
         - name: Tests
           run: yarn test:ci
+        - name: Linting
+          run: yarn lint:ci
         - name: Upload Artifacts
           uses: actions/upload-artifact@v2
           with:
