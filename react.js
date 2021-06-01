@@ -5,7 +5,7 @@ module.exports = {
         },
     },
     plugins: ['react', 'react-hooks', 'jsx-a11y'],
-    extends: ['plugin:react/recommended', 'prettier/react'],
+    extends: ['plugin:react/recommended'],
     rules: {
         'jsx-a11y/aria-props': 'error',
         'jsx-a11y/label-has-associated-control': 'error',

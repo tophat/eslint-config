@@ -1,22 +1,55 @@
-name: Tophat Eslint Release
+name: Release
 
 on:
-    push:
-        tags: 
-            - 'v*'
+  workflow_dispatch:
+
+env:
+  CI: 1
+  ARTIFACT_DIR: ./artifacts
 
 jobs:
-    deploy:
-        runs-on: ubuntu-latest
-        steps:
-            - uses: actions/checkout@v2
-            - name: install
-              run: yarn
-            - name: get tag
-              id: get_tag
-              run: echo ::set-output name=tag::${GITHUB_REF#refs/*/v}
-            - name: deploy
-              env:
-                  NPM_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-              run:
-                  yarn publish --access public --tag latest --new-version ${{steps.get_tag.outputs.tag}}
+  release:
+    name: Publish ESLint Config
+    runs-on: ubuntu-20.04
+    steps:
+        - uses: actions/checkout@v2
+          with:
+            token: ${{ secrets.TOPHAT_BOT_GH_TOKEN }}
+            fetch-depth: 0
+        - uses: ./.github/actions/detect-env
+        - name: Setup Node.js
+          uses: actions/setup-node@v1
+          with:
+            node-version: ${{ env.NODE_VERSION }}
+        - name: Create artifacts directory
+          run: mkdir -p ${{ env.ARTIFACT_DIR }}
+        - name: Restore yarn cache
+          id: yarn-cache
+          uses: actions/cache@v2
+          with:
+            path: |
+              ./.yarn
+              .pnp.*
+            key: ${{ env.NODE_VERSION }}-${{ env.YARN_VERSION }}-${{ hashFiles('yarn.lock') }}
+        - name: Install dependencies
+          run: yarn install --immutable
+        - name: Configure Git
+          run: |
+            git config --global user.name tophat-opensource-bot
+            git config --global user.email opensource-leads+bot@tophatmonocle.com
+            git config --global init.defaultBranch master
+        - name: Publish via Monodeploy
+          if: github.ref == 'refs/heads/master'
+          env:
+            NPM_PUBLISH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+            GH_TOKEN: ${{ secrets.TOPHAT_BOT_GH_TOKEN }}
+          run: |
+            yarn monodeploy --config-file monodeploy.config.js \
+              --log-level 0 \
+              --persist-versions \
+              --push
+        - name: Upload Artifacts
+          uses: actions/upload-artifact@v2
+          with:
+            name: build-artifacts
+            path: ${{ env.ARTIFACT_DIR }}
