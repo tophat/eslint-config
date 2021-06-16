@@ -46,7 +46,7 @@ jobs:
           run: |
             yarn monodeploy --config-file monodeploy.config.js --log-level 0
         - name: Log Issues
-          if: ${{ failure }}
+          if: ${{ failure() }}
           run: |
             git status
         - name: Upload Artifacts
