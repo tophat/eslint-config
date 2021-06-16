@@ -5,4 +5,9 @@ module.exports = {
     autoCommit: true,
     autoCommitMessage: 'chore: release eslint config [skip ci]',
     plugins: ['@monodeploy/plugin-github'],
+    git: {
+        push: true,
+        tag: true,
+    },
+    persistVersions: true,
 }
