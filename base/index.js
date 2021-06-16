@@ -38,36 +38,7 @@ const rules = {
 
     /* Naming Convention */
     camelcase: 'off', // disabled in favour of @typescript-eslint's version
-    '@typescript-eslint/naming-convention': [
-        'error',
-        {
-            selector: ['default'],
-            format: ['camelCase'],
-            leadingUnderscore: 'allow',
-            trailingUnderscore: 'allow',
-        },
-        {
-            selector: 'variable',
-            format: ['PascalCase', 'camelCase', 'UPPER_CASE'],
-            leadingUnderscore: 'allowSingleOrDouble',
-            trailingUnderscore: 'allowSingleOrDouble',
-        },
-        {
-            selector: 'typeLike',
-            format: ['PascalCase'],
-        },
-        // Type keys can be snake_case to reflect API schemas
-        {
-            selector: ['typeProperty', 'objectLiteralProperty'],
-            format: ['camelCase', 'snake_case', 'UPPER_CASE'],
-            leadingUnderscore: 'allow',
-            trailingUnderscore: 'allow',
-        },
-        {
-            selector: ['enumMember'],
-            format: ['UPPER_CASE'],
-        },
-    ],
+    '@typescript-eslint/naming-convention': 'off', // to enable this, we require a deeper exploration of our naming patterns
 
     /* Object Properties */
     'dot-notation': 'error',
