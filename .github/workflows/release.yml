@@ -44,10 +44,11 @@ jobs:
             NPM_PUBLISH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
             GH_TOKEN: ${{ secrets.TOPHAT_BOT_GH_TOKEN }}
           run: |
-            yarn monodeploy --config-file monodeploy.config.js \
-              --log-level 0 \
-              --persist-versions \
-              --push
+            yarn monodeploy --config-file monodeploy.config.js --log-level 0
+        - name: Log Issues
+          if: ${{ failure }}
+          run: |
+            git status
         - name: Upload Artifacts
           uses: actions/upload-artifact@v2
           with:
