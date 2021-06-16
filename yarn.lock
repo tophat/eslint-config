@@ -1571,16 +1571,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monodeploy/node@npm:^0.9.4":
-  version: 0.9.4
-  resolution: "@monodeploy/node@npm:0.9.4"
+"@monodeploy/node@npm:^0.9.5":
+  version: 0.9.5
+  resolution: "@monodeploy/node@npm:0.9.5"
   dependencies:
     "@monodeploy/changelog": ^0.5.7
     "@monodeploy/dependencies": ^0.2.9
     "@monodeploy/git": ^0.2.4
     "@monodeploy/io": ^0.2.12
     "@monodeploy/logging": ^0.1.6
-    "@monodeploy/publish": ^0.4.7
+    "@monodeploy/publish": ^0.4.8
     "@monodeploy/types": ^0.6.1
     "@monodeploy/versions": ^0.5.3
     "@yarnpkg/cli": ^3.0.0-rc.5
@@ -1589,7 +1589,7 @@ __metadata:
     "@yarnpkg/plugin-npm": ^2.5.0-rc.5
     "@yarnpkg/plugin-pack": ^3.0.0-rc.5
     tapable: ^2.2.0
-  checksum: a4ce010aaeeaacdb950f8d20421313e547cf787bd0b0fbc3897c4d77a0b4bd0bfd52c08ad4fc6515ea212ccb9843155fd17a931a6ed1103a8ae6b6e8094d08a3
+  checksum: 7a2a865be190f9d380d9f2ab89c4271b24fbada314f7bf7adca55e716d8ef1505f0d3a182b0a75b51d4766cb33f36d2195c6b2501a12d30e5ad6ade343589f19
   languageName: node
   linkType: hard
 
@@ -1607,9 +1607,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monodeploy/publish@npm:^0.4.7":
-  version: 0.4.7
-  resolution: "@monodeploy/publish@npm:0.4.7"
+"@monodeploy/publish@npm:^0.4.8":
+  version: 0.4.8
+  resolution: "@monodeploy/publish@npm:0.4.8"
   dependencies:
     p-limit: ^3.1.0
   peerDependencies:
@@ -1623,7 +1623,7 @@ __metadata:
     "@yarnpkg/fslib": ^2.5.0-rc.5
     "@yarnpkg/plugin-npm": ^2.5.0-rc.5
     "@yarnpkg/plugin-pack": ^3.0.0-rc.5
-  checksum: 49880c8fd6d3d5edc3574d052267f3cdd823f582b47f9e51ba18be874184ff050907523c059d502ae2f25969551118d906c9d24440bbd29f08127333b88d0085
+  checksum: eab9295e811cecf62d2772872c83cfb5ce1d8de60ef8393567eb0ed0675a89ba2218a25485454524f35e3239faf8ef42964ee0ed0acc8836562a2d902868a7d9
   languageName: node
   linkType: hard
 
@@ -1880,7 +1880,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.2.0
     jest: ^27.0.4
     jest-junit: ^12.2.0
-    monodeploy: ^2.6.4
+    monodeploy: ^2.6.5
     prettier: ^2.3.1
     typescript: ~4.3.2
   peerDependencies:
@@ -6460,18 +6460,18 @@ fsevents@^2.3.2:
   languageName: node
   linkType: hard
 
-"monodeploy@npm:^2.6.4":
-  version: 2.6.4
-  resolution: "monodeploy@npm:2.6.4"
+"monodeploy@npm:^2.6.5":
+  version: 2.6.5
+  resolution: "monodeploy@npm:2.6.5"
   dependencies:
-    "@monodeploy/node": ^0.9.4
+    "@monodeploy/node": ^0.9.5
     "@monodeploy/types": ^0.6.1
     "@yarnpkg/core": ^3.0.0-rc.5
     ajv: ^8.1.0
     yargs: ^16.2.0
   bin:
     monodeploy: ./lib/cli.js
-  checksum: 0d44d5f53574dd83407c3a9b341c62c80f4a9295903ca504532d8f451b9b76c7560b4fe123eb686dc3fe606e72c4403a5e20512a79680883bfa67552960f17c5
+  checksum: 90584900519cfc6c46ca1a6b0aab2079e103f91f3b89528421b13a50b4cf7608a26af6ac44516405bb80e9938acf1589f9ae117dc604cec5f6ea02a203ce33b1
   languageName: node
   linkType: hard
 
