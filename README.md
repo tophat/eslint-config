@@ -9,7 +9,7 @@
 
 The default config includes the following:
 
-- A set of base eslint rules for all JavaScript projects
+- A set of base eslint rules for all JavaScript/TypeScript projects
 - Rules for React apps
 - Rules for Jest tests
 - Rules for web apps
@@ -27,7 +27,11 @@ yarn add --dev \
     eslint-plugin-react-hooks \
     eslint-plugin-jsx-a11y \
     eslint-plugin-jest \
-    eslint-plugin-import
+    eslint-plugin-import \
+    eslint-import-resolver-typescript \
+    @typescript-eslint/eslint-plugin \
+    @typescript-eslint/parser \
+    @tophat/eslint-import-resolver-require
 ```
 
 or
@@ -43,6 +47,10 @@ module.exports = {
     extends: '@tophat'
 }
 ```
+
+Note: `@tophat/eslint-import-resolver-require` is an optional peer dependency and helps with Yarn Berry projects.
+
+Note that Typescript is required.
 
 ## Picking and choosing certain configs
 

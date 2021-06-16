@@ -14,7 +14,7 @@ const configs = [
 `,
     },
     {
-        file: 'base.js',
+        file: 'base/index.js',
         codeExample: `function foo(a, b) {
     return a + b
 }
@@ -23,7 +23,7 @@ foo(1, 2)
 `,
     },
     {
-        file: 'react.js',
+        file: 'react/index.js',
         codeExample: `
 var React = require('react')
 var PropTypes = require('prop-types')
@@ -69,7 +69,7 @@ MyComponent.propTypes = {
         badCodeMessageCount: 2,
     },
     {
-        file: 'jest.js',
+        file: 'jest/index.js',
         codeExample: `
 describe('Some suite', function() {
     it('runs some test', function() {
@@ -79,7 +79,7 @@ describe('Some suite', function() {
         `,
     },
     {
-        file: 'web.js',
+        file: 'web/index.js',
         codeExample: `
 var React = require('react')
 var ReactDOM = require('react-dom')
@@ -89,11 +89,17 @@ ReactDOM.render(React.createElement('div'), element)
     },
 ]
 
-configs.forEach((params) => {
-    const { file, codeExample, badCodeMessageCount, badCodeExample } = params
-    const config = require(`../${file}`)
+describe.each(configs)(
+    '$file config',
+    ({ codeExample, badCodeMessageCount, badCodeExample, file }) => {
+        let config
+        beforeAll(() => {
+            config = require(`../${file}`)
+        })
+        afterAll(() => {
+            config = null
+        })
 
-    describe(`${file} config`, () => {
         it("doesn't include any rules superseded by prettier", () => {
             const prettierConflictWhitelist = ['quotes']
 
@@ -113,7 +119,9 @@ configs.forEach((params) => {
                 useEslintrc: false,
                 overrideConfigFile: file,
             })
-            const results = await cli.lintText(codeExample)
+            const results = await cli.lintText(codeExample, {
+                filePath: 'example/file.js',
+            })
             expect(results[0].messages).toEqual([])
         })
 
@@ -127,12 +135,58 @@ configs.forEach((params) => {
                 useEslintrc: false,
                 overrideConfigFile: file,
             })
-            const results = await cli.lintText(badCodeExample)
+            const results = await cli.lintText(badCodeExample, {
+                filePath: 'example/file.js',
+            })
             expect(results[0].messages).toHaveLength(badCodeMessageCount)
         })
+    },
+)
 
-        it('is listed in package.json', () => {
-            expect(packageJson.files).toContain(file)
+describe('Typescript Overrides', () => {
+    it('enforces types in typescript files', async () => {
+        const cli = new ESLint({
+            useEslintrc: false,
+            overrideConfigFile: 'index.js',
         })
+
+        const code = `${`
+export default function (a) {
+    return a
+}
+`.trim()}\n`
+
+        // ts file requires types
+        expect(
+            (
+                await cli.lintText(code, {
+                    filePath: 'example/file.ts',
+                })
+            )[0].messages,
+        ).toHaveLength(2)
+
+        // js file is fine (types disabled)
+        expect(
+            (
+                await cli.lintText(code, {
+                    filePath: 'example/file.js',
+                })
+            )[0].messages,
+        ).toHaveLength(0)
+    })
+})
+
+describe('Package JSON', () => {
+    it('is listed in package.json', () => {
+        expect(packageJson.files).toMatchInlineSnapshot(`
+            Array [
+              "index.js",
+              "base",
+              "jest",
+              "react",
+              "web",
+              "helpers",
+            ]
+        `)
     })
 })
