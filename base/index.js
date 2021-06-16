@@ -1,6 +1,6 @@
 const { requireResolveOptional } = require('../helpers/requireUtils')
 
-// Marked as optional in peerDependenciesMeta
+// Marked as optional in peerDependenciesMeta.
 const importResolverRequire = requireResolveOptional(
     '@tophat/eslint-import-resolver-require',
 )
