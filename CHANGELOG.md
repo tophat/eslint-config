@@ -4,6 +4,13 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [0.10.2](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@0.10.1...@tophat/eslint-config@0.10.2) "@tophat/eslint-config" (2021-06-16)<a name="0.10.2"></a>
+
+### Bug Fixes
+
+* disable overzealous naming rule (#195) ([4be0b9c](https://github.com/tophat/eslint-config/commits/4be0b9c))
+
+
 ## [0.9.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@0.8.0...@tophat/eslint-config@0.9.0) "@tophat/eslint-config" (2021-06-01)<a name="0.9.0"></a>
 
 ### Features
