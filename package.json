@@ -1,6 +1,6 @@
 {
   "name": "@tophat/eslint-import-resolver-require",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "ESLint import resolver plugin to use native require resolver",
   "main": "./lib/index.js",
   "repository": "git@github.com:tophat/eslint-import-resolver-require",
