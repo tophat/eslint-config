@@ -4,6 +4,14 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [0.10.3](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@0.10.2...@tophat/eslint-config@0.10.3) "@tophat/eslint-config" (2021-06-21)<a name="0.10.3"></a>
+
+### Bug Fixes
+
+* specify to use custom tophat resolver before node ([4144d8d](https://github.com/tophat/eslint-config/commits/4144d8d))
+* specify to use custom tophat resolver before node (#196) ([4144d8d](https://github.com/tophat/eslint-config/commits/4144d8d))
+
+
 ## [0.10.2](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@0.10.1...@tophat/eslint-config@0.10.2) "@tophat/eslint-config" (2021-06-16)<a name="0.10.2"></a>
 
 ### Bug Fixes
