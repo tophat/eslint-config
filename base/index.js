@@ -165,8 +165,8 @@ module.exports = {
             },
             {
                 ...(importResolverRequire
-                    ? { [importResolverRequire]: {} }
-                    : {}),
+                    ? [{ [importResolverRequire]: {} }]
+                    : []),
             },
             { node: {} },
         ],
