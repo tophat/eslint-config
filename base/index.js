@@ -163,11 +163,9 @@ module.exports = {
                     alwaysTryTypes: true,
                 },
             },
-            {
-                ...(importResolverRequire
-                    ? [{ [importResolverRequire]: {} }]
-                    : []),
-            },
+            ...(importResolverRequire
+                ? [{ [importResolverRequire]: {} }]
+                : []),
             { node: {} },
         ],
     },
