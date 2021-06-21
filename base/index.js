@@ -157,12 +157,14 @@ module.exports = {
         'import/parsers': {
             '@typescript-eslint/parser': ['.ts', '.tsx', '.js', '.jsx'],
         },
-        'import/resolver': {
-            typescript: {
-                alwaysTryTypes: true,
+        'import/resolver': [
+            {
+                typescript: {
+                    alwaysTryTypes: true,
+                },
             },
-            node: {},
-            ...(importResolverRequire ? { [importResolverRequire]: {} } : {}),
-        },
+            { ...(importResolverRequire ? { [importResolverRequire]: {} } : {}), },
+            { node: {}, },
+        ]
     },
 }
