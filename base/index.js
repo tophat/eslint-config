@@ -133,8 +133,8 @@ module.exports = {
     },
     extends: [
         'eslint:recommended',
-        'prettier',
         'plugin:@typescript-eslint/recommended',
+        'plugin:prettier/recommended',
     ],
     plugins: ['import', 'prettier', '@typescript-eslint'],
     rules,
