@@ -4,6 +4,15 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [0.10.4](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@0.10.3...@tophat/eslint-config@0.10.4) "@tophat/eslint-config" (2021-07-29)<a name="0.10.4"></a>
+
+### Bug Fixes
+
+* Prevent tslint and prettier from fighting over semi-colons ([6a7db8c](https://github.com/tophat/eslint-config/commits/6a7db8c))
+* swap order of configs ([6a7db8c](https://github.com/tophat/eslint-config/commits/6a7db8c))
+* Prevent tslint and prettier from fighting over semi-colons (#197) ([6a7db8c](https://github.com/tophat/eslint-config/commits/6a7db8c))
+
+
 ## [0.10.3](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@0.10.2...@tophat/eslint-config@0.10.3) "@tophat/eslint-config" (2021-06-21)<a name="0.10.3"></a>
 
 ### Bug Fixes
