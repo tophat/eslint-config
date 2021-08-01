@@ -4,6 +4,13 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [0.10.5](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@0.10.4...@tophat/eslint-config@0.10.5) "@tophat/eslint-config" (2021-08-01)<a name="0.10.5"></a>
+
+### Bug Fixes
+
+* mark react peers as optional (#199) ([bdcdde7](https://github.com/tophat/eslint-config/commits/bdcdde7))
+
+
 ## [0.10.4](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@0.10.3...@tophat/eslint-config@0.10.4) "@tophat/eslint-config" (2021-07-29)<a name="0.10.4"></a>
 
 ### Bug Fixes
