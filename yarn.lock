@@ -1902,6 +1902,12 @@ __metadata:
   peerDependenciesMeta:
     "@tophat/eslint-import-resolver-require":
       optional: true
+    eslint-plugin-jsx-a11y:
+      optional: true
+    eslint-plugin-react:
+      optional: true
+    eslint-plugin-react-hooks:
+      optional: true
   languageName: unknown
   linkType: soft
 
