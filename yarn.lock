@@ -1908,6 +1908,7 @@ __metadata:
     "@typescript-eslint/parser": ">=4.30.0"
     eslint: ">=7.32.0"
     eslint-config-prettier: ">=8.3.0"
+    eslint-import-resolver-node: ">=0.3.6"
     eslint-import-resolver-typescript: ">=2.4.0"
     eslint-plugin-import: ">=2.24.2"
     eslint-plugin-jest: ">=24.4.0"
@@ -1918,8 +1919,6 @@ __metadata:
     prettier: ">=2.3.2"
     typescript: ">=4"
   peerDependenciesMeta:
-    "@tophat/eslint-import-resolver-require":
-      optional: true
     eslint-plugin-jsx-a11y:
       optional: true
     eslint-plugin-react:

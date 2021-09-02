@@ -1,10 +1,3 @@
-const { requireResolveOptional } = require('../helpers/requireUtils')
-
-// Marked as optional in peerDependenciesMeta.
-const importResolverRequire = requireResolveOptional(
-    '@tophat/eslint-import-resolver-require',
-)
-
 const rules = {
     /* Prettier Overrides */
     'prettier/prettier': [
@@ -160,12 +153,12 @@ module.exports = {
         },
         'import/resolver': [
             {
-                typescript: {
+                [require.resolve('eslint-import-resolver-typescript')]: {
                     alwaysTryTypes: true,
                 },
             },
-            ...(importResolverRequire ? [{ [importResolverRequire]: {} }] : []),
-            { node: {} },
+            { [require.resolve('@tophat/eslint-import-resolver-require')]: {} },
+            { [require.resolve('eslint-import-resolver-node')]: {} },
         ],
     },
 }

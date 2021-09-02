@@ -30,6 +30,7 @@
     "@typescript-eslint/parser": ">=4.30.0",
     "eslint": ">=7.32.0",
     "eslint-config-prettier": ">=8.3.0",
+    "eslint-import-resolver-node": ">=0.3.6",
     "eslint-import-resolver-typescript": ">=2.4.0",
     "eslint-plugin-import": ">=2.24.2",
     "eslint-plugin-jest": ">=24.4.0",
@@ -40,12 +41,16 @@
     "prettier": ">=2.3.2",
     "typescript": ">=4"
   },
+  "dependencies": {
+    "@tophat/eslint-import-resolver-require": "^0.1.3",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-import-resolver-typescript": "^2.4.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
     "@monodeploy/plugin-github": "^0.3.8",
     "@tophat/conventional-changelog-config": "^0.5.8",
-    "@tophat/eslint-import-resolver-require": "^0.1.3",
     "@typescript-eslint/eslint-plugin": "^4.30.0",
     "@typescript-eslint/parser": "^4.30.0",
     "@yarnpkg/sdks": "^2.4.2-rc.2",
@@ -67,9 +72,6 @@
     "typescript": "~4.3.5"
   },
   "peerDependenciesMeta": {
-    "@tophat/eslint-import-resolver-require": {
-      "optional": true
-    },
     "eslint-plugin-jsx-a11y": {
       "optional": true
     },
