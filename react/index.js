@@ -13,14 +13,20 @@ module.exports = {
         'jsx-a11y/role-has-required-aria-props': 'error',
         'jsx-a11y/role-supports-aria-props': 'error',
         'react/default-props-match-prop-types': 'error',
-        'react/require-default-props': 'error',
+        'react/require-default-props': [
+            'error',
+            {
+                forbidDefaultForRequired: true,
+            },
+        ],
         'react/display-name': 'off',
+        'react/no-unsafe': ['error', { checkAliases: true }],
         'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'error',
     },
     settings: {
         react: {
-            version: '16.0',
+            version: '16.14.0',
         },
     },
 }
