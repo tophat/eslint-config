@@ -4,10 +4,11 @@ module.exports = {
     changelogFilename: './CHANGELOG.md',
     autoCommit: true,
     autoCommitMessage: 'chore: release eslint config [skip ci]',
-    plugins: ['@monodeploy/plugin-github'],
+    plugins: process.env.PREVIEW === '1' ? [] : ['@monodeploy/plugin-github'],
     git: {
         push: true,
         tag: true,
     },
     persistVersions: true,
+    changesetIgnorePatterns: ['**/*.test.ts'],
 }
