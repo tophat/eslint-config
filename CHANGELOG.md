@@ -4,6 +4,15 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [0.11.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@0.10.5...@tophat/eslint-config@0.11.0) "@tophat/eslint-config" (2021-09-02)<a name="0.11.0"></a>
+
+### Features
+
+* **react**: do not allow unsafe react lifecycle methods ([acfa77c](https://github.com/tophat/eslint-config/commits/acfa77c))
+* raise minimum versions of eslint, typescript, prettier ([acfa77c](https://github.com/tophat/eslint-config/commits/acfa77c))
+* fallback to dependencies when peers for resolvers not provided ([acfa77c](https://github.com/tophat/eslint-config/commits/acfa77c))
+
+
 ## [0.10.5](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@0.10.4...@tophat/eslint-config@0.10.5) "@tophat/eslint-config" (2021-08-01)<a name="0.10.5"></a>
 
 ### Bug Fixes
