@@ -1909,15 +1909,15 @@ __metadata:
     eslint: ">=7.32.0"
     eslint-config-prettier: ">=8.3.0"
     eslint-import-resolver-node: ">=0.3.6"
-    eslint-import-resolver-typescript: ">=2.4.0"
+    eslint-import-resolver-typescript: ">=2.5.0"
     eslint-plugin-import: ">=2.24.2"
-    eslint-plugin-jest: ">=24.4.0"
+    eslint-plugin-jest: ">=24.4.2"
     eslint-plugin-jsx-a11y: ">=6.4.1"
     eslint-plugin-prettier: ">=4.0.0"
-    eslint-plugin-react: ">=7.0.0"
-    eslint-plugin-react-hooks: ">=2.0.0"
-    prettier: ">=2.3.2"
-    typescript: ">=4"
+    eslint-plugin-react: ">=7.26.0"
+    eslint-plugin-react-hooks: ">=4.2.0"
+    prettier: ">=2.4.1"
+    typescript: ">=4.3.5"
   peerDependenciesMeta:
     eslint-plugin-jsx-a11y:
       optional: true
