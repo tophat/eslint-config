@@ -4,6 +4,13 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [0.12.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@0.11.0...@tophat/eslint-config@0.12.0) "@tophat/eslint-config" (2021-09-28)<a name="0.12.0"></a>
+
+### Features
+
+* Bump eslint dependencies (#201) ([4ce9808](https://github.com/tophat/eslint-config/commits/4ce9808))
+
+
 ## [0.11.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@0.10.5...@tophat/eslint-config@0.11.0) "@tophat/eslint-config" (2021-09-02)<a name="0.11.0"></a>
 
 ### Features
