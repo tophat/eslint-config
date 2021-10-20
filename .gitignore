@@ -18,3 +18,4 @@ artifacts
 
 # this is configured via bootstrap script
 .vscode
+.vim
