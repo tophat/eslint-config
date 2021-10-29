@@ -53,7 +53,7 @@
     "@tophat/conventional-changelog-config": "^0.5.9",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
-    "@yarnpkg/sdks": "^2.5.0-rc.2",
+    "@yarnpkg/sdks": "^2.5.0",
     "babel-jest": "^27.1.0",
     "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.3.0",
