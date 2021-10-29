@@ -1909,9 +1909,9 @@ __metadata:
     typescript: ^4.4.4
   peerDependencies:
     "@tophat/eslint-import-resolver-require": ">=0.1.3"
-    "@typescript-eslint/eslint-plugin": ^5.1.0
-    "@typescript-eslint/parser": ^5.1.0
-    eslint: ^8.0.1
+    "@typescript-eslint/eslint-plugin": ^5.2.0
+    "@typescript-eslint/parser": ^5.2.0
+    eslint: ^8.1.0
     eslint-config-prettier: ^8.3.0
     eslint-import-resolver-node: ^0.3.6
     eslint-import-resolver-typescript: ^2.5.0
@@ -1923,9 +1923,6 @@ __metadata:
     eslint-plugin-react-hooks: ^4.2.0
     prettier: ">=2.4.1"
     typescript: ^4.4.4
-  dependenciesMeta:
-    "@typescript-eslint/eslint-plugin@5.1.0":
-      unplugged: true
   peerDependenciesMeta:
     eslint-plugin-jsx-a11y:
       optional: true
