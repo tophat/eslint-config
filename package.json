@@ -47,14 +47,14 @@
     "eslint-import-resolver-typescript": "^2.5.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
     "@monodeploy/plugin-github": "^0.3.8",
     "@tophat/conventional-changelog-config": "^0.5.9",
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
     "@yarnpkg/sdks": "^2.5.0",
-    "babel-jest": "^27.1.0",
+    "babel-jest": "^27.3.1",
     "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-import-resolver-node": "^0.3.6",
@@ -65,8 +65,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.26.1",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "jest": "^27.1.0",
-    "jest-junit": "^12.2.0",
+    "jest": "^27.3.1",
+    "jest-junit": "^13.0.0",
     "monodeploy": "^2.8.10",
     "prettier": "^2.4.1",
     "typescript": "^4.4.4"
