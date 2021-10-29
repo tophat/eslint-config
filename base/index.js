@@ -155,6 +155,7 @@ module.exports = {
             {
                 [require.resolve('eslint-import-resolver-typescript')]: {
                     alwaysTryTypes: true,
+
                 },
             },
             { [require.resolve('@tophat/eslint-import-resolver-require')]: {} },
