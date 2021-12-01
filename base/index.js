@@ -98,6 +98,10 @@ const rules = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/ban-ts-comment': 'warn', // Discourage disabling static analysis.
     '@typescript-eslint/ban-types': 'warn', // Discourage disabling static analysis.
+
+    // no-use-before-define can cause errors with typescript concepts, like types or enums
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': 'error',
 }
 
 const jsIncompatibleRules = {
