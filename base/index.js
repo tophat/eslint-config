@@ -41,6 +41,7 @@ const rules = {
     /* Conditionals */
     eqeqeq: 'error',
     'no-nested-ternary': 'error',
+    'no-use-before-define': 'error',
 
     /* Behaviours */
     /*
