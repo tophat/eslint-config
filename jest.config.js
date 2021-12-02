@@ -43,4 +43,5 @@ module.exports = {
         throwOnModuleCollision: true,
     },
     modulePathIgnorePatterns: ['<rootDir>/.*/lib'],
+    resolver: '<rootDir>/jest-resolver.js',
 }

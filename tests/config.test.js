@@ -143,39 +143,6 @@ describe.each(configs)(
     },
 )
 
-describe('Typescript Overrides', () => {
-    it('enforces types in typescript files', async () => {
-        const cli = new ESLint({
-            useEslintrc: false,
-            overrideConfigFile: 'index.js',
-        })
-
-        const code = `${`
-export default function (a) {
-    return a
-}
-`.trim()}\n`
-
-        // ts file requires types
-        expect(
-            (
-                await cli.lintText(code, {
-                    filePath: 'example/file.ts',
-                })
-            )[0].messages,
-        ).toHaveLength(2)
-
-        // js file is fine (types disabled)
-        expect(
-            (
-                await cli.lintText(code, {
-                    filePath: 'example/file.js',
-                })
-            )[0].messages,
-        ).toHaveLength(0)
-    })
-})
-
 describe('Package JSON', () => {
     it('is listed in package.json', () => {
         expect(packageJson.files).toMatchInlineSnapshot(`
