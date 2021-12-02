@@ -101,7 +101,8 @@ const rules = {
 
     // no-use-before-define can cause errors with typescript concepts, like types or enums
     'no-use-before-define': 'off',
-    '@typescript-eslint/no-use-before-define': 'error',
+    // functions can be called before they are defined because function declarations are hoisted
+    '@typescript-eslint/no-use-before-define': ['error', { functions: true }],
 }
 
 const jsIncompatibleRules = {
