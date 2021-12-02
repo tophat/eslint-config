@@ -4,6 +4,14 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.0.2](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@1.0.1...@tophat/eslint-config@1.0.2) "@tophat/eslint-config" (2021-12-02)<a name="1.0.2"></a>
+
+### Bug Fixes
+
+* Set function to false ([ad733b3](https://github.com/tophat/eslint-config/commits/ad733b3))
+* Set function to false (#206) ([ad733b3](https://github.com/tophat/eslint-config/commits/ad733b3))
+
+
 ## [1.0.1](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@1.0.0...@tophat/eslint-config@1.0.1) "@tophat/eslint-config" (2021-12-02)<a name="1.0.1"></a>
 
 ### Bug Fixes
