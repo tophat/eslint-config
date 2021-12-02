@@ -1,6 +1,6 @@
 {
   "name": "@tophat/eslint-config",
-  "version": "0.12.0",
+  "version": "1.0.1",
   "description": "Top Hat's shareable eslint configuration",
   "main": "index.js",
   "files": [

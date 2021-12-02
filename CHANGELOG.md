@@ -4,6 +4,14 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.0.1](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@1.0.0...@tophat/eslint-config@1.0.1) "@tophat/eslint-config" (2021-12-02)<a name="1.0.1"></a>
+
+### Bug Fixes
+
+* Exclude functions from no-use-before-define rule ([d9808f5](https://github.com/tophat/eslint-config/commits/d9808f5))
+* Exclude functions from no-use-before-define rule (#205) ([d9808f5](https://github.com/tophat/eslint-config/commits/d9808f5))
+
+
 ## [0.12.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@0.11.0...@tophat/eslint-config@0.12.0) "@tophat/eslint-config" (2021-09-28)<a name="0.12.0"></a>
 
 ### Features
