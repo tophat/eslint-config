@@ -107,12 +107,6 @@ const rules = {
 
 const jsIncompatibleRules = {
     /*
-     * Rule: Require explicit return and argument types on exported functions/classes.
-     * Reason Disabled: Not compatible with JS files, recommended by the rule docs to disable.
-     */
-    '@typescript-eslint/explicit-module-boundary-types': 'off',
-
-    /*
      * Rule: Disallow require statements in favour of import statements.
      * Reason Disabled: We don't know if JS files are transpiled, so don't bother enforcing TS import syntax.
      */
