@@ -4,6 +4,18 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [3.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@2.0.0...@tophat/eslint-config@3.0.0) "@tophat/eslint-config" (2022-02-28)<a name="3.0.0"></a>
+
+### Breaking Changes
+
+* You will need to run `eslint --fix .` on your code base when adopting this update and it will sort all imports in your codebase. After this change, there will be a single correct order for all imports with an auto-fixing rule to correct them. ([60314c7](https://github.com/tophat/eslint-config/commits/60314c7))
+
+### Features
+
+* Alphabetize imports by import location ([60314c7](https://github.com/tophat/eslint-config/commits/60314c7))
+* Alphabetize imports by import location (#208) ([60314c7](https://github.com/tophat/eslint-config/commits/60314c7))
+
+
 ## [2.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@1.0.2...@tophat/eslint-config@2.0.0) "@tophat/eslint-config" (2021-12-02)<a name="2.0.0"></a>
 
 ### Breaking Changes
