@@ -2475,13 +2475,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/plugin-compat@npm:^3.1.1":
-  version: 3.1.1
-  resolution: "@yarnpkg/plugin-compat@npm:3.1.1"
+"@yarnpkg/plugin-compat@npm:@yarnpkg/plugin-compat@3.1.2-rc.1":
+  version: 3.1.2-rc.1
+  resolution: "@yarnpkg/plugin-compat@npm:3.1.2-rc.1"
   peerDependencies:
-    "@yarnpkg/core": ^3.1.0
-    "@yarnpkg/plugin-patch": ^3.1.0
-  checksum: 698d58ff96c8ceb870afa897158e542d340404f9f2b87d129f1467f8e2ae33ddae16824dafb61b49290c21ade8b7f94dbc634907b365e65f4c35f939eabd631c
+    "@yarnpkg/core": ^3.2.0-rc.5
+    "@yarnpkg/plugin-patch": ^3.1.1-rc.3
+  checksum: 2a1fe6c96995a3e62e5930e81c35232d99531c41c3936f44e1228d4f2f7312bc8ac50a68adb11406c17834baace74ab3641e47e99a6bea4d8296a561549cb00d
   languageName: node
   linkType: hard
 
