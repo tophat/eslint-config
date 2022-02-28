@@ -82,5 +82,8 @@
       "optional": true
     }
   },
+  "resolutions": {
+    "@yarnpkg/plugin-compat": "npm:@yarnpkg/plugin-compat@3.1.2-rc.1"
+  },
   "packageManager": "yarn@3.1.1"
 }

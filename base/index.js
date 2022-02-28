@@ -90,6 +90,7 @@ const rules = {
                 'sibling',
                 'index',
             ],
+            alphabetize: { order: 'asc' },
         },
     ],
 
