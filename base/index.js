@@ -95,7 +95,7 @@ const rules = {
             alphabetize: { order: 'asc' },
             pathGroups: [
                 {
-                    pattern: '@+(tophat|thm)/**',
+                    pattern: '@tophat/**',
                     group: 'external',
                     position: 'after',
                 },
