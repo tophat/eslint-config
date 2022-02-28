@@ -4,6 +4,14 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [3.1.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@3.0.0...@tophat/eslint-config@3.1.0) "@tophat/eslint-config" (2022-02-28)<a name="3.1.0"></a>
+
+### Features
+
+* Separate tophat packages into their own group after external ([4f737df](https://github.com/tophat/eslint-config/commits/4f737df))
+* Separate tophat packages into their own group after external (#209) ([4f737df](https://github.com/tophat/eslint-config/commits/4f737df))
+
+
 ## [3.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@2.0.0...@tophat/eslint-config@3.0.0) "@tophat/eslint-config" (2022-02-28)<a name="3.0.0"></a>
 
 ### Breaking Changes
