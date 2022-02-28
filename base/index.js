@@ -89,8 +89,17 @@ const rules = {
                 'parent',
                 'sibling',
                 'index',
+                "object",
+                "type",
             ],
             alphabetize: { order: 'asc' },
+            pathGroups: [{
+                pattern: '@+(tophat|thm)/**',
+                group: 'external',
+                position: 'after',
+            }],
+            pathGroupsExcludedImportTypes: ["builtin"],
+            warnOnUnassignedImports: true,
         },
     ],
 
