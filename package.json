@@ -26,50 +26,50 @@
   },
   "peerDependencies": {
     "@tophat/eslint-import-resolver-require": ">=0.1.3",
-    "@typescript-eslint/eslint-plugin": ">=5.5.0",
-    "@typescript-eslint/parser": ">=5.5.0",
-    "eslint": ">=8.3.0",
-    "eslint-config-prettier": ">=8.3.0",
+    "@typescript-eslint/eslint-plugin": ">=5.19.0",
+    "@typescript-eslint/parser": ">=5.19.0",
+    "eslint": ">=8.13.0",
+    "eslint-config-prettier": ">=8.5.0",
     "eslint-import-resolver-node": ">=0.3.6",
-    "eslint-import-resolver-typescript": ">=2.5.0",
-    "eslint-plugin-import": ">=2.25.3",
-    "eslint-plugin-jest": ">=25.3.0",
+    "eslint-import-resolver-typescript": ">=2.7.1",
+    "eslint-plugin-import": ">=2.26.0",
+    "eslint-plugin-jest": ">=26.1.4",
     "eslint-plugin-jsx-a11y": ">=6.5.1",
     "eslint-plugin-prettier": ">=4.0.0",
-    "eslint-plugin-react": ">=7.27.1",
-    "eslint-plugin-react-hooks": ">=4.3.0",
-    "prettier": ">=2.5.0",
-    "typescript": ">=4.3.5"
+    "eslint-plugin-react": ">=7.29.4",
+    "eslint-plugin-react-hooks": ">=4.4.0",
+    "prettier": ">=2.6.2",
+    "typescript": ">=4.6.3"
   },
   "dependencies": {
     "@tophat/eslint-import-resolver-require": "^0.1.3",
     "eslint-import-resolver-node": "^0.3.6",
-    "eslint-import-resolver-typescript": "^2.5.0"
+    "eslint-import-resolver-typescript": "^2.7.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/preset-env": "^7.16.4",
-    "@monodeploy/plugin-github": "^0.3.13",
+    "@babel/core": "^7.17.9",
+    "@babel/preset-env": "^7.16.11",
+    "@monodeploy/plugin-github": "^0.4.0",
     "@tophat/conventional-changelog-config": "^0.5.9",
-    "@typescript-eslint/eslint-plugin": "^5.5.0",
-    "@typescript-eslint/parser": "^5.5.0",
-    "@yarnpkg/sdks": "^2.5.1-rc.4",
-    "babel-jest": "^27.4.2",
-    "eslint": "^8.3.0",
-    "eslint-config-prettier": "^8.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
+    "@yarnpkg/sdks": "^2.6.0",
+    "babel-jest": "^27.5.1",
+    "eslint": "^8.13.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-node": "^0.3.6",
-    "eslint-import-resolver-typescript": "^2.5.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jest": "^25.3.0",
+    "eslint-import-resolver-typescript": "^2.7.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.1.4",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.27.1",
-    "eslint-plugin-react-hooks": "^4.3.0",
+    "eslint-plugin-react": "^7.29.4",
+    "eslint-plugin-react-hooks": "^4.4.0",
     "jest": "^27.4.3",
     "jest-junit": "^13.0.0",
-    "monodeploy": "^2.8.17",
-    "prettier": "^2.5.0",
-    "typescript": "~4.5.2"
+    "monodeploy": "^3.0.0",
+    "prettier": "^2.6.2",
+    "typescript": "^4.6.3"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-jsx-a11y": {
@@ -82,8 +82,5 @@
       "optional": true
     }
   },
-  "resolutions": {
-    "@yarnpkg/plugin-compat": "npm:@yarnpkg/plugin-compat@3.1.2-rc.1"
-  },
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.2.0"
 }

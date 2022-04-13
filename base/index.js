@@ -22,6 +22,14 @@ const rules = {
             /* By ignoring rest siblings, we support using `...rest` as an alternative to
              * a 3rd party omit function, to omit keys from an object. */
             ignoreRestSiblings: true,
+            // The following allows us to maintain args for type purposes without needing to use them,
+            //  for example, a reducer in which the action is typed but we don't use the action in the
+            //  reducer
+            argsIgnorePattern: '^_',
+            // The alternative to this is to use empty array syntax, such as const [, , thing] = someArr
+            //  this syntax lets you at least name the unused parameters which reads a bit nicer, i.e.
+            //  const [_first, _second, third] = someArr
+            destructuredArrayIgnorePattern: '^_',
         },
     ],
 
