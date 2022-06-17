@@ -11,4 +11,5 @@ module.exports = {
     },
     persistVersions: true,
     changesetIgnorePatterns: ['**/*.test.ts'],
+    access: 'public',
 }
