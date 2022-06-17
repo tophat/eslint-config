@@ -157,7 +157,7 @@ module.exports = {
             rules: jsIncompatibleRules,
         },
         {
-            files: ['**/*.d.ts'],
+            files: ['**/*.d.ts', '**/*.d.mts', '**/*.d.cts'],
             rules: {
                 /* In type declaration files we often model external libraries,
                  * in which we have no control over the name. */
