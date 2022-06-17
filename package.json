@@ -47,29 +47,29 @@
     "eslint-import-resolver-typescript": "^2.7.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.17.9",
-    "@babel/preset-env": "^7.16.11",
-    "@monodeploy/plugin-github": "^0.4.0",
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@monodeploy/plugin-github": "^0.4.1",
     "@tophat/conventional-changelog-config": "^0.5.9",
-    "@typescript-eslint/eslint-plugin": "^5.19.0",
-    "@typescript-eslint/parser": "^5.19.0",
-    "@yarnpkg/sdks": "^2.6.0",
-    "babel-jest": "^27.5.1",
-    "eslint": "^8.13.0",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "@yarnpkg/sdks": "^3.0.0-rc.9",
+    "babel-jest": "^28.1.1",
+    "eslint": "^8.17.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-import-resolver-node": "^0.3.6",
     "eslint-import-resolver-typescript": "^2.7.1",
     "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jest": "^26.1.4",
+    "eslint-plugin-jest": "^26.5.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.4.0",
-    "jest": "^27.4.3",
-    "jest-junit": "^13.0.0",
-    "monodeploy": "^3.0.0",
-    "prettier": "^2.6.2",
-    "typescript": "^4.6.3"
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^28.1.1",
+    "jest-junit": "^13.2.0",
+    "monodeploy": "^3.0.2",
+    "prettier": "^2.7.1",
+    "typescript": "4.7.3"
   },
   "peerDependenciesMeta": {
     "eslint-plugin-jsx-a11y": {
@@ -82,5 +82,5 @@
       "optional": true
     }
   },
-  "packageManager": "yarn@3.2.0"
+  "packageManager": "yarn@3.2.1"
 }

@@ -136,7 +136,7 @@ const jsIncompatibleRules = {
 module.exports = {
     parser: '@typescript-eslint/parser',
     parserOptions: {
-        ecmaVersion: 2021,
+        ecmaVersion: 'latest',
         sourceType: 'module',
     },
     env: {
@@ -153,7 +153,7 @@ module.exports = {
     rules,
     overrides: [
         {
-            files: ['**/*.js'],
+            files: ['**/*.js', '**/*.cjs', '**/*.mjs'],
             rules: jsIncompatibleRules,
         },
         {
@@ -168,7 +168,16 @@ module.exports = {
     settings: {
         'import/external-module-folders': ['node_modules', '.yarn'],
         'import/parsers': {
-            '@typescript-eslint/parser': ['.ts', '.tsx', '.js', '.jsx'],
+            '@typescript-eslint/parser': [
+                '.ts',
+                '.tsx',
+                '.mts',
+                '.cts',
+                '.js',
+                '.mjs',
+                '.cjs',
+                '.jsx',
+            ],
         },
         'import/resolver': [
             {
