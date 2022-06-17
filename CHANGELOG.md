@@ -4,6 +4,18 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [3.2.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@3.1.0...@tophat/eslint-config@3.2.0) "@tophat/eslint-config" (2022-06-17)<a name="3.2.0"></a>
+
+### Bug Fixes
+
+* Add _ exclusions to no-unused-vars rule ([76df491](https://github.com/tophat/eslint-config/commits/76df491))
+* Add _ exclusions to no-unused-vars rule (#210) ([76df491](https://github.com/tophat/eslint-config/commits/76df491))
+
+### Features
+
+* include cjs, cts, mjs, mts file extensions (#211) ([632b363](https://github.com/tophat/eslint-config/commits/632b363))
+
+
 ## [3.1.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@3.0.0...@tophat/eslint-config@3.1.0) "@tophat/eslint-config" (2022-02-28)<a name="3.1.0"></a>
 
 ### Features
