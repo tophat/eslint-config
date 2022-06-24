@@ -9,7 +9,7 @@ env:
 
 jobs:
   release:
-    name: Publish ESLint Import Resolver Plugin
+    name: Publish ESLint Import Resolver Require
     runs-on: ubuntu-20.04
     steps:
         - uses: actions/checkout@v2
@@ -18,7 +18,7 @@ jobs:
             fetch-depth: 0
         - uses: ./.github/actions/detect-env
         - name: Setup Node.js
-          uses: actions/setup-node@v1
+          uses: actions/setup-node@v3.3.0
           with:
             node-version: ${{ env.NODE_VERSION }}
         - name: Create artifacts directory
@@ -29,8 +29,8 @@ jobs:
           with:
             path: |
               ./.yarn
-              ./.pnp.*
-            key: ${{ env.NODE_VERSION }}-${{ env.YARN_VERSION }}-${{ hashFiles('yarn.lock') }}
+              .pnp.*
+            key: ${{ env.NODE_VERSION }}-${{ hashFiles('yarn.lock') }}
         - name: Install dependencies
           run: yarn install --immutable
         - name: Configure Git
@@ -42,22 +42,15 @@ jobs:
           if: github.ref == 'refs/heads/master'
           env:
             NPM_PUBLISH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+            GH_TOKEN: ${{ secrets.TOPHAT_BOT_GH_TOKEN }}
           run: |
-            yarn monodeploy --log-level 0 --config-file=monodeploy.config.js
-        - name: Update Git Repository
-          if: github.ref == 'refs/heads/master'
+            yarn monodeploy --config-file monodeploy.config.js --log-level 0
+        - name: Log Issues
+          if: ${{ failure() }}
           run: |
-            yarn dedupe
-            if ! git diff-index --quiet HEAD -- CHANGELOG.md; then
-              git push --tags \
-                && git add yarn.lock CHANGELOG.md "package.json" \
-                && git commit -m "chore: release eslint import resolver require [skip ci]" \
-                && git push
-            fi
+            git status
         - name: Upload Artifacts
-          if: ${{ always() }}
           uses: actions/upload-artifact@v2
           with:
-            name: reports-and-build-artifacts
-            path: |
-                ${{ env.ARTIFACT_DIR }}
+            name: build-artifacts
+            path: ${{ env.ARTIFACT_DIR }}

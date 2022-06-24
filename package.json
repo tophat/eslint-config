@@ -17,14 +17,15 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^12.1.1",
-    "@tophat/commitlint-config": "^0.3.4",
-    "@tophat/conventional-changelog-config": "^0.5.6",
-    "@yarnpkg/pnpify": "^3.0.0-rc.3",
+    "@monodeploy/plugin-github": "^0.4.1",
+    "@tophat/commitlint-config": "^0.3.7",
+    "@tophat/conventional-changelog-config": "^0.6.2",
+    "@yarnpkg/sdks": "^3.0.0-rc.9",
     "all-contributors-cli": "^6.20.0",
     "commitizen": "^4.2.3",
     "husky": "^6.0.0",
     "lint-staged": "^10.5.4",
-    "monodeploy": "^2.4.1",
+    "monodeploy": "^3.0.2",
     "yaml-validator": "^3.0.1"
   },
   "lint-staged": {
@@ -40,5 +41,6 @@
   },
   "engines": {
     "node": ">=12.0.0"
-  }
+  },
+  "packageManager": "yarn@3.2.1"
 }
