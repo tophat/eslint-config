@@ -22,7 +22,7 @@ jobs:
             fetch-depth: 0
         - uses: ./.github/actions/detect-env
         - name: Setup Node.js
-          uses: actions/setup-node@v2
+          uses: actions/setup-node@v3.3.0
           with:
             node-version: ${{ env.NODE_VERSION }}
         - name: Create artifacts directory
@@ -51,7 +51,7 @@ jobs:
             fetch-depth: 0
         - uses: ./.github/actions/detect-env
         - name: Setup Node.js
-          uses: actions/setup-node@v2
+          uses: actions/setup-node@v3.3.0
           with:
             node-version: ${{ env.NODE_VERSION }}
         - name: Create artifacts directory
@@ -63,7 +63,7 @@ jobs:
             path: |
               ./.yarn
               .pnp.*
-            key: ${{ env.NODE_VERSION }}-${{ env.YARN_VERSION }}-${{ hashFiles('yarn.lock') }}
+            key: ${{ env.NODE_VERSION }}-${{ hashFiles('yarn.lock') }}
         - name: Install dependencies
           run: |
             yarn install --immutable
@@ -91,7 +91,7 @@ jobs:
             fetch-depth: 0
         - uses: ./.github/actions/detect-env
         - name: Setup Node.js
-          uses: actions/setup-node@v2
+          uses: actions/setup-node@v3.3.0
           with:
             node-version: ${{ env.NODE_VERSION }}
         - name: Create artifacts directory
@@ -103,7 +103,7 @@ jobs:
             path: |
               ./.yarn
               .pnp.*
-            key: ${{ env.NODE_VERSION }}-${{ env.YARN_VERSION }}-${{ hashFiles('yarn.lock') }}
+            key: ${{ env.NODE_VERSION }}-${{ hashFiles('yarn.lock') }}
         - name: Install dependencies
           run: yarn install --immutable
         - name: Run Monodeploy in Dry Run Mode
