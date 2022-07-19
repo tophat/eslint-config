@@ -4,6 +4,17 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [3.2.1](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@3.2.0...@tophat/eslint-config@3.2.1) "@tophat/eslint-config" (2022-07-19)<a name="3.2.1"></a>
+
+### Bug Fixes
+
+* treat .d.mts and .d.cts files like .d.ts (#212) ([af2b923](https://github.com/tophat/eslint-config/commits/af2b923))
+
+### Dependencies
+
+* update all dependencies to latest version (#214) ([bca0e98](https://github.com/tophat/eslint-config/commits/bca0e98))
+
+
 ## [3.2.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@3.1.0...@tophat/eslint-config@3.2.0) "@tophat/eslint-config" (2022-06-17)<a name="3.2.0"></a>
 
 ### Bug Fixes
