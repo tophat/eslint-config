@@ -17,6 +17,7 @@ module.exports = {
             'error',
             {
                 forbidDefaultForRequired: true,
+                functions: 'defaultArguments',
             },
         ],
         'react/display-name': 'off',
