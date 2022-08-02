@@ -4,6 +4,13 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [3.3.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@3.2.1...@tophat/eslint-config@3.3.0) "@tophat/eslint-config" (2022-08-02)<a name="3.3.0"></a>
+
+### Features
+
+* **react**: use default arguments for function components (#215) ([a46d886](https://github.com/tophat/eslint-config/commits/a46d886))
+
+
 ## [3.2.1](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@3.2.0...@tophat/eslint-config@3.2.1) "@tophat/eslint-config" (2022-07-19)<a name="3.2.1"></a>
 
 ### Bug Fixes
