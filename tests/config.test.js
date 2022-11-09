@@ -146,7 +146,7 @@ describe.each(configs)(
 describe('Package JSON', () => {
     it('is listed in package.json', () => {
         expect(packageJson.files).toMatchInlineSnapshot(`
-            Array [
+            [
               "index.js",
               "base",
               "jest",
