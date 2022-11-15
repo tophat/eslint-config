@@ -4,6 +4,21 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [4.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@3.3.0...@tophat/eslint-config@4.0.0) "@tophat/eslint-config" (2022-11-15)<a name="4.0.0"></a>
+
+### Breaking Changes
+
+* @typescript-eslint must be updated to v5.43.0 or higher. All type imports should be imported using inline type syntax. There's an autofixer for this, so you'll need to fix your code base upon accepting this change. ([18770fa](https://github.com/tophat/eslint-config/commits/18770fa))
+
+### Dependencies
+
+* Update all dependencies to latest version (#216) ([c70c53c](https://github.com/tophat/eslint-config/commits/c70c53c))
+
+### Features
+
+* Enforce inline-types for typescript (#218) ([18770fa](https://github.com/tophat/eslint-config/commits/18770fa))
+
+
 ## [3.3.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@3.2.1...@tophat/eslint-config@3.3.0) "@tophat/eslint-config" (2022-08-02)<a name="3.3.0"></a>
 
 ### Features
