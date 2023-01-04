@@ -2,15 +2,14 @@ const plugins = []
 const rules = {}
 const pluginExtends = []
 
-const doesModuleExist = (moduleName) =>
-    (() => {
-        try {
-            require.resolve(moduleName)
-            return true
-        } catch {
-            return false
-        }
-    })()
+const doesModuleExist = (moduleName) => {
+    try {
+        require.resolve(moduleName)
+        return true
+    } catch {
+        return false
+    }
+}
 
 const reactModule = doesModuleExist('eslint-plugin-react')
 if (reactModule) {
