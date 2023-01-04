@@ -25,6 +25,7 @@
     "lint:ci": "run lint"
   },
   "peerDependencies": {
+    "@tanstack/eslint-plugin-query": ">=4.20.8",
     "@tophat/eslint-import-resolver-require": ">=0.1.3",
     "@typescript-eslint/eslint-plugin": ">=5.43.0",
     "@typescript-eslint/parser": ">=5.43.0",
@@ -50,6 +51,7 @@
     "@babel/core": "^7.20.2",
     "@babel/preset-env": "^7.20.2",
     "@monodeploy/plugin-github": "^0.8.0",
+    "@tanstack/eslint-plugin-query": "^4.20.8",
     "@tophat/conventional-changelog-config": "^1.0.1",
     "@typescript-eslint/eslint-plugin": "^5.43.0",
     "@typescript-eslint/parser": "^5.43.0",
@@ -72,6 +74,9 @@
     "typescript": "^4.8.4"
   },
   "peerDependenciesMeta": {
+    "@tanstack/eslint-plugin-query": {
+      "optional": true
+    },
     "eslint-plugin-jsx-a11y": {
       "optional": true
     },
