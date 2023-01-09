@@ -26,6 +26,11 @@ if (reactModule) {
         ],
         'react/display-name': 'off',
         'react/no-unsafe': ['error', { checkAliases: true }],
+        'react/jsx-no-useless-fragment': ['warn', { allowExpressions: true }],
+        'react/jsx-no-leaked-render': 'warn',
+        'react/hook-use-state': 'warn',
+        'react/no-array-index-key': 'warn',
+        'react/no-unused-prop-types': ['warn', { skipShapeProps: true }],
     })
 }
 
