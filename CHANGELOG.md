@@ -4,6 +4,14 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [4.1.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@4.0.0...@tophat/eslint-config@4.1.0) "@tophat/eslint-config" (2023-01-10)<a name="4.1.0"></a>
+
+### Features
+
+* Add react-query eslint plugin and rules ([e5fa0f8](https://github.com/tophat/eslint-config/commits/e5fa0f8))
+* Add react-query eslint plugin and rules (#221) ([e5fa0f8](https://github.com/tophat/eslint-config/commits/e5fa0f8))
+
+
 ## [4.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@3.3.0...@tophat/eslint-config@4.0.0) "@tophat/eslint-config" (2022-11-15)<a name="4.0.0"></a>
 
 ### Breaking Changes
