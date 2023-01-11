@@ -10,7 +10,6 @@
 The default config includes the following:
 
 - A set of base eslint rules for all JavaScript/TypeScript projects
-- Rules for React apps
 - Rules for Jest tests
 - Rules for web apps
 
@@ -23,15 +22,26 @@ yarn add --dev \
     prettier \
     eslint-config-prettier \
     eslint-plugin-prettier \
-    eslint-plugin-react \
-    eslint-plugin-react-hooks \
-    eslint-plugin-jsx-a11y \
     eslint-plugin-jest \
     eslint-plugin-import \
     eslint-import-resolver-typescript \
     @typescript-eslint/eslint-plugin \
     @typescript-eslint/parser \
-    @tophat/eslint-import-resolver-require
+    @tophat/eslint-import-resolver-require \
+
+```
+
+If you wish to install lint rules for react apps, you can also optionally install:
+```bash
+yarn add --dev \
+    eslint-plugin-react \
+    eslint-plugin-react-hooks \
+    eslint-plugin-jsx-a11y \
+```
+
+If your app uses react-query, you can also install:
+```bash
+yarn add --dev @tanstack/eslint-plugin-query
 ```
 
 or
@@ -73,11 +83,11 @@ module.exports = {
 Each config requires certain peer dependencies:
 
 - **base**: eslint, prettier, eslint-config-prettier, eslint-plugin-import, eslint-plugin-prettier
-- **react**: eslint-plugin-react, eslint-plugin-react-hooks, eslint-plugin-jsx-a11y
+- **react**: eslint-plugin-react, eslint-plugin-react-hooks, eslint-plugin-jsx-a11y, @tanstack/eslint-plugin-query
 - **jest**: eslint-plugin-jest
 - **web**: (none)
 
-You only have to install the dependencies for the configs which you are using.
+You only have to install the dependencies for the configs which you are using. Also note that all dependencies in the react package are optional, to support using this config in non-react apps.
 
 ## Upgrading this package
 
