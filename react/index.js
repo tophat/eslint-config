@@ -1,6 +1,7 @@
 const plugins = []
 const rules = {}
 const pluginExtends = []
+const overrides = []
 
 const doesModuleExist = (moduleName) => {
     try {
@@ -35,6 +36,12 @@ if (reactModule) {
         'react/no-array-index-key': 'warn',
         'react/no-unused-prop-types': ['warn', { skipShapeProps: true }],
         'react/jsx-props-no-spreading': ['warn', { explicitSpread: 'ignore' }],
+    })
+    overrides.push({
+        files: ['*.test.*'],
+        rules: {
+            'react/jsx-props-no-spreading': 'off',
+        },
     })
 }
 
@@ -77,6 +84,7 @@ module.exports = {
     plugins,
     extends: pluginExtends,
     rules,
+    overrides,
     settings: {
         react: {
             version: '16.14.0',
