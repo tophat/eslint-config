@@ -4,6 +4,14 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [4.2.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@4.1.0...@tophat/eslint-config@4.2.0) "@tophat/eslint-config" (2023-01-11)<a name="4.2.0"></a>
+
+### Features
+
+* Add new react warnings for best practices ([506a914](https://github.com/tophat/eslint-config/commits/506a914))
+* Add new react warnings for best practices (#226) ([506a914](https://github.com/tophat/eslint-config/commits/506a914))
+
+
 ## [4.1.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@4.0.0...@tophat/eslint-config@4.1.0) "@tophat/eslint-config" (2023-01-10)<a name="4.1.0"></a>
 
 ### Features
