@@ -4,6 +4,17 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [5.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@4.2.1...@tophat/eslint-config@5.0.0) "@tophat/eslint-config" (2023-01-23)<a name="5.0.0"></a>
+
+### Breaking Changes
+
+* We've adopted the recommended ruleset from the `eslint-plugin-jsx-a11y` package. We previously only included a few of their rules. To adopt, we recommend updating to the new version, running linting locally (or on CI), then changing any rules that have errors to 'warn' in your local config. ([08283c8](https://github.com/tophat/eslint-config/commits/08283c8))
+
+### Features
+
+* Enforce stricter a11y rules (#228) ([08283c8](https://github.com/tophat/eslint-config/commits/08283c8))
+
+
 ## [4.2.1](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@4.2.0...@tophat/eslint-config@4.2.1) "@tophat/eslint-config" (2023-01-11)<a name="4.2.1"></a>
 
 ### Bug Fixes
