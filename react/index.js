@@ -1,6 +1,6 @@
 const plugins = []
 const rules = {}
-const pluginExtends = []
+const extensions = []
 const overrides = []
 
 const doesModuleExist = (moduleName) => {
@@ -15,7 +15,7 @@ const doesModuleExist = (moduleName) => {
 const reactModule = doesModuleExist('eslint-plugin-react')
 if (reactModule) {
     plugins.push('react')
-    pluginExtends.push('plugin:react/recommended')
+    extensions.push('plugin:react/recommended')
     Object.assign(rules, {
         'react/default-props-match-prop-types': 'error',
         'react/require-default-props': [
@@ -57,13 +57,7 @@ if (reactHooksModule) {
 const jsxA11yModule = doesModuleExist('eslint-plugin-jsx-a11y')
 if (jsxA11yModule) {
     plugins.push('jsx-a11y')
-    Object.assign(rules, {
-        'jsx-a11y/aria-props': 'error',
-        'jsx-a11y/label-has-associated-control': 'error',
-        'jsx-a11y/mouse-events-have-key-events': 'error',
-        'jsx-a11y/role-has-required-aria-props': 'error',
-        'jsx-a11y/role-supports-aria-props': 'error',
-    })
+    extensions.push('plugin:jsx-a11y/recommended')
 }
 
 const tanstackQueryModule = doesModuleExist('@tanstack/eslint-plugin-query')
@@ -82,7 +76,7 @@ module.exports = {
         },
     },
     plugins,
-    extends: pluginExtends,
+    extends: extensions,
     rules,
     overrides,
     settings: {
