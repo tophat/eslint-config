@@ -27,7 +27,7 @@ yarn add --dev \
     eslint-import-resolver-typescript \
     @typescript-eslint/eslint-plugin \
     @typescript-eslint/parser \
-    @tophat/eslint-import-resolver-require \
+    @tophat/eslint-import-resolver-require
 
 ```
 
