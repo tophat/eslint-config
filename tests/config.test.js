@@ -95,6 +95,11 @@ describe.each(configs)(
         let config
         beforeAll(() => {
             config = require(`../${file}`)
+            config.parserOptions = {
+                ...config.parserOptions,
+                tsconfigRootDir: '.',
+                project: ['./tsconfig.json'],
+            }
         })
         afterAll(() => {
             config = null
@@ -120,7 +125,7 @@ describe.each(configs)(
                 overrideConfigFile: file,
             })
             const results = await cli.lintText(codeExample, {
-                filePath: 'example/file.js',
+                filePath: 'tests/example.js',
             })
             expect(results[0].messages).toEqual([])
         })
@@ -136,7 +141,7 @@ describe.each(configs)(
                 overrideConfigFile: file,
             })
             const results = await cli.lintText(badCodeExample, {
-                filePath: 'example/file.js',
+                filePath: 'tests/example.js',
             })
             expect(results[0].messages).toHaveLength(badCodeMessageCount)
         })

@@ -122,6 +122,16 @@ const rules = {
         'error',
         { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
     ],
+    '@typescript-eslint/no-confusing-void-expression': 'warn',
+    '@typescript-eslint/no-duplicate-enum-values': 'warn',
+    '@typescript-eslint/no-for-in-array': 'error',
+    '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
+    '@typescript-eslint/prefer-includes': 'warn',
+    '@typescript-eslint/prefer-for-of': 'warn',
+    '@typescript-eslint/prefer-optional-chain': 'warn',
+    '@typescript-eslint/prefer-reduce-type-parameter': 'warn',
+    '@typescript-eslint/prefer-string-starts-ends-with': 'warn',
+    '@typescript-eslint/prefer-ts-expect-error': 'error',
 
     // no-use-before-define can cause errors with typescript concepts, like types or enums
     'no-use-before-define': 'off',
