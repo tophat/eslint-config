@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "noImplicitAny": true,
+        "moduleResolution": "node",
+        "module": "NodeNext",
+        "allowJs": true,
+        "noEmit": true,
+        "strict": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "resolveJsonModule": true,
+        "lib": ["esnext"]
+    },
+    "exclude": [".eslintrc.js"]
+}
