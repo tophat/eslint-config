@@ -4,6 +4,23 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [6.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@5.0.0...@tophat/eslint-config@6.0.0) "@tophat/eslint-config" (2023-02-01)<a name="6.0.0"></a>
+
+### Breaking Changes
+
+* We are expanding your list of typescript rules which requires connecting your eslint config to your tsconfig. See the typescript-eslint documentation https://typescript-eslint.io/linting/typed-linting for how to do this. If your project does not use typescript and you do not want to add a tsconfig file needlessly, disable the following rules in your config: @typescript-eslint/no-confusing-void-expression, @typescript-eslint/no-for-in-array, @typescript-eslint/prefer-includes, @typescript-eslint/prefer-reduce-type-parameter, and @typescript-eslint/prefer-string-starts-ends-with. ([a4d50f5](https://github.com/tophat/eslint-config/commits/a4d50f5))
+
+### Dependencies
+
+* Update dependencies to latest version ([8b5b97f](https://github.com/tophat/eslint-config/commits/8b5b97f))
+* Update dependencies to latest version (#230) ([8b5b97f](https://github.com/tophat/eslint-config/commits/8b5b97f))
+
+### Features
+
+* Expand list of typescript rules ([a4d50f5](https://github.com/tophat/eslint-config/commits/a4d50f5))
+* Expand list of typescript rules (#231) ([a4d50f5](https://github.com/tophat/eslint-config/commits/a4d50f5))
+
+
 ## [5.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@4.2.1...@tophat/eslint-config@5.0.0) "@tophat/eslint-config" (2023-01-23)<a name="5.0.0"></a>
 
 ### Breaking Changes
