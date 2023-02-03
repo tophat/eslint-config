@@ -4,6 +4,13 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [6.0.1](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@6.0.0...@tophat/eslint-config@6.0.1) "@tophat/eslint-config" (2023-02-03)<a name="6.0.1"></a>
+
+### Bug Fixes
+
+* disable react/jsx-no-leaked-render in TypeScript components (#232) ([afe0bd6](https://github.com/tophat/eslint-config/commits/afe0bd6))
+
+
 ## [6.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@5.0.0...@tophat/eslint-config@6.0.0) "@tophat/eslint-config" (2023-02-01)<a name="6.0.0"></a>
 
 ### Breaking Changes
