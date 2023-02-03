@@ -43,6 +43,14 @@ if (reactModule) {
             'react/jsx-props-no-spreading': 'off',
         },
     })
+    overrides.push({
+        files: ['*.tsx'],
+        rules: {
+            // In TypeScript, we know with certainty whether we're using booleans or some condition
+            // that may shortcircuit and return undefined.
+            'react/jsx-no-leaked-render': 'off',
+        },
+    })
 }
 
 const reactHooksModule = doesModuleExist('eslint-plugin-react-hooks')
