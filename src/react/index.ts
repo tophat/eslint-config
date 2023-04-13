@@ -73,10 +73,7 @@ if (jsxA11yModule) {
 const tanstackQueryModule = doesModuleExist('@tanstack/eslint-plugin-query')
 if (tanstackQueryModule) {
     plugins.push('@tanstack/query')
-    Object.assign(rules, {
-        '@tanstack/query/exhaustive-deps': 'error',
-        '@tanstack/query/prefer-query-object-syntax': 'warn',
-    })
+    extensions.push('plugin:@tanstack/eslint-plugin-query/recommended')
 }
 
 const config: ESLint.ConfigData = {
