@@ -31,7 +31,7 @@ jobs:
             CI_BASE_BRANCH: origin/${{ github.base_ref }}
           run: yarn dlx commit-watch
         - name: Upload Artifacts
-          uses: actions/upload-artifact@v2
+          uses: actions/upload-artifact@v3
           with:
             name: commit-watch-artifacts
             path: ${{ env.ARTIFACT_DIR }}
@@ -49,7 +49,7 @@ jobs:
         - name: Linting
           run: yarn lint:ci
         - name: Upload Artifacts
-          uses: actions/upload-artifact@v2
+          uses: actions/upload-artifact@v3
           with:
             name: report-artifacts
             path: ${{ env.ARTIFACT_DIR }}
@@ -102,7 +102,7 @@ jobs:
               This Pull Request introduces the following changes:
               ${{ steps.run-monodeploy.outputs.changelog }}
         - name: Upload Artifacts
-          uses: actions/upload-artifact@v2
+          uses: actions/upload-artifact@v3
           with:
             name: build-artifacts
             path: ${{ env.ARTIFACT_DIR }}
