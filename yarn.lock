@@ -1256,7 +1256,7 @@ __metadata:
     "@typescript-eslint/parser": ^5.58.0
     "@typescript-eslint/utils": ^5.58.0
     "@yarnpkg/core": ^3.5.0
-    "@yarnpkg/sdks": ^3.0.0-rc.40
+    "@yarnpkg/sdks": ^3.0.0-rc.42
     eslint: ^8.38.0
     eslint-config-prettier: ^8.8.0
     eslint-import-resolver-node: ^0.3.7
@@ -2208,7 +2208,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/sdks@npm:^3.0.0-rc.40":
+"@yarnpkg/sdks@npm:^3.0.0-rc.42":
   version: 3.0.0-rc.42
   resolution: "@yarnpkg/sdks@npm:3.0.0-rc.42"
   dependencies:
