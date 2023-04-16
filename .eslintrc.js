@@ -1,5 +1,5 @@
 module.exports = {
-    ...require('./index'),
+    ...require('@tophat/eslint-config'),
     ignorePatterns: ['/.yarn', '/.git', '/.github', '/.vscode', '/artifacts', '.eslintrc.js'],
     parserOptions: {
         ecmaVersion: 'latest',

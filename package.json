@@ -2,18 +2,48 @@
   "name": "@tophat/eslint-config",
   "version": "6.0.1",
   "description": "Top Hat's shareable eslint configuration",
-  "main": "index.js",
-  "files": [
-    "index.js",
-    "base",
-    "jest",
-    "react",
-    "web",
-    "helpers"
-  ],
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "default": "./src/index.js"
+    },
+    "./base": {
+      "default": "./src/base/index.js"
+    },
+    "./jest": {
+      "default": "./src/jest/index.js"
+    },
+    "./react": {
+      "default": "./src/react/index.js"
+    },
+    "./web": {
+      "default": "./src/web/index.js"
+    }
   },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "main": "lib/index.js",
+    "exports": {
+      ".": {
+        "default": "./lib/index.js"
+      },
+      "./base": {
+        "default": "./lib/base/index.js"
+      },
+      "./jest": {
+        "default": "./lib/jest/index.js"
+      },
+      "./react": {
+        "default": "./lib/react/index.js"
+      },
+      "./web": {
+        "default": "./lib/web/index.js"
+      }
+    }
+  },
+  "files": [
+    "lib"
+  ],
   "repository": "git@github.com:tophat/eslint-config.git",
   "author": "Top Hat Monocle Corp. <opensource@tophat.com>",
   "license": "Apache-2.0",
@@ -22,7 +52,9 @@
     "lint": "eslint . --max-warnings 0",
     "lint-fix": "eslint . --fix",
     "test:ci": "run test",
-    "lint:ci": "run lint"
+    "lint:ci": "run lint",
+    "build": "rm -rf lib && tsc -p tsconfig.build.json",
+    "prepack": "run build"
   },
   "peerDependencies": {
     "@tanstack/eslint-plugin-query": ">=4.21.0",
@@ -49,12 +81,16 @@
   },
   "devDependencies": {
     "@monodeploy/plugin-github": "^0.10.1",
+    "@monodeploy/types": "^3.9.0",
     "@tanstack/eslint-plugin-query": "^4.29.0",
     "@tophat/conventional-changelog-config": "^1.0.1",
     "@types/eslint": "^8.37.0",
+    "@types/jest": "^29.5.0",
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.58.0",
     "@typescript-eslint/parser": "^5.58.0",
+    "@typescript-eslint/utils": "^5.58.0",
+    "@yarnpkg/core": "^3.5.0",
     "@yarnpkg/sdks": "^3.0.0-rc.40",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",

@@ -1,4 +1,6 @@
-module.exports = {
+import type { RecursivePartial, MonodeployConfiguration } from '@monodeploy/types'
+
+const config: RecursivePartial<MonodeployConfiguration> = {
     conventionalChangelogConfig: '@tophat/conventional-changelog-config',
     maxConcurrentWrites: 1,
     changelogFilename: './CHANGELOG.md',
@@ -13,3 +15,5 @@ module.exports = {
     changesetIgnorePatterns: ['**/*.test.ts'],
     access: 'public',
 }
+
+module.exports = config

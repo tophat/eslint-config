@@ -1,9 +1,9 @@
 {
     "compilerOptions": {
-        "target": "ESNext",
+        "target": "ES2022",
         "noImplicitAny": true,
         "moduleResolution": "node",
-        "module": "NodeNext",
+        "module": "Node16",
         "allowJs": true,
         "noEmit": true,
         "strict": true,
@@ -11,7 +11,7 @@
         "esModuleInterop": true,
         "skipLibCheck": true,
         "resolveJsonModule": true,
-        "lib": ["esnext"]
+        "lib": ["es2022"]
     },
     "exclude": [".eslintrc.js"]
 }
