@@ -115,9 +115,7 @@ function rewritePath({
     return null
 }
 
-const createRule = ESLintUtils.RuleCreator(
-    (name) => `@tophat/eslint-plugin-import/${name}`,
-)
+const createRule = ESLintUtils.RuleCreator((name) => `@tophat/${name}`)
 
 const rule = createRule({
     name: 'prefer-workspace-aliases',
