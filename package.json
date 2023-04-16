@@ -54,7 +54,7 @@
     "eslint-plugin-react": ">=7.31.10",
     "eslint-plugin-react-hooks": ">=4.6.0",
     "prettier": ">=2.8.7",
-    "typescript": ">=4.9.4"
+    "typescript": ">=4.9.5"
   },
   "dependencies": {
     "@tophat/eslint-import-resolver-require": "^0.1.3",
