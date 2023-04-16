@@ -1,4 +1,6 @@
-const rules = {
+import { type ESLint } from 'eslint'
+
+const rules: ESLint.ConfigData['rules'] = {
     /* Prettier Overrides */
     'prettier/prettier': [
         'error',
@@ -142,7 +144,7 @@ const rules = {
     '@typescript-eslint/no-use-before-define': ['error', { functions: false }],
 }
 
-const jsIncompatibleRules = {
+const jsIncompatibleRules: ESLint.ConfigData['rules'] = {
     /*
      * Rule: Disallow require statements in favour of import statements.
      * Reason Disabled: We don't know if JS files are transpiled, so don't bother enforcing TS import syntax.
@@ -150,7 +152,7 @@ const jsIncompatibleRules = {
     '@typescript-eslint/no-var-requires': 'off',
 }
 
-module.exports = {
+const config: ESLint.ConfigData = {
     parser: '@typescript-eslint/parser',
     parserOptions: {
         ecmaVersion: 'latest',
@@ -207,3 +209,5 @@ module.exports = {
         ],
     },
 }
+
+export = config

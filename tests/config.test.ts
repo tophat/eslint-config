@@ -1,20 +1,20 @@
-import { ESLint } from 'eslint'
-import prettierRules from 'eslint-config-prettier'
+import { TSESLint } from '@typescript-eslint/utils'
 
-const packageJson = require('../package.json')
+import type { ESLint } from 'eslint'
 
-const allPrettierRules = Object.keys(prettierRules.rules)
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const allPrettierRules = Object.keys(require('eslint-config-prettier').rules)
 
 const configs = [
     {
-        file: 'index.js',
+        file: '.',
         codeExample: `export default function (a, b) {
     return a + b
 }
 `,
     },
     {
-        file: 'base/index.js',
+        file: 'base',
         codeExample: `function foo(a, b) {
     return a + b
 }
@@ -23,7 +23,7 @@ foo(1, 2)
 `,
     },
     {
-        file: 'react/index.js',
+        file: 'react',
         codeExample: `
 var React = require('react')
 var PropTypes = require('prop-types')
@@ -69,7 +69,7 @@ MyComponent.propTypes = {
         badCodeMessageCount: 2,
     },
     {
-        file: 'jest/index.js',
+        file: 'jest',
         codeExample: `
 describe('Some suite', function() {
     it('runs some test', function() {
@@ -79,7 +79,7 @@ describe('Some suite', function() {
         `,
     },
     {
-        file: 'web/index.js',
+        file: 'web',
         codeExample: `
 var React = require('react')
 var ReactDOM = require('react-dom')
@@ -92,23 +92,27 @@ ReactDOM.render(React.createElement('div'), element)
 describe.each(configs)(
     '$file config',
     ({ codeExample, badCodeMessageCount, badCodeExample, file }) => {
-        let config
+        let config: ESLint.ConfigData | undefined
+        const moduleName = `@tophat/eslint-config/${file}`
         beforeAll(() => {
-            config = require(`../${file}`)
-            config.parserOptions = {
-                ...config.parserOptions,
-                tsconfigRootDir: '.',
-                project: ['./tsconfig.json'],
+            config = require(moduleName)
+            if (config) {
+                config.parserOptions = {
+                    ...config.parserOptions,
+                    tsconfigRootDir: '.',
+                    project: ['./tsconfig.json'],
+                }
             }
         })
         afterAll(() => {
-            config = null
+            config = undefined
         })
 
         it("doesn't include any rules superseded by prettier", () => {
             const prettierConflictWhitelist = ['quotes']
 
-            const baseRules = Object.keys(config.rules).filter(
+            // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+            const baseRules = Object.keys(config!.rules!).filter(
                 (rule) => !prettierConflictWhitelist.includes(rule),
             )
 
@@ -120,9 +124,9 @@ describe.each(configs)(
         it('has no errors', async () => {
             // Run eslint on a minimal code example to make sure all rules
             // are named and configured correctly
-            const cli = new ESLint({
+            const cli = new TSESLint.ESLint({
                 useEslintrc: false,
-                overrideConfigFile: file,
+                overrideConfigFile: require.resolve(moduleName),
             })
             const results = await cli.lintText(codeExample, {
                 filePath: 'tests/example.js',
@@ -136,9 +140,9 @@ describe.each(configs)(
             }
             // Run eslint on a bad code example to make sure all rules
             // will trigger on errors correctly
-            const cli = new ESLint({
+            const cli = new TSESLint.ESLint({
                 useEslintrc: false,
-                overrideConfigFile: file,
+                overrideConfigFile: require.resolve(moduleName),
             })
             const results = await cli.lintText(badCodeExample, {
                 filePath: 'tests/example.js',
@@ -147,18 +151,3 @@ describe.each(configs)(
         })
     },
 )
-
-describe('Package JSON', () => {
-    it('is listed in package.json', () => {
-        expect(packageJson.files).toMatchInlineSnapshot(`
-            [
-              "index.js",
-              "base",
-              "jest",
-              "react",
-              "web",
-              "helpers",
-            ]
-        `)
-    })
-})

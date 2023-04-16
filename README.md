@@ -54,7 +54,7 @@ Then update your eslint config (for example, .eslintrc.js):
 
 ```javascript
 module.exports = {
-    extends: '@tophat'
+    extends: '@tophat/eslint-config'
 }
 ```
 

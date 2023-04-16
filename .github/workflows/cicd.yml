@@ -68,8 +68,8 @@ jobs:
             PREVIEW: 1
           run: |
             echo "<!-- MONODEPLOY:BELOW -->" > ${{ env.ARTIFACT_DIR }}/CHANGELOG.md
-            yarn monodeploy --dry-run \
-              --config-file monodeploy.config.js \
+            yarn ts-node --transpileOnly $(yarn bin monodeploy) --dry-run \
+              --config-file monodeploy.config.ts \
               --log-level 0 \
               --git-base-branch origin/${{ github.base_ref }} \
               --prepend-changelog ${{ env.ARTIFACT_DIR }}/CHANGELOG.md \

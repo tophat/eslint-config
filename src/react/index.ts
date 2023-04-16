@@ -1,9 +1,11 @@
-const plugins = []
-const rules = {}
-const extensions = []
-const overrides = []
+import type { ESLint } from 'eslint'
 
-const doesModuleExist = (moduleName) => {
+const plugins: ESLint.ConfigData['plugins'] = []
+const rules: ESLint.ConfigData['rules'] = {}
+const extensions: ESLint.ConfigData['extends'] = []
+const overrides: ESLint.ConfigData['overrides'] = []
+
+const doesModuleExist = (moduleName: string) => {
     try {
         require.resolve(moduleName)
         return true
@@ -77,7 +79,7 @@ if (tanstackQueryModule) {
     })
 }
 
-module.exports = {
+const config: ESLint.ConfigData = {
     parserOptions: {
         ecmaFeatures: {
             jsx: true,
@@ -93,3 +95,5 @@ module.exports = {
         },
     },
 }
+
+export = config
