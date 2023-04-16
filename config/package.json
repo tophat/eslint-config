@@ -1,7 +1,7 @@
 {
     "name": "@tophat/eslint-config",
     "version": "6.0.2",
-    "description": "Top Hat's shareable eslint configuration",
+    "description": "Top Hat's shareable eslint configuration.",
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
     },
