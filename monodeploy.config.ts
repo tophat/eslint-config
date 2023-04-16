@@ -1,9 +1,12 @@
-import type { RecursivePartial, MonodeployConfiguration } from '@monodeploy/types'
+import type {
+    MonodeployConfiguration,
+    RecursivePartial,
+} from '@monodeploy/types'
 
 const config: RecursivePartial<MonodeployConfiguration> = {
     conventionalChangelogConfig: '@tophat/conventional-changelog-config',
     maxConcurrentWrites: 1,
-    changelogFilename: './CHANGELOG.md',
+    changelogFilename: '<packageDir>/CHANGELOG.md',
     autoCommit: true,
     autoCommitMessage: 'chore: release eslint config [skip ci]',
     plugins: process.env.PREVIEW === '1' ? [] : ['@monodeploy/plugin-github'],
