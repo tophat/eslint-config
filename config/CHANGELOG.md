@@ -4,6 +4,27 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [7.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@6.0.2...@tophat/eslint-config@7.0.0) "@tophat/eslint-config" (2023-04-16)<a name="7.0.0"></a>
+
+### Breaking Changes
+
+* Since we are setting the @tanstack/query/prefer-query-object-syntax, this will require changes to your code that satisfy the rule before CI will pass. You will no longer be able to skip these changes. ([9f0f705](https://github.com/tophat/eslint-config/commits/9f0f705))
+* The internals of @tophat/eslint-config have been
+refactored to better support a build step in the @tophat/eslint-config
+project. If you are using the default @tophat/eslint-config config in
+your eslint configuration file, there is no impact to you. However, if
+you specify individual subsets, for example, @tophat/eslint-config/jest
+then you must use tooling that supports the package.json exports map
+format. Most modern tooling supports this. ([9f0f705](https://github.com/tophat/eslint-config/commits/9f0f705))
+
+### Features
+
+* use package.json export maps for rule subsets ([9f0f705](https://github.com/tophat/eslint-config/commits/9f0f705))
+* adopt recommended config for tanstack eslint-plugin-query (#274) ([9f0f705](https://github.com/tophat/eslint-config/commits/9f0f705))
+
+
+
+
 ## [6.0.2](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@6.0.1...@tophat/eslint-config@6.0.2) "@tophat/eslint-config" (2023-04-16)<a name="6.0.2"></a>
 
 ### Bug Fixes
