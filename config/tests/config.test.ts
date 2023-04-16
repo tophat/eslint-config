@@ -100,7 +100,7 @@ describe.each(configs)(
                 config.parserOptions = {
                     ...config.parserOptions,
                     tsconfigRootDir: '.',
-                    project: ['./tsconfig.json'],
+                    project: [require.resolve('../tsconfig.json')],
                 }
             }
         })
@@ -129,7 +129,7 @@ describe.each(configs)(
                 overrideConfigFile: require.resolve(moduleName),
             })
             const results = await cli.lintText(codeExample, {
-                filePath: 'tests/example.js',
+                filePath: 'config/tests/example.js',
             })
             expect(results[0].messages).toEqual([])
         })
@@ -145,7 +145,7 @@ describe.each(configs)(
                 overrideConfigFile: require.resolve(moduleName),
             })
             const results = await cli.lintText(badCodeExample, {
-                filePath: 'tests/example.js',
+                filePath: 'config/tests/example.js',
             })
             expect(results[0].messages).toHaveLength(badCodeMessageCount)
         })
