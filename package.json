@@ -73,7 +73,7 @@
     "@typescript-eslint/parser": "^5.58.0",
     "@typescript-eslint/utils": "^5.58.0",
     "@yarnpkg/core": "^3.5.0",
-    "@yarnpkg/sdks": "^3.0.0-rc.40",
+    "@yarnpkg/sdks": "^3.0.0-rc.42",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-node": "^0.3.7",
