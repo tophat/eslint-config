@@ -20,11 +20,4 @@ In the event that the rule is non-controversial and has majority approval :thumb
 
 ### Making a release
 
-When the build passes on master, the [project owners](https://github.com/tophat/getting-started/blob/master/project-owners-and-responsibilities.md#project-owners) will make a release by using yarn and pushing the git tag it creates:
-
-```
-yarn version --major|--minor|--patch # choose the appropriate semver increment
-git push --tags origin master
-```
-
-CircleCI will run the build on the tag and deploy a new version.
+Releases are triggered via a manual workflow action and accomplished via monodeploy.

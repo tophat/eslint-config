@@ -3,7 +3,7 @@ name: Continuous Integration
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
 
 env:
@@ -20,13 +20,7 @@ jobs:
           with:
             ref: ${{ github.event.pull_request.head.sha }}
             fetch-depth: 0
-        - uses: ./.github/actions/detect-env
-        - name: Setup Node.js
-          uses: actions/setup-node@v3.3.0
-          with:
-            node-version: ${{ env.NODE_VERSION }}
-        - name: Create artifacts directory
-          run: mkdir -p ${{ env.ARTIFACT_DIR }}
+        - uses: ./.github/actions/setup-env
         - name: Run Commit Watch
           env:
             COMMIT_WATCH_OUTPUT_DIR: ${{ env.ARTIFACT_DIR }}/
@@ -49,29 +43,7 @@ jobs:
         - uses: actions/checkout@v2
           with:
             fetch-depth: 0
-        - uses: ./.github/actions/detect-env
-        - name: Setup Node.js
-          uses: actions/setup-node@v3.3.0
-          with:
-            node-version: ${{ env.NODE_VERSION }}
-        - name: Create artifacts directory
-          run: mkdir -p ${{ env.ARTIFACT_DIR }}
-        - name: Restore yarn cache
-          id: yarn-cache
-          uses: actions/cache@v2
-          with:
-            path: |
-              ./.yarn
-              .pnp.*
-            key: ${{ env.NODE_VERSION }}-${{ hashFiles('yarn.lock') }}
-        - name: Install dependencies
-          run: |
-            yarn install --immutable
-        - name: Set GitHub user for tests
-          run: |
-            git config --global user.email "opensource@tophat.com"
-            git config --global user.name "Top Hat Open Source"
-            git config --global init.defaultBranch master
+        - uses: ./.github/actions/setup-env
         - name: Tests
           run: yarn test:ci
         - name: Linting
@@ -89,23 +61,7 @@ jobs:
         - uses: actions/checkout@v2
           with:
             fetch-depth: 0
-        - uses: ./.github/actions/detect-env
-        - name: Setup Node.js
-          uses: actions/setup-node@v3.3.0
-          with:
-            node-version: ${{ env.NODE_VERSION }}
-        - name: Create artifacts directory
-          run: mkdir -p ${{ env.ARTIFACT_DIR }}
-        - name: Restore yarn cache
-          id: yarn-cache
-          uses: actions/cache@v2
-          with:
-            path: |
-              ./.yarn
-              .pnp.*
-            key: ${{ env.NODE_VERSION }}-${{ hashFiles('yarn.lock') }}
-        - name: Install dependencies
-          run: yarn install --immutable
+        - uses: ./.github/actions/setup-env
         - name: Run Monodeploy in Dry Run Mode
           id: run-monodeploy
           env:
