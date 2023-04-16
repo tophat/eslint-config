@@ -34,7 +34,7 @@
     "author": "Top Hat Monocle Corp. <opensource@tophat.com>",
     "license": "Apache-2.0",
     "scripts": {
-        "prepack": "rm -rf lib && run -T tsc -p $INIT_CWD/tsconfig.build.json"
+        "prepack": "rm -rf lib && run -T tsc -p ./tsconfig.build.json"
     },
     "peerDependencies": {
         "@tanstack/eslint-plugin-query": ">=4.29.0",
