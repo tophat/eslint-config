@@ -23,7 +23,7 @@ jobs:
             NPM_PUBLISH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
             GH_TOKEN: ${{ secrets.TOPHAT_BOT_GH_TOKEN }}
           run: |
-            yarn ts-node --transpileOnly $(yarn bin monodeploy) --prelease --no-auto-commit --config-file monodeploy.config.ts --log-level 0
+            yarn ts-node --transpileOnly $(yarn bin monodeploy) --prerelease --no-auto-commit --config-file monodeploy.config.ts --log-level 0
         - name: Log Issues
           if: ${{ failure() }}
           run: |
