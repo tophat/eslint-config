@@ -13,5 +13,9 @@
         "resolveJsonModule": true,
         "lib": ["es2022"]
     },
-    "exclude": [".eslintrc.js"]
+    "exclude": [".eslintrc.js"],
+    "ts-node": {
+        "transpileOnly": true,
+        "ignore": ["(?:^|/)node_modules/", ".yarn/plugins/.*"],
+    }
 }
