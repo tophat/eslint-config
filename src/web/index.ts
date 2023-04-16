@@ -1,4 +1,6 @@
-module.exports = {
+import { type ESLint } from 'eslint'
+
+const config: ESLint.ConfigData = {
     env: {
         browser: true,
     },
@@ -6,3 +8,5 @@ module.exports = {
         'no-console': 'error',
     },
 }
+
+export = config

@@ -1,4 +1,6 @@
-module.exports = {
+import { type ESLint } from 'eslint'
+
+const config: ESLint.ConfigData = {
     env: {
         jest: true,
     },
@@ -13,3 +15,5 @@ module.exports = {
         'jest/no-large-snapshots': 'error',
     },
 }
+
+export = config

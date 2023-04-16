@@ -2,43 +2,25 @@
   "name": "@tophat/eslint-config",
   "version": "6.0.1",
   "description": "Top Hat's shareable eslint configuration",
-  "main": "src/index.js",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "main": "lib/index.js",
   "exports": {
     ".": {
-      "default": "./src/index.js"
+      "default": "./lib/index.js"
     },
     "./base": {
-      "default": "./src/base/index.js"
+      "default": "./lib/base/index.js"
     },
     "./jest": {
-      "default": "./src/jest/index.js"
+      "default": "./lib/jest/index.js"
     },
     "./react": {
-      "default": "./src/react/index.js"
+      "default": "./lib/react/index.js"
     },
     "./web": {
-      "default": "./src/web/index.js"
-    }
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "main": "lib/index.js",
-    "exports": {
-      ".": {
-        "default": "./lib/index.js"
-      },
-      "./base": {
-        "default": "./lib/base/index.js"
-      },
-      "./jest": {
-        "default": "./lib/jest/index.js"
-      },
-      "./react": {
-        "default": "./lib/react/index.js"
-      },
-      "./web": {
-        "default": "./lib/web/index.js"
-      }
+      "default": "./lib/web/index.js"
     }
   },
   "files": [
@@ -48,7 +30,7 @@
   "author": "Top Hat Monocle Corp. <opensource@tophat.com>",
   "license": "Apache-2.0",
   "scripts": {
-    "test": "jest --config jest.config.ts",
+    "test": "run build && jest --config jest.config.ts",
     "lint": "eslint . --max-warnings 0",
     "lint-fix": "eslint . --fix",
     "test:ci": "run test",
