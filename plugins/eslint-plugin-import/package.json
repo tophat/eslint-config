@@ -18,7 +18,7 @@
     ],
     "main": "./src/index.ts",
     "scripts": {
-        "prepack": "rm -rf lib && run -T tsc -p $INIT_CWD/tsconfig.build.json"
+        "prepack": "rm -rf lib && run -T tsc -p ./tsconfig.build.json"
     },
     "devDependencies": {
         "@types/eslint": "^8.37.0",
