@@ -26,6 +26,9 @@
   "files": [
     "lib"
   ],
+  "workspaces": [
+    "plugins/*"
+  ],
   "repository": "git@github.com:tophat/eslint-config.git",
   "author": "Top Hat Monocle Corp. <opensource@tophat.com>",
   "license": "Apache-2.0",

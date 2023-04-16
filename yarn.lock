@@ -1312,6 +1312,20 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tophat/eslint-plugin-import@workspace:plugins/eslint-plugin-import":
+  version: 0.0.0-use.local
+  resolution: "@tophat/eslint-plugin-import@workspace:plugins/eslint-plugin-import"
+  dependencies:
+    "@types/eslint": ^8.37.0
+    "@types/jest": ^29.5.0
+    "@types/node": ^18.15.11
+    "@typescript-eslint/utils": ^5.58.0
+    eslint: ^8.38.0
+  peerDependencies:
+    eslint: ^8.38.0
+  languageName: unknown
+  linkType: soft
+
 "@tsconfig/node10@npm:^1.0.7":
   version: 1.0.9
   resolution: "@tsconfig/node10@npm:1.0.9"

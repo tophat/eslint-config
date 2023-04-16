@@ -1,0 +1,35 @@
+{
+    "name": "@tophat/eslint-plugin-import",
+    "version": "0.0.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tophat/eslint-config.git",
+        "directory": "plugins/eslint-plugin-import"
+    },
+    "author": "Top Hat Monocle Corp. <opensource@tophat.com>",
+    "license": "Apache-2.0",
+    "publishConfig": {
+        "main": "./lib/index.js",
+        "registry": "https://registry.npmjs.org/",
+        "access": "public"
+    },
+    "files": [
+        "lib"
+    ],
+    "main": "./src/index.ts",
+    "scripts": {
+        "prepack": "rm -rf lib && run -T tsc -p $INIT_CWD/tsconfig.build.json"
+    },
+    "devDependencies": {
+        "@types/eslint": "^8.37.0",
+        "@types/jest": "^29.5.0",
+        "@types/node": "^18.15.11",
+        "eslint": "^8.38.0"
+    },
+    "dependencies": {
+        "@typescript-eslint/utils": "^5.58.0"
+    },
+    "peerDependencies": {
+        "eslint": "^8.38.0"
+    }
+}
