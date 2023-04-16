@@ -44,10 +44,12 @@ jobs:
           with:
             fetch-depth: 0
         - uses: ./.github/actions/setup-env
-        - name: Tests
-          run: yarn test:ci
+        - name: Build
+          run: yarn build
         - name: Linting
           run: yarn lint:ci
+        - name: Tests
+          run: yarn test:ci
         - name: Upload Artifacts
           uses: actions/upload-artifact@v3
           with:
