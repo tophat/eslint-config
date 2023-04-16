@@ -2068,7 +2068,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.49.0
     "@typescript-eslint/parser": ^5.49.0
     "@yarnpkg/sdks": ^3.0.0-rc.40
-    babel-jest: ^29.4.3
+    babel-jest: ^29.5.0
     eslint: ^8.32.0
     eslint-config-prettier: ^8.6.0
     eslint-import-resolver-node: ^0.3.6
@@ -3333,7 +3333,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"babel-jest@npm:^29.4.3, babel-jest@npm:^29.5.0":
+"babel-jest@npm:^29.5.0":
   version: 29.5.0
   resolution: "babel-jest@npm:29.5.0"
   dependencies:
