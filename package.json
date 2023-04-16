@@ -39,7 +39,7 @@
     "prepack": "run build"
   },
   "peerDependencies": {
-    "@tanstack/eslint-plugin-query": ">=4.27.0",
+    "@tanstack/eslint-plugin-query": ">=4.29.0",
     "@tophat/eslint-import-resolver-require": ">=0.1.3",
     "@typescript-eslint/eslint-plugin": ">=5.58.0",
     "@typescript-eslint/parser": ">=5.56.0",
