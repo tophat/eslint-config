@@ -5,12 +5,12 @@ const config: ESLint.Plugin = {
         recommended: {
             plugins: ['@tophat/eslint-plugin-import'],
             rules: {
-                '@tophat/prefer-workspace-aliases': 'off',
+                '@tophat/eslint-plugin-import/prefer-workspace-aliases': 'off',
             },
         },
     },
     rules: {
-        '@tophat/prefer-workspace-aliases': require('./rules/prefer-workspace-aliases'),
+        'prefer-workspace-aliases': require('./rules/prefer-workspace-aliases'),
     },
 }
 
