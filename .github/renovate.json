@@ -1,3 +1,5 @@
 {
-    "extends": ["github>tophat/new-project-kit//.github/renovate"]
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["github>tophat/new-project-kit//.github/renovate"],
+    "rangeStrategy": "auto"
 }
