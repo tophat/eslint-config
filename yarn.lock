@@ -1334,14 +1334,19 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@tophat/eslint-import-resolver-require@npm:^0.1.3":
-  version: 0.1.3
-  resolution: "@tophat/eslint-import-resolver-require@npm:0.1.3"
+"@tophat/eslint-import-resolver-require@^0.1.3, @tophat/eslint-import-resolver-require@workspace:eslint-import-resolver-require":
+  version: 0.0.0-use.local
+  resolution: "@tophat/eslint-import-resolver-require@workspace:eslint-import-resolver-require"
+  dependencies:
+    "@types/eslint": ^8.37.0
+    "@types/jest": ^29.5.0
+    "@types/node": ^18.15.11
+    "@typescript-eslint/utils": ^5.58.0
+    eslint: ^8.38.0
   peerDependencies:
     eslint-plugin-import: ">= 2.0.0"
-  checksum: a19c7e2abba314d502c21ce4d86582e8d44fab67fc9a4b8eb66da4d7e9c443aa4b81063d44e03a0839d074b90fa0515b0218e3a87c48489e8c0c9420b805134e
-  languageName: node
-  linkType: hard
+  languageName: unknown
+  linkType: soft
 
 "@tophat/eslint-plugin-import@workspace:plugins/eslint-plugin-import":
   version: 0.0.0-use.local

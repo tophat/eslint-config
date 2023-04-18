@@ -8,7 +8,8 @@
   },
   "workspaces": [
     "plugins/*",
-    "config"
+    "config",
+    "eslint-import-resolver-require"
   ],
   "repository": "git@github.com:tophat/eslint-config.git",
   "author": "Top Hat Monocle Corp. <opensource@tophat.com>",
