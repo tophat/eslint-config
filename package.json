@@ -20,7 +20,10 @@
     "lint:fix": "eslint . --fix",
     "test:ci": "run test",
     "lint:ci": "run lint",
-    "build": "yarn workspaces foreach -vti run prepack"
+    "build": "yarn workspaces foreach -vti run prepack",
+    "contrib:add": "all-contributors add",
+    "contrib:generate": "all-contributors generate",
+    "contrib:check": "all-contributors check"
   },
   "devDependencies": {
     "@monodeploy/plugin-github": "^0.10.1",
@@ -37,6 +40,7 @@
     "@typescript-eslint/utils": "^5.58.0",
     "@yarnpkg/core": "^3.5.0",
     "@yarnpkg/sdks": "^3.0.0-rc.42",
+    "all-contributors-cli": "^6.24.0",
     "eslint": "^8.38.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-import-resolver-node": "^0.3.7",
