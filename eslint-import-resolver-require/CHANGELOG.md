@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 <!-- MONODEPLOY:BELOW -->
 
+## [0.1.4](https://github.com/tophat/eslint-config/compare/@tophat/eslint-import-resolver-require@0.1.3...@tophat/eslint-import-resolver-require@0.1.4) "@tophat/eslint-import-resolver-require" (2023-04-18)<a name="0.1.4"></a>
+
+### Bug Fixes
+
+* update manifest to point to new repository (#276) ([3d44c0e](https://github.com/tophat/eslint-config/commits/3d44c0e))
+
+
+
+
 ## [0.1.3](https://github.com/tophat/eslint-import-resolver-require/compare/@tophat/eslint-import-resolver-require@0.1.2...@tophat/eslint-import-resolver-require@0.1.3) "@tophat/eslint-import-resolver-require" (2021-06-21)<a name="0.1.3"></a>
 
 ### Bug Fixes
