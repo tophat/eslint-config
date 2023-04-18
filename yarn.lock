@@ -1342,7 +1342,6 @@ __metadata:
     "@types/eslint": ^8.37.0
     "@types/jest": ^29.5.0
     "@types/node": ^18.15.11
-    "@typescript-eslint/utils": ^5.58.0
     eslint: ^8.38.0
   peerDependencies:
     eslint-plugin-import: ">= 2.0.0"
