@@ -11,14 +11,23 @@
   "commitConvention": "none",
   "contributors": [
     {
-        "login": "noahnu",
-        "name": "Noah",
-        "avatar_url": "https://avatars.githubusercontent.com/u/1297096?v=4",
-        "profile": "https://noahnu.com/",
-        "contributions": [
-          "code",
-          "infra"
-        ]
+      "login": "noahnu",
+      "name": "Noah",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1297096?v=4",
+      "profile": "https://noahnu.com/",
+      "contributions": [
+        "code",
+        "infra"
+      ]
+    },
+    {
+      "login": "dbasilio",
+      "name": "Daniel Basilio",
+      "avatar_url": "https://avatars.githubusercontent.com/u/8311284?v=4",
+      "profile": "https://github.com/dbasilio",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
