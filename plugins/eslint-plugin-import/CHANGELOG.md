@@ -4,6 +4,15 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [0.2.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-plugin-import@0.1.0...@tophat/eslint-plugin-import@0.2.0) "@tophat/eslint-plugin-import" (2023-05-02)<a name="0.2.0"></a>
+
+### Features
+
+* add prefer-non-default-react-imports rule (#279) ([6059878](https://github.com/tophat/eslint-config/commits/6059878))
+
+
+
+
 ## [0.1.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-plugin-import@0.1.0-rc.0...@tophat/eslint-plugin-import@0.1.0) "@tophat/eslint-plugin-import" (2023-04-16)<a name="0.1.0"></a>
 
 ### Bug Fixes
