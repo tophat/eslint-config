@@ -131,6 +131,32 @@ describe('Prefer Non-Default React Imports', () => {
                     },
                 ],
             },
+
+            // Types
+            {
+                code: [
+                    "import React, { type FC } from 'react'",
+                    'const [x, setX] = React.useState(false)',
+                ].join('\n'),
+                output: [
+                    "import React, { type FC, useState } from 'react'",
+                    'const [x, setX] = useState(false)',
+                ].join('\n'),
+                errors: [
+                    {
+                        messageId: 'rewrite-import',
+                        data: {
+                            methods: 'useState',
+                        },
+                    },
+                    {
+                        messageId: 'rewrite-usage',
+                        data: {
+                            method: 'useState',
+                        },
+                    },
+                ],
+            },
         ],
     })
 })
