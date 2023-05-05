@@ -14,6 +14,7 @@ type MessageIds = 'rewrite-import' | 'rewrite-usage'
 
 type Options = [
     {
+        skipDefaultReactTypeImport?: boolean
         methods?: string[]
     },
 ]
@@ -59,6 +60,7 @@ const rule = createRule<Options, MessageIds>({
     },
     defaultOptions: [
         {
+            skipDefaultReactTypeImport: false,
             methods: [
                 'useCallback',
                 'useContext',
@@ -79,6 +81,10 @@ const rule = createRule<Options, MessageIds>({
         },
     ],
     create(context) {
+        const skipDefaultReactTypeImport =
+            context.options[0]?.skipDefaultReactTypeImport ??
+            rule.defaultOptions[0].skipDefaultReactTypeImport ??
+            false
         const methodSet = new Set(
             context.options[0]?.methods ?? rule.defaultOptions[0].methods ?? [],
         )
@@ -88,9 +94,12 @@ const rule = createRule<Options, MessageIds>({
 
         return {
             ImportDeclaration(node) {
-                // Only run on React imports and skip type-only imports (too much complexity with type imports)
-                if (node.source.value !== 'react' || node.importKind === 'type')
+                if (
+                    node.source.value !== 'react' ||
+                    (skipDefaultReactTypeImport && node.importKind === 'type')
+                ) {
                     return
+                }
                 reactImportDeclaration ??= node
             },
             CallExpression(node) {
@@ -141,7 +150,11 @@ const rule = createRule<Options, MessageIds>({
 
                 const parts: string[] = []
                 if (isImportDefaultSpecifier(reactImport.specifiers[0])) {
-                    parts.push('React')
+                    if (reactImport.importKind === 'type') {
+                        allMethods.add('type default as React')
+                    } else {
+                        parts.push('React')
+                    }
                 }
                 if (allMethods.size) {
                     parts.push(

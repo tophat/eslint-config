@@ -33,14 +33,6 @@ describe('Prefer Non-Default React Imports', () => {
                     'const r = useRef()',
                 ].join('\n'),
             },
-            {
-                // we don't apply the rule when we encounter type imports
-                // too difficult for now (but we welcome contributions to add support)
-                code: [
-                    "import type React from 'react'",
-                    'const [x, setX] = useState(false)',
-                ].join('\n'),
-            },
         ],
         invalid: [
             {
@@ -149,6 +141,56 @@ describe('Prefer Non-Default React Imports', () => {
                             methods: 'useState',
                         },
                     },
+                    {
+                        messageId: 'rewrite-usage',
+                        data: {
+                            method: 'useState',
+                        },
+                    },
+                ],
+            },
+            // Default React type
+            {
+                code: [
+                    "import type React from 'react'",
+                    'const [x, setX] = React.useState(false)',
+                ].join('\n'),
+                output: [
+                    "import { type default as React, useState } from 'react'",
+                    'const [x, setX] = useState(false)',
+                ].join('\n'),
+                errors: [
+                    {
+                        messageId: 'rewrite-import',
+                        data: {
+                            methods: 'useState',
+                        },
+                    },
+                    {
+                        messageId: 'rewrite-usage',
+                        data: {
+                            method: 'useState',
+                        },
+                    },
+                ],
+            },
+
+            // Does not run 'rewrite-import' on type imports if skipDefaultReactTypeImport is true
+            {
+                code: [
+                    "import type React from 'react'",
+                    'const [x, setX] = React.useState(false)',
+                ].join('\n'),
+                output: [
+                    "import type React from 'react'",
+                    'const [x, setX] = useState(false)',
+                ].join('\n'),
+                options: [
+                    {
+                        skipDefaultReactTypeImport: true,
+                    },
+                ],
+                errors: [
                     {
                         messageId: 'rewrite-usage',
                         data: {

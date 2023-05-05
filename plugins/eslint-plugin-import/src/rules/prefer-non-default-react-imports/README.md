@@ -52,4 +52,14 @@ module.exports = {
 
 ## Limitations
 
-The rule exits early if it encounters import aliases in the React import, or if there's a React type import such as `import type React from 'react'`. This is to reduce complexity of the implementation, however contributions to add better support for these scenarios is welcome.
+If the rule encounters a React type import of the format `import type React from 'react'` and it notices missing imports, it will add the missing imports by default while preserving the single import line. To do this, it will rewrite the import as `import { type default as React, useState } from 'react'`. This way, the rule plays nicely with rules that prevent duplicate import lines. To disable this behaviour, and have the eslint rule exit early if encountering a type import, set `skipDefaultReactTypeImport` to `true`:
+
+```js
+module.exports = {
+    extends: ['plugin:@tophat/eslint-plugin-import/recommended'],
+    plugins: ['@tophat/eslint-plugin-import'],
+    rules: {
+        '@tophat/import/prefer-non-default-react-imports': ['error', { skipDefaultReactTypeImport: true }],
+    },
+}
+```
