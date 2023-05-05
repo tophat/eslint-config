@@ -4,6 +4,15 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [0.2.1](https://github.com/tophat/eslint-config/compare/@tophat/eslint-plugin-import@0.2.0...@tophat/eslint-plugin-import@0.2.1) "@tophat/eslint-plugin-import" (2023-05-05)<a name="0.2.1"></a>
+
+### Bug Fixes
+
+* support default type import (#281) ([605a8e7](https://github.com/tophat/eslint-config/commits/605a8e7))
+
+
+
+
 ## [0.2.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-plugin-import@0.1.0...@tophat/eslint-plugin-import@0.2.0) "@tophat/eslint-plugin-import" (2023-05-02)<a name="0.2.0"></a>
 
 ### Features
