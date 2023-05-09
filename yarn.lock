@@ -980,6 +980,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@monodeploy/types@npm:^4.0.0":
+  version: 4.0.1
+  resolution: "@monodeploy/types@npm:4.0.1"
+  dependencies:
+    tapable: ^2.2.1
+  peerDependencies:
+    "@yarnpkg/core": ^3.5.1
+  checksum: a3c7600a831b14cff15bbbe1e9b79c15b3df3561c8a08c8650d347c33fa50df1810a6f464c2f2c84094b88004d0c8412d45ebba180d17d8324132d4fc45190a5
+  languageName: node
+  linkType: hard
+
 "@monodeploy/versions@npm:^3.9.0":
   version: 3.9.0
   resolution: "@monodeploy/versions@npm:3.9.0"
@@ -1224,7 +1235,7 @@ __metadata:
   resolution: "@tophat-eslint-config/monorepo@workspace:."
   dependencies:
     "@monodeploy/plugin-github": ^0.10.1
-    "@monodeploy/types": ^3.9.0
+    "@monodeploy/types": ^4.0.0
     "@tanstack/eslint-plugin-query": ^4.29.0
     "@tophat/conventional-changelog-config": ^1.0.1
     "@tophat/eslint-config": "workspace:*"
