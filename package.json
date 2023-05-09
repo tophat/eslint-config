@@ -26,7 +26,7 @@
     "contrib:check": "all-contributors check"
   },
   "devDependencies": {
-    "@monodeploy/plugin-github": "^0.10.1",
+    "@monodeploy/plugin-github": "^1.0.0",
     "@monodeploy/types": "^3.9.0",
     "@tanstack/eslint-plugin-query": "^4.29.0",
     "@tophat/conventional-changelog-config": "^1.0.1",
