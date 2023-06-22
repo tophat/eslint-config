@@ -74,7 +74,7 @@ jobs:
               --config-file monodeploy.config.ts \
               --log-level 0 \
               --git-base-branch origin/${{ github.base_ref }} \
-              --changelogFilename ${{ env.ARTIFACT_DIR }}/CHANGELOG.md \
+              --changelog-filename ${{ env.ARTIFACT_DIR }}/CHANGELOG.md \
               --force-write-change-files
             changelog_body=$(cat ${{ env.ARTIFACT_DIR }}/CHANGELOG.md)
             changelog_body="${changelog_body//'%'/'%25'}"
