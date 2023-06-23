@@ -4,6 +4,15 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [7.0.2](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@7.0.1...@tophat/eslint-config@7.0.2) "@tophat/eslint-config" (2023-06-23)<a name="7.0.2"></a>
+
+### Dependencies
+
+* Update typescript, yarn, and monodeploy to latest (#287) ([4bd8adc](https://github.com/tophat/eslint-config/commits/4bd8adc))
+
+
+
+
 ## [7.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@6.0.2...@tophat/eslint-config@7.0.0) "@tophat/eslint-config" (2023-04-16)<a name="7.0.0"></a>
 
 ### Breaking Changes
