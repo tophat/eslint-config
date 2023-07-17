@@ -4,6 +4,19 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [1.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-plugin-import@0.2.2...@tophat/eslint-plugin-import@1.0.0) "@tophat/eslint-plugin-import" (2023-07-17)<a name="1.0.0"></a>
+
+### Breaking Changes
+
+* Stable release of the eslint-plugin-import package. ([7632c3a](https://github.com/tophat/eslint-config/commits/7632c3a))
+
+### Features
+
+* initial stable release (#297) ([7632c3a](https://github.com/tophat/eslint-config/commits/7632c3a))
+
+
+
+
 ## [0.2.2](https://github.com/tophat/eslint-config/compare/@tophat/eslint-plugin-import@0.2.1...@tophat/eslint-plugin-import@0.2.2) "@tophat/eslint-plugin-import" (2023-07-17)<a name="0.2.2"></a>
 
 ### Dependencies

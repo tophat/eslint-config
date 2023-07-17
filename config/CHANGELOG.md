@@ -4,6 +4,15 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [7.0.4](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@7.0.3...@tophat/eslint-config@7.0.4) "@tophat/eslint-config" (2023-07-17)<a name="7.0.4"></a>
+
+### Dependencies
+
+* minor dependencies updates (#296) ([f3e6fab](https://github.com/tophat/eslint-config/commits/f3e6fab))
+
+
+
+
 ## [7.0.3](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@7.0.2...@tophat/eslint-config@7.0.3) "@tophat/eslint-config" (2023-07-17)<a name="7.0.3"></a>
 
 ### Dependencies
