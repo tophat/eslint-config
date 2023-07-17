@@ -6,6 +6,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 <!-- MONODEPLOY:BELOW -->
 
+## [0.1.5](https://github.com/tophat/eslint-config/compare/@tophat/eslint-import-resolver-require@0.1.4...@tophat/eslint-import-resolver-require@0.1.5) "@tophat/eslint-import-resolver-require" (2023-07-17)<a name="0.1.5"></a>
+
+### Dependencies
+
+* update dependencies to latest within semver range (#291) ([28c472d](https://github.com/tophat/eslint-config/commits/28c472d))
+
+
+
+
 ## [0.1.4](https://github.com/tophat/eslint-config/compare/@tophat/eslint-import-resolver-require@0.1.3...@tophat/eslint-import-resolver-require@0.1.4) "@tophat/eslint-import-resolver-require" (2023-04-18)<a name="0.1.4"></a>
 
 ### Bug Fixes

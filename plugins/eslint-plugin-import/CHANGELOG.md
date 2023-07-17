@@ -4,6 +4,15 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [0.2.2](https://github.com/tophat/eslint-config/compare/@tophat/eslint-plugin-import@0.2.1...@tophat/eslint-plugin-import@0.2.2) "@tophat/eslint-plugin-import" (2023-07-17)<a name="0.2.2"></a>
+
+### Dependencies
+
+* update dependencies to latest within semver range (#291) ([28c472d](https://github.com/tophat/eslint-config/commits/28c472d))
+
+
+
+
 ## [0.2.1](https://github.com/tophat/eslint-config/compare/@tophat/eslint-plugin-import@0.2.0...@tophat/eslint-plugin-import@0.2.1) "@tophat/eslint-plugin-import" (2023-05-05)<a name="0.2.1"></a>
 
 ### Bug Fixes

@@ -1,6 +1,6 @@
 {
     "name": "@tophat/eslint-import-resolver-require",
-    "version": "0.1.4",
+    "version": "0.1.5",
     "repository": {
         "type": "git",
         "url": "https://github.com/tophat/eslint-config.git",

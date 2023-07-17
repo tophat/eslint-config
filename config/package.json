@@ -1,6 +1,6 @@
 {
     "name": "@tophat/eslint-config",
-    "version": "7.0.2",
+    "version": "7.0.3",
     "description": "Top Hat's shareable eslint configuration.",
     "publishConfig": {
         "registry": "https://registry.npmjs.org/"
@@ -38,7 +38,7 @@
     },
     "peerDependencies": {
         "@tanstack/eslint-plugin-query": ">=4.29.0",
-        "@tophat/eslint-import-resolver-require": "^0.1.4",
+        "@tophat/eslint-import-resolver-require": "^0.1.5",
         "@typescript-eslint/eslint-plugin": ">=5.58.0",
         "@typescript-eslint/parser": ">=5.58.0",
         "eslint": ">=8.36.0",
@@ -55,7 +55,7 @@
         "typescript": ">=5.0.4"
     },
     "dependencies": {
-        "@tophat/eslint-import-resolver-require": "^0.1.4",
+        "@tophat/eslint-import-resolver-require": "^0.1.5",
         "eslint-import-resolver-node": "^0.3.7",
         "eslint-import-resolver-typescript": "^3.5.5"
     },
