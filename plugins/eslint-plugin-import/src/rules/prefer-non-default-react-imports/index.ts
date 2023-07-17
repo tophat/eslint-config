@@ -4,7 +4,6 @@ import {
     ESLintUtils,
     type TSESTree,
 } from '@typescript-eslint/utils'
-import { isIdentifier } from '@typescript-eslint/utils/dist/ast-utils'
 
 const createRule = ESLintUtils.RuleCreator(
     (name) => `@tophat/eslint-plugin-import/${name}`,
@@ -27,6 +26,8 @@ const isImportDefaultSpecifier = ASTUtils.isNodeOfType(
     AST_NODE_TYPES.ImportDefaultSpecifier,
 )
 
+const isIdentifier = ASTUtils.isNodeOfType(AST_NODE_TYPES.Identifier)
+
 const isImportSpecifier = ASTUtils.isNodeOfType(AST_NODE_TYPES.ImportSpecifier)
 
 const rule = createRule<Options, MessageIds>({
@@ -35,7 +36,7 @@ const rule = createRule<Options, MessageIds>({
         docs: {
             description:
                 'Do not use the default React import, instead be explicit about imports.',
-            recommended: 'error',
+            recommended: 'recommended',
         },
         messages: {
             'rewrite-import': 'Your React import should contain: {{methods}}.',
@@ -51,7 +52,6 @@ const rule = createRule<Options, MessageIds>({
                         items: {
                             type: 'string',
                         },
-                        additionalProperties: false,
                     },
                 },
             },
