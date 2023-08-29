@@ -69,7 +69,7 @@
         "@typescript-eslint/utils": "^5.62.0",
         "@yarnpkg/core": "^3.5.2",
         "@yarnpkg/sdks": "^3.0.0-rc.48",
-        "eslint": "^8.38.0",
+        "eslint": "^8.48.0",
         "eslint-config-prettier": "^8.8.0",
         "eslint-import-resolver-node": "^0.3.7",
         "eslint-import-resolver-typescript": "^3.5.5",
