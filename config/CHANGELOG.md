@@ -4,6 +4,20 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [8.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@7.0.4...@tophat/eslint-config@8.0.0) "@tophat/eslint-config" (2023-08-29)<a name="8.0.0"></a>
+
+### Breaking Changes
+
+* This repo has been updated to prettier v3 and peerDependency ranges have been updated to require v3 for consumers. You can find the migration steps here https://prettier.io/blog/2023/07/05/3.0.0.html for adopting the changes, most of which should be minimal for consumers. ([28a9cc9](https://github.com/tophat/eslint-config/commits/28a9cc9))
+
+### Dependencies
+
+* Update to prettier v3 ([28a9cc9](https://github.com/tophat/eslint-config/commits/28a9cc9))
+* Update to prettier v3 (#302) ([28a9cc9](https://github.com/tophat/eslint-config/commits/28a9cc9))
+
+
+
+
 ## [7.0.4](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@7.0.3...@tophat/eslint-config@7.0.4) "@tophat/eslint-config" (2023-07-17)<a name="7.0.4"></a>
 
 ### Dependencies
