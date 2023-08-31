@@ -124,10 +124,8 @@ const rules: ESLint.ConfigData['rules'] = {
         'error',
         { prefer: 'type-imports', fixStyle: 'inline-type-imports' },
     ],
-    '@typescript-eslint/no-confusing-void-expression': [
-        'warn',
-        { ignoreVoidOperator: true },
-    ],
+    // Disabled to prevent auto linting from changing code behaviour of ambigious return types
+    '@typescript-eslint/no-confusing-void-expression': 'off',
     '@typescript-eslint/no-duplicate-enum-values': 'warn',
     '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/no-non-null-asserted-nullish-coalescing': 'error',
