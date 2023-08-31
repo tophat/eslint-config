@@ -4,6 +4,16 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [8.0.1](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@8.0.0...@tophat/eslint-config@8.0.1) "@tophat/eslint-config" (2023-08-31)<a name="8.0.1"></a>
+
+### Bug Fixes
+
+* ignore no-confusing-void-expression as it changes code behaviour ([9421ea6](https://github.com/tophat/eslint-config/commits/9421ea6))
+* ignore no-confusing-void-expression as it changes code behaviour (#307) ([9421ea6](https://github.com/tophat/eslint-config/commits/9421ea6))
+
+
+
+
 ## [8.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@7.0.4...@tophat/eslint-config@8.0.0) "@tophat/eslint-config" (2023-08-29)<a name="8.0.0"></a>
 
 ### Breaking Changes
