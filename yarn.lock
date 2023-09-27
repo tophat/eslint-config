@@ -1284,9 +1284,11 @@ __metadata:
   linkType: hard
 
 "@tanstack/eslint-plugin-query@npm:^4.29.25":
-  version: 4.29.25
-  resolution: "@tanstack/eslint-plugin-query@npm:4.29.25"
-  checksum: cf2c7b48e7584bf59738d01655da77abbc071bb8b5a189be60402442870d6f6a390a0ada9d1ae20697d26a088495abf21101af418b0ede59bdc467ad2b81a395
+  version: 4.34.1
+  resolution: "@tanstack/eslint-plugin-query@npm:4.34.1"
+  peerDependencies:
+    eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+  checksum: f88cb3721225ca79aa536886809b90d690edeacd7194e4c7ba28d7211d76b2c532691a02b74dfb3d4f9c36bdcef32c7c6f4ca9fe46eecc6aaeb73dbc87e6c599
   languageName: node
   linkType: hard
 
