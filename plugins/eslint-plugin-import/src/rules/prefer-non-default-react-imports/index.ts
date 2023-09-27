@@ -90,7 +90,7 @@ const rule = createRule<Options, MessageIds>({
         )
 
         let reactImportDeclaration: TSESTree.ImportDeclaration | undefined
-        const methodsUsed: Set<string> = new Set()
+        const methodsUsed = new Set<string>()
 
         return {
             ImportDeclaration(node) {

@@ -3,7 +3,7 @@ import path from 'path'
 
 import { ESLintUtils, type TSESLint } from '@typescript-eslint/utils'
 
-type Manifest = {
+interface Manifest {
     dependencies?: { [name in string]?: string }
     devDependencies?: { [name in string]?: string }
     peerDependencies?: { [name in string]?: string }
