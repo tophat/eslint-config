@@ -1047,25 +1047,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monodeploy/types@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@monodeploy/types@npm:4.1.0"
+"@monodeploy/types@npm:^4.1.0, @monodeploy/types@npm:^4.2.0":
+  version: 4.3.0
+  resolution: "@monodeploy/types@npm:4.3.0"
   dependencies:
     tapable: ^2.2.1
   peerDependencies:
-    "@yarnpkg/core": ^3.5.2
-  checksum: 84296cec4abb6acc3b6c24a503598bc17b51a37361a9378dd07e33ccbf33104cc10a95aa02338bc9df19f91fdbcf97d03b74981c7e5faffc8b035a5e01b86541
-  languageName: node
-  linkType: hard
-
-"@monodeploy/types@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@monodeploy/types@npm:4.2.0"
-  dependencies:
-    tapable: ^2.2.1
-  peerDependencies:
-    "@yarnpkg/core": ^3.5.2
-  checksum: e49057c8c592e081b4caaa33543c6881b77501b869fc7f26b4a3ebdd2bb5d191d8bd4ee00c816e9d7d4ee6373dcbbac834c80e2af0899b16d90c4b2ac87d2167
+    "@yarnpkg/core": ^3.5.3
+  checksum: c14c39deffc25609e62e897909b518ec7dd3db2be1346bc48533d03b2bb4397dcebd80d3a978ed6853704ace12e4bae3d11014060898eab04dc61f71039e7110
   languageName: node
   linkType: hard
 
