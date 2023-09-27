@@ -619,15 +619,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/expect-utils@npm:^29.6.1":
-  version: 29.6.1
-  resolution: "@jest/expect-utils@npm:29.6.1"
-  dependencies:
-    jest-get-type: ^29.4.3
-  checksum: 037ee017eca62f7b45e1465fb5c6f9e92d5709a9ac716b8bff0bd294240a54de734e8f968fb69309cc4aef6c83b9552d5a821f3b18371af394bf04783859d706
-  languageName: node
-  linkType: hard
-
 "@jest/expect-utils@npm:^29.6.4":
   version: 29.6.4
   resolution: "@jest/expect-utils@npm:29.6.4"
@@ -710,15 +701,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@jest/schemas@npm:^29.6.0":
-  version: 29.6.0
-  resolution: "@jest/schemas@npm:29.6.0"
-  dependencies:
-    "@sinclair/typebox": ^0.27.8
-  checksum: c00511c69cf89138a7d974404d3a5060af375b5a52b9c87215d91873129b382ca11c1ff25bd6d605951404bb381ddce5f8091004a61e76457da35db1f5c51365
-  languageName: node
-  linkType: hard
-
 "@jest/schemas@npm:^29.6.3":
   version: 29.6.3
   resolution: "@jest/schemas@npm:29.6.3"
@@ -783,20 +765,6 @@ __metadata:
     slash: ^3.0.0
     write-file-atomic: ^4.0.2
   checksum: 0341a200a0bb926fc67ab9aede91c7b4009458206495e92057e72a115c55da5fed117457e68c6ea821e24c58b55da75c6a7b0f272ed63c2693db583d689a3383
-  languageName: node
-  linkType: hard
-
-"@jest/types@npm:^29.6.1":
-  version: 29.6.1
-  resolution: "@jest/types@npm:29.6.1"
-  dependencies:
-    "@jest/schemas": ^29.6.0
-    "@types/istanbul-lib-coverage": ^2.0.0
-    "@types/istanbul-reports": ^3.0.0
-    "@types/node": "*"
-    "@types/yargs": ^17.0.8
-    chalk: ^4.0.0
-  checksum: 89fc1ccf71a84fe0da643e0675b1cfe6a6f19ea72e935b2ab1dbdb56ec547e94433fb59b3536d3832a6e156c077865b7176fe9dae707dab9c3d2f9405ba6233c
   languageName: node
   linkType: hard
 
@@ -880,174 +848,135 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monodeploy/changelog@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@monodeploy/changelog@npm:4.1.0"
+"@monodeploy/changelog@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "@monodeploy/changelog@npm:4.3.0"
   dependencies:
-    conventional-changelog-writer: ^5.0.1
-    conventional-commits-parser: ^3.2.4
+    conventional-changelog-writer: ^7.0.0
+    conventional-commits-parser: ^5.0.0
     p-limit: ^3.1.0
   peerDependencies:
-    "@monodeploy/git": ^4.1.0
-    "@monodeploy/io": ^4.1.0
-    "@monodeploy/logging": ^4.1.0
-    "@monodeploy/types": ^4.1.0
-    "@yarnpkg/core": ^3.5.2
+    "@monodeploy/git": ^4.3.0
+    "@monodeploy/io": ^4.3.0
+    "@monodeploy/logging": ^4.3.0
+    "@monodeploy/types": ^4.3.0
+    "@yarnpkg/core": ^3.5.3
     "@yarnpkg/fslib": ^2.10.3
-  checksum: 18694f2a4574339907fcd32e24def7fced0d7914df31f47b0287eb32c1cd7553aef28ea4e890552b244c1e9441c679f6f8cc4a87e278919c596237a94fa32b0c
+  checksum: 58d81d313843b5672ffff6c4544357ffd43420dfbe0b18ea7af3726a07c489bba3d766478703ebc7c69c40cae20591b44bcb21983c321a97bb8c33cad19de76c
   languageName: node
   linkType: hard
 
-"@monodeploy/dependencies@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@monodeploy/dependencies@npm:4.1.0"
+"@monodeploy/dependencies@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "@monodeploy/dependencies@npm:4.3.0"
   peerDependencies:
-    "@monodeploy/logging": ^4.1.0
-    "@monodeploy/types": ^4.1.0
-    "@yarnpkg/core": ^3.5.2
-  checksum: 549306815ee2b8d60df01e1e26801061470e218e7c1598f5a3d8fcbbedff0a0e0fa4d0eb4619326ff85e4319c35c554d35b25fd5824ac63fbd7426b90c4cd376
+    "@monodeploy/logging": ^4.3.0
+    "@monodeploy/types": ^4.3.0
+    "@yarnpkg/core": ^3.5.3
+  checksum: d26237a39a1eba0454874900e2abee487ea1b58867cb0826ec0e0bdc72f9e9ee940a57a52a3bfb981bf04d4da4ad6e6a628ccc0aa034c4965e7fd4a624bd8545
   languageName: node
   linkType: hard
 
-"@monodeploy/git@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@monodeploy/git@npm:4.1.0"
+"@monodeploy/git@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "@monodeploy/git@npm:4.3.0"
   dependencies:
     micromatch: ^4.0.5
   peerDependencies:
-    "@monodeploy/io": ^4.1.0
-    "@monodeploy/logging": ^4.1.0
-    "@monodeploy/types": ^4.1.0
-    "@yarnpkg/core": ^3.5.2
+    "@monodeploy/io": ^4.3.0
+    "@monodeploy/logging": ^4.3.0
+    "@monodeploy/types": ^4.3.0
+    "@yarnpkg/core": ^3.5.3
     "@yarnpkg/fslib": ^2.10.3
-  checksum: 4db147e651b8c6c04697d6ad691739a7fa0120f7a2843bdaff11515fd1517e4e952e24d94ebd2f862e5c7eb1746b9f87aecf29a98cee8783eb72fcbfddd3454b
+  checksum: 95d67904c35dfccf36db6e59a78acadb838880069cf9c3453bf8dc842ef85b659cd0b09563f2a303208c5f99444a5195bafa4e9c8c967155eb28595781f1d342
   languageName: node
   linkType: hard
 
-"@monodeploy/git@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@monodeploy/git@npm:4.2.0"
+"@monodeploy/io@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "@monodeploy/io@npm:4.3.0"
   dependencies:
-    micromatch: ^4.0.5
+    semver: ^7.5.4
   peerDependencies:
-    "@monodeploy/io": ^4.2.0
-    "@monodeploy/logging": ^4.2.0
-    "@monodeploy/types": ^4.2.0
-    "@yarnpkg/core": ^3.5.2
-    "@yarnpkg/fslib": ^2.10.3
-  checksum: 21bbdef26622ddcdde8a6a3d6e973f2391d3f939fc4f18216fa1c56d9da4eff79385ad7161e2dbce07fe833750d1bd62708098b0faa55c7c7869f26d00c432d3
-  languageName: node
-  linkType: hard
-
-"@monodeploy/io@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@monodeploy/io@npm:4.1.0"
-  dependencies:
-    semver: ^7.5.1
-  peerDependencies:
-    "@monodeploy/logging": ^4.1.0
-    "@monodeploy/types": ^4.1.0
-    "@yarnpkg/core": ^3.5.2
+    "@monodeploy/logging": ^4.3.0
+    "@monodeploy/types": ^4.3.0
+    "@yarnpkg/core": ^3.5.3
     "@yarnpkg/fslib": ^2.10.3
     "@yarnpkg/shell": ^3.2.5
-  checksum: 9a4301da148147be04c5e743f20fed5922719e2054376f058f963799e77b85ff25298697ee61ce46277b859669642a4442d1f4820aa1d4d3872aa6c63e154254
+  checksum: 6935d4721438e3b12807153f93c012a16fb119c65f023a504c35dc20bbf35668f75aa905523158d10d98bdeb25205e719d836514306956ab748392543b8cb7d9
   languageName: node
   linkType: hard
 
-"@monodeploy/io@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@monodeploy/io@npm:4.2.0"
+"@monodeploy/logging@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "@monodeploy/logging@npm:4.3.0"
+  peerDependencies:
+    "@yarnpkg/core": ^3.5.3
+  checksum: 97c7d1d3677e76cc0b7950e266bf573f1d3962712c23bd4849d8fb7cceebb9ca2337ec9f355a50ae64aab4098a77c6d9a1217a46e6344bee1d2eecaa5e56a424
+  languageName: node
+  linkType: hard
+
+"@monodeploy/node@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "@monodeploy/node@npm:4.3.0"
   dependencies:
-    semver: ^7.5.1
-  peerDependencies:
-    "@monodeploy/logging": ^4.2.0
-    "@monodeploy/types": ^4.2.0
-    "@yarnpkg/core": ^3.5.2
-    "@yarnpkg/fslib": ^2.10.3
-    "@yarnpkg/shell": ^3.2.5
-  checksum: bd2faa30995da805230fc26c152b458db6733caae59c501c104bcde0a0a91022024590a837f0ad6a82f57343c3febb659700ed67972d43da6577ed10abeb8e8a
-  languageName: node
-  linkType: hard
-
-"@monodeploy/logging@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@monodeploy/logging@npm:4.1.0"
-  peerDependencies:
-    "@yarnpkg/core": ^3.5.2
-  checksum: d846d90a04aca7eccd073f39e1c20b49295f3016dada053953c99cc5b183c628038e9dc7b7639f8ab76625b32fcf2ffe725104e7b561b5cd53388e57a3cbf930
-  languageName: node
-  linkType: hard
-
-"@monodeploy/logging@npm:^4.2.0":
-  version: 4.2.0
-  resolution: "@monodeploy/logging@npm:4.2.0"
-  peerDependencies:
-    "@yarnpkg/core": ^3.5.2
-  checksum: 1df914fee36c4c4913ec9266f11f874c192d2444539506609989a9f28af24263d31b312c1986214073e0905076fa85b263f185a8b44173ae181f4dada30f55a7
-  languageName: node
-  linkType: hard
-
-"@monodeploy/node@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@monodeploy/node@npm:4.1.0"
-  dependencies:
-    "@monodeploy/changelog": ^4.1.0
-    "@monodeploy/dependencies": ^4.1.0
-    "@monodeploy/git": ^4.1.0
-    "@monodeploy/io": ^4.1.0
-    "@monodeploy/logging": ^4.1.0
-    "@monodeploy/publish": ^4.1.0
-    "@monodeploy/types": ^4.1.0
-    "@monodeploy/versions": ^4.1.0
-    "@yarnpkg/cli": ^3.6.0
-    "@yarnpkg/core": ^3.5.2
+    "@monodeploy/changelog": ^4.3.0
+    "@monodeploy/dependencies": ^4.3.0
+    "@monodeploy/git": ^4.3.0
+    "@monodeploy/io": ^4.3.0
+    "@monodeploy/logging": ^4.3.0
+    "@monodeploy/publish": ^4.3.0
+    "@monodeploy/types": ^4.3.0
+    "@monodeploy/versions": ^4.3.0
+    "@yarnpkg/cli": ^3.6.3
+    "@yarnpkg/core": ^3.5.3
     "@yarnpkg/fslib": ^2.10.3
     "@yarnpkg/plugin-npm": ^2.7.4
     "@yarnpkg/plugin-pack": ^3.2.0
     "@yarnpkg/shell": ^3.2.5
     tapable: ^2.2.1
-  checksum: 713a02524381c03393635f046f0590db8fe8f9076558eef55731361f761bc9eaaecb462905f8ba3196c1b368d442fbce6462b064d517cf5779f17ec7298a4154
+  checksum: a04a756898f7f2e4a1107a9f98b0e39f46a567feff5d7011cc34c899d5c3db640b92cd8e0ba2fe00f14e4f89b5c8e6112bb16e8a66555d42276f372a4596759d
   languageName: node
   linkType: hard
 
-"@monodeploy/plugin-github@npm:^1.1.0":
-  version: 1.1.1
-  resolution: "@monodeploy/plugin-github@npm:1.1.1"
+"@monodeploy/plugin-github@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "@monodeploy/plugin-github@npm:1.2.0"
   dependencies:
-    "@monodeploy/git": ^4.2.0
-    "@monodeploy/io": ^4.2.0
-    "@monodeploy/logging": ^4.2.0
-    "@monodeploy/types": ^4.2.0
-    "@octokit/core": ^4.2.1
+    "@monodeploy/git": ^4.3.0
+    "@monodeploy/io": ^4.3.0
+    "@monodeploy/logging": ^4.3.0
+    "@monodeploy/types": ^4.3.0
+    "@octokit/core": ^4.2.4
     "@octokit/plugin-throttling": ^5.2.3
-    "@yarnpkg/core": ^3.5.2
+    "@yarnpkg/core": ^3.5.3
     "@yarnpkg/fslib": ^2.10.3
     "@yarnpkg/shell": ^3.2.5
-  checksum: c94523ebbd1ddc3506191b1042783ad39c25955dfc62948f5f7ae5facc2ea667dd80c18a161e12c58d7b202bc848ad4f87003c59ea59eb445bd16b092cf054dd
+  checksum: 47d4fdadb1337b1fcc540f96df28b6e221142951b71b54ce40cc79404c4c94fd37205efac47a5e0ea6e3e0209b2a3009a4401e829c6285b7a46c771cbb958b4c
   languageName: node
   linkType: hard
 
-"@monodeploy/publish@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@monodeploy/publish@npm:4.1.0"
+"@monodeploy/publish@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "@monodeploy/publish@npm:4.3.0"
   dependencies:
     p-limit: ^3.1.0
   peerDependencies:
-    "@monodeploy/dependencies": ^4.1.0
-    "@monodeploy/git": ^4.1.0
-    "@monodeploy/io": ^4.1.0
-    "@monodeploy/logging": ^4.1.0
-    "@monodeploy/types": ^4.1.0
-    "@yarnpkg/cli": ^3.6.0
-    "@yarnpkg/core": ^3.5.2
+    "@monodeploy/dependencies": ^4.3.0
+    "@monodeploy/git": ^4.3.0
+    "@monodeploy/io": ^4.3.0
+    "@monodeploy/logging": ^4.3.0
+    "@monodeploy/types": ^4.3.0
+    "@yarnpkg/cli": ^3.6.3
+    "@yarnpkg/core": ^3.5.3
     "@yarnpkg/fslib": ^2.10.3
     "@yarnpkg/plugin-npm": ^2.7.4
     "@yarnpkg/plugin-pack": ^3.2.0
-  checksum: be7d31476bc56ef419883adf6bc467d8ad59d657fa72661eb3f85eeed6d9edaab5245dc8da92a3ebb391526e41c7149453d1664d73b1afa5c9582c19ba33fa02
+  checksum: 95d56a0e55d1b24cd8e30776f2715714d23bfbfbf154c46a961f263f28fcf10bbdad14ca146a402a1d51ac4e8638da742238a25d47106a85c2781725225fb49c
   languageName: node
   linkType: hard
 
-"@monodeploy/types@npm:^4.1.0, @monodeploy/types@npm:^4.2.0":
+"@monodeploy/types@npm:^4.3.0":
   version: 4.3.0
   resolution: "@monodeploy/types@npm:4.3.0"
   dependencies:
@@ -1058,27 +987,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@monodeploy/versions@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "@monodeploy/versions@npm:4.1.0"
+"@monodeploy/versions@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "@monodeploy/versions@npm:4.3.0"
   dependencies:
-    conventional-commits-parser: ^3.2.4
+    conventional-commits-parser: ^5.0.0
     micromatch: ^4.0.5
     p-limit: ^3.1.0
-    semver: ^7.5.1
+    semver: ^7.5.4
   peerDependencies:
-    "@monodeploy/changelog": ^4.1.0
-    "@monodeploy/dependencies": ^4.1.0
-    "@monodeploy/git": ^4.1.0
-    "@monodeploy/io": ^4.1.0
-    "@monodeploy/logging": ^4.1.0
-    "@monodeploy/types": ^4.1.0
-    "@yarnpkg/cli": ^3.6.0
-    "@yarnpkg/core": ^3.5.2
+    "@monodeploy/changelog": ^4.3.0
+    "@monodeploy/dependencies": ^4.3.0
+    "@monodeploy/git": ^4.3.0
+    "@monodeploy/io": ^4.3.0
+    "@monodeploy/logging": ^4.3.0
+    "@monodeploy/types": ^4.3.0
+    "@yarnpkg/cli": ^3.6.3
+    "@yarnpkg/core": ^3.5.3
     "@yarnpkg/fslib": ^2.10.3
     "@yarnpkg/plugin-npm": ^2.7.4
     "@yarnpkg/plugin-pack": ^3.2.0
-  checksum: 60d1826d7364ed6d4ddfe394d6c9eb78a262015caf09288fa24120ddc092b69528eb8e492eedb4156d87386192026560b7de4e43f504e71084804a32317cc39f
+  checksum: fd79b2364941cc80d178856fb797a04ad5aef00dcf1f6263d338d9131d1fd79e76a6dfb88cc4c553439dfc44ba0fe74ae600a3ab0b266d0d780774d8277b045b
   languageName: node
   linkType: hard
 
@@ -1138,7 +1067,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/core@npm:^4.2.1":
+"@octokit/core@npm:^4.2.4":
   version: 4.2.4
   resolution: "@octokit/core@npm:4.2.4"
   dependencies:
@@ -1303,8 +1232,8 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@tophat-eslint-config/monorepo@workspace:."
   dependencies:
-    "@monodeploy/plugin-github": ^1.1.0
-    "@monodeploy/types": ^4.1.0
+    "@monodeploy/plugin-github": ^1.2.0
+    "@monodeploy/types": ^4.3.0
     "@tanstack/eslint-plugin-query": ^4.29.25
     "@tophat/conventional-changelog-config": ^1.0.1
     "@tophat/eslint-config": ^7.0.4
@@ -1315,8 +1244,8 @@ __metadata:
     "@typescript-eslint/eslint-plugin": ^5.62.0
     "@typescript-eslint/parser": ^5.62.0
     "@typescript-eslint/utils": ^5.62.0
-    "@yarnpkg/core": ^3.5.2
-    "@yarnpkg/sdks": ^3.0.0-rc.48
+    "@yarnpkg/core": ^3.5.3
+    "@yarnpkg/sdks": ^3.0.0-rc.51
     all-contributors-cli: ^6.26.1
     eslint: ^8.48.0
     eslint-config-prettier: ^9.0.0
@@ -1330,7 +1259,7 @@ __metadata:
     eslint-plugin-react-hooks: ^4.6.0
     jest: ^29.6.1
     jest-junit: ^16.0.0
-    monodeploy: ^4.1.0
+    monodeploy: ^4.3.0
     prettier: ^3.0.3
     ts-jest: ^29.1.1
     ts-node: ^10.9.1
@@ -1902,15 +1831,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/cli@npm:^3.6.0":
-  version: 3.6.0
-  resolution: "@yarnpkg/cli@npm:3.6.0"
+"@yarnpkg/cli@npm:^3.6.3":
+  version: 3.6.3
+  resolution: "@yarnpkg/cli@npm:3.6.3"
   dependencies:
-    "@yarnpkg/core": ^3.5.2
+    "@yarnpkg/core": ^3.5.3
     "@yarnpkg/fslib": ^2.10.3
     "@yarnpkg/libzip": ^2.3.0
     "@yarnpkg/parsers": ^2.5.1
-    "@yarnpkg/plugin-compat": ^3.1.12
+    "@yarnpkg/plugin-compat": ^3.1.14
     "@yarnpkg/plugin-dlx": ^3.1.4
     "@yarnpkg/plugin-essentials": ^3.3.0
     "@yarnpkg/plugin-file": ^2.3.1
@@ -1924,7 +1853,7 @@ __metadata:
     "@yarnpkg/plugin-npm-cli": ^3.4.0
     "@yarnpkg/plugin-pack": ^3.2.0
     "@yarnpkg/plugin-patch": ^3.2.4
-    "@yarnpkg/plugin-pnp": ^3.2.10
+    "@yarnpkg/plugin-pnp": ^3.2.13
     "@yarnpkg/plugin-pnpm": ^1.1.3
     "@yarnpkg/shell": ^3.2.5
     chalk: ^3.0.0
@@ -1935,14 +1864,14 @@ __metadata:
     typanion: ^3.3.0
     yup: ^0.32.9
   peerDependencies:
-    "@yarnpkg/core": ^3.5.2
-  checksum: 1ac45d97920a7c26b5a2afdb7c368d2e7de611aa1c7f5b5c25721fc40163543c935eedf0436aac532e519ac51a2c1fe6954222b6462c1f8f1365766671deedd9
+    "@yarnpkg/core": ^3.5.3
+  checksum: 3aca30943f030c1d0ecaadfe2529d31ec32ec4ecc447394dc707b8e1c06f4bda4a99801d86665b5e4a4a159478f4634adba7dac6b95a99b40bde44e8d6e50611
   languageName: node
   linkType: hard
 
-"@yarnpkg/core@npm:^3.3.0, @yarnpkg/core@npm:^3.5.2":
-  version: 3.5.2
-  resolution: "@yarnpkg/core@npm:3.5.2"
+"@yarnpkg/core@npm:^3.3.0, @yarnpkg/core@npm:^3.5.2, @yarnpkg/core@npm:^3.5.3":
+  version: 3.5.3
+  resolution: "@yarnpkg/core@npm:3.5.3"
   dependencies:
     "@arcanis/slice-ansi": ^1.1.1
     "@types/semver": ^7.1.0
@@ -1951,7 +1880,7 @@ __metadata:
     "@yarnpkg/json-proxy": ^2.1.1
     "@yarnpkg/libzip": ^2.3.0
     "@yarnpkg/parsers": ^2.5.1
-    "@yarnpkg/pnp": ^3.3.3
+    "@yarnpkg/pnp": ^3.3.4
     "@yarnpkg/shell": ^3.2.5
     camelcase: ^5.3.1
     chalk: ^3.0.0
@@ -1976,29 +1905,29 @@ __metadata:
     treeify: ^1.1.0
     tslib: ^1.13.0
     tunnel: ^0.0.6
-  checksum: 7635ea96c79195afc2146a1b8c5adfcb765a83bce2721bc0c88799a01e0e0b73243631f47b57df14667d7349aa0cf0a6b28b6ecfc9814ef329c7dd1f4c7f3826
+  checksum: 203abb513eead0bbe048f56dd2f9f9f0e744fa17362ae1228ca77a9e353e794ec5cbefb09bdb738aecb3a12416b92d5e179bd1627455b1dd6dc27dbd792086f0
   languageName: node
   linkType: hard
 
-"@yarnpkg/core@npm:^4.0.0-rc.48":
-  version: 4.0.0-rc.48
-  resolution: "@yarnpkg/core@npm:4.0.0-rc.48"
+"@yarnpkg/core@npm:^4.0.0-rc.51":
+  version: 4.0.0-rc.51
+  resolution: "@yarnpkg/core@npm:4.0.0-rc.51"
   dependencies:
     "@arcanis/slice-ansi": ^1.1.1
     "@types/semver": ^7.1.0
     "@types/treeify": ^1.0.0
-    "@yarnpkg/fslib": ^3.0.0-rc.48
-    "@yarnpkg/libzip": ^3.0.0-rc.48
-    "@yarnpkg/parsers": ^3.0.0-rc.48
-    "@yarnpkg/shell": ^4.0.0-rc.48
+    "@yarnpkg/fslib": ^3.0.0-rc.51
+    "@yarnpkg/libzip": ^3.0.0-rc.51
+    "@yarnpkg/parsers": ^3.0.0-rc.51
+    "@yarnpkg/shell": ^4.0.0-rc.51
     camelcase: ^5.3.1
     chalk: ^3.0.0
     ci-info: ^3.2.0
-    clipanion: ^3.2.1
+    clipanion: ^4.0.0-rc.2
     cross-spawn: 7.0.3
     diff: ^5.1.0
     dotenv: ^16.3.1
-    globby: ^11.0.1
+    fast-glob: ^3.2.2
     got: ^11.7.0
     lodash: ^4.17.15
     micromatch: ^4.0.2
@@ -2010,7 +1939,7 @@ __metadata:
     treeify: ^1.1.0
     tslib: ^2.4.0
     tunnel: ^0.0.6
-  checksum: f42a81bb7bf70005485fbc0e93a6e135b491c3182e094bbbc84c138c49cdd007dafb6322a31f1449d8d9d02a69fd2ce2860d7b40037513e7387aa2f7f6e0281b
+  checksum: 8dcb6c764f0f6ef0c8bdeec9063557d927ce8e8c697ebe0d78475945bd613d6759943909ab16a5b97ab7660258a41de5a49beb6d557d9ff554ee8899b7ae5594
   languageName: node
   linkType: hard
 
@@ -2033,12 +1962,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/fslib@npm:^3.0.0-rc.48":
-  version: 3.0.0-rc.48
-  resolution: "@yarnpkg/fslib@npm:3.0.0-rc.48"
+"@yarnpkg/fslib@npm:^3.0.0-rc.51":
+  version: 3.0.0-rc.51
+  resolution: "@yarnpkg/fslib@npm:3.0.0-rc.51"
   dependencies:
     tslib: ^2.4.0
-  checksum: 658b8c1b688d875de06adf1a4be167641b3082445e310b9a1312deb71a7ef816f829675a571acad10725aed3ee5d0791d6c370a6565af05e1f4f38f470d457d2
+  checksum: e3fddbd810dfb402381ef5b8cfa7833a382cee191961ead3b0ff780cbac726d3d7f7d0238672db26315aeca2df2782f7a2059ff15e161826fadbbba77d2f2fe7
   languageName: node
   linkType: hard
 
@@ -2062,16 +1991,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/libzip@npm:^3.0.0-rc.48":
-  version: 3.0.0-rc.48
-  resolution: "@yarnpkg/libzip@npm:3.0.0-rc.48"
+"@yarnpkg/libzip@npm:^3.0.0-rc.51":
+  version: 3.0.0-rc.51
+  resolution: "@yarnpkg/libzip@npm:3.0.0-rc.51"
   dependencies:
     "@types/emscripten": ^1.39.6
-    "@yarnpkg/fslib": ^3.0.0-rc.48
+    "@yarnpkg/fslib": ^3.0.0-rc.51
     tslib: ^2.4.0
   peerDependencies:
-    "@yarnpkg/fslib": ^3.0.0-rc.48
-  checksum: 9e699e4315a92693de303d0c447a0b104e6171e5c4a583761f0a690bcc9917ba3c7cd051737eac94e1a52e7012fcad294db345ffd31261a5e74d2aad10ec35f6
+    "@yarnpkg/fslib": ^3.0.0-rc.51
+  checksum: 481a4809c2af6a056d6bcd872af81010c04727d6baef8f360cc0e7a63d4b787a40743b770669f2f07a6f8c599f81c42a2c301f44a05401a5f25e304af78cd3ba
   languageName: node
   linkType: hard
 
@@ -2096,25 +2025,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/parsers@npm:^3.0.0-rc.48":
-  version: 3.0.0-rc.48.1
-  resolution: "@yarnpkg/parsers@npm:3.0.0-rc.48.1"
+"@yarnpkg/parsers@npm:^3.0.0-rc.51":
+  version: 3.0.0-rc.51
+  resolution: "@yarnpkg/parsers@npm:3.0.0-rc.51"
   dependencies:
     js-yaml: ^3.10.0
     tslib: ^2.4.0
-  checksum: c4328cad81ec91de0840b065dfcfda9afa038dadf7507f27f73415675e257a9ad3b21247a6e28a6e90533c411645320104fd529ef85659173932ae38b26a7b0e
+  checksum: 35748fada41e45ada477e9e9da67e5e79acf895d4170d500966855a147912103e5bf33f3a658ad08a60ed22f21be05c5cfe13e342145c074b8ef6dd34b14572e
   languageName: node
   linkType: hard
 
-"@yarnpkg/plugin-compat@npm:^3.1.12":
-  version: 3.1.12
-  resolution: "@yarnpkg/plugin-compat@npm:3.1.12"
+"@yarnpkg/plugin-compat@npm:^3.1.14":
+  version: 3.1.14
+  resolution: "@yarnpkg/plugin-compat@npm:3.1.14"
   dependencies:
     "@yarnpkg/extensions": ^1.1.2
   peerDependencies:
-    "@yarnpkg/core": ^3.5.2
+    "@yarnpkg/core": ^3.5.3
     "@yarnpkg/plugin-patch": ^3.2.4
-  checksum: b1a4edeaeff4c698b5b1d7f7837d6ab30ac45d95c97320fedde08b2c5b5bf111d7245518422515503afca213438bea4ca1d93a50948b1699824d4ef68e2449fb
+  checksum: d99ae283a62fdf38164d376136318fbca34825bb9f6a371b73768d9971c6f7d48745dea6eeb488e7b55c37a8db3375f2c63ca7e06673b94365dc4c5392143d5a
   languageName: node
   linkType: hard
 
@@ -2325,22 +2254,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/plugin-pnp@npm:^3.2.10, @yarnpkg/plugin-pnp@npm:^3.2.5, @yarnpkg/plugin-pnp@npm:^3.2.6":
-  version: 3.2.10
-  resolution: "@yarnpkg/plugin-pnp@npm:3.2.10"
+"@yarnpkg/plugin-pnp@npm:^3.2.13, @yarnpkg/plugin-pnp@npm:^3.2.5, @yarnpkg/plugin-pnp@npm:^3.2.6":
+  version: 3.2.13
+  resolution: "@yarnpkg/plugin-pnp@npm:3.2.13"
   dependencies:
     "@types/semver": ^7.1.0
     "@yarnpkg/fslib": ^2.10.3
     "@yarnpkg/plugin-stage": ^3.1.3
-    "@yarnpkg/pnp": ^3.3.3
+    "@yarnpkg/pnp": ^3.3.5
     clipanion: 3.2.0-rc.4
     micromatch: ^4.0.2
     semver: ^7.1.2
     tslib: ^1.13.0
   peerDependencies:
-    "@yarnpkg/cli": ^3.6.0
-    "@yarnpkg/core": ^3.5.2
-  checksum: 35a1e1a3db400db991a4c48bf2a317834cdbe39e0c3154b4e641204e20f76ffecd2e04214b45be393a9cb556d4c40f1843201d45ef7482f094ad3a7b9a86c65c
+    "@yarnpkg/cli": ^3.6.3
+    "@yarnpkg/core": ^3.5.3
+  checksum: a9631e9eebe84ff97839956d3f4a818c693fcd1e024ae857b5463930a95fe0175cad3e87fe0583e2bf05b6a2449b02c42e4443cef47d70da62606463801842c0
   languageName: node
   linkType: hard
 
@@ -2375,31 +2304,31 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/pnp@npm:^3.2.5, @yarnpkg/pnp@npm:^3.3.3":
-  version: 3.3.3
-  resolution: "@yarnpkg/pnp@npm:3.3.3"
+"@yarnpkg/pnp@npm:^3.2.5, @yarnpkg/pnp@npm:^3.3.4, @yarnpkg/pnp@npm:^3.3.5":
+  version: 3.3.5
+  resolution: "@yarnpkg/pnp@npm:3.3.5"
   dependencies:
     "@types/node": ^13.7.0
     "@yarnpkg/fslib": ^2.10.3
-  checksum: e379df5f8a6e1781f5af6f502b7d549642c62bf3c00fd9e6956389b7f6ccf4ee731b89d5c9569ff64eba5bf0b8d9003b7ad261d07a0506f7cba0cc70fedc4f33
+  checksum: 5197775e44eb24607473793e344e10007289800b156061d5bd57a593ad735a0a34bd8d412bd822508048bd7c2442008766ac336595de1fc91c8f94c8179b47c6
   languageName: node
   linkType: hard
 
-"@yarnpkg/sdks@npm:^3.0.0-rc.48":
-  version: 3.0.0-rc.48
-  resolution: "@yarnpkg/sdks@npm:3.0.0-rc.48"
+"@yarnpkg/sdks@npm:^3.0.0-rc.48, @yarnpkg/sdks@npm:^3.0.0-rc.51":
+  version: 3.0.0-rc.51
+  resolution: "@yarnpkg/sdks@npm:3.0.0-rc.51"
   dependencies:
-    "@yarnpkg/core": ^4.0.0-rc.48
-    "@yarnpkg/fslib": ^3.0.0-rc.48
-    "@yarnpkg/parsers": ^3.0.0-rc.48
+    "@yarnpkg/core": ^4.0.0-rc.51
+    "@yarnpkg/fslib": ^3.0.0-rc.51
+    "@yarnpkg/parsers": ^3.0.0-rc.51
     chalk: ^3.0.0
-    clipanion: ^3.2.1
+    clipanion: ^4.0.0-rc.2
     comment-json: ^2.2.0
     lodash: ^4.17.15
     tslib: ^2.4.0
   bin:
     sdks: ./lib/cli.js
-  checksum: 0acbd80758d72636f5355bdb78ad1a52ae07a94c29680703cb4e8db02a4c8633a0007cfc9ee99b8e02ffb622300ae18c377c214c81e4521a87fa6db2cf4ce9d1
+  checksum: b3895f0430643ae3f6834712d7d87487befcff186e225dba9c0ee789e6359f5d2ff890ecacd7a53f93afc91cc342946e4118cbe4bc1fb61530534d07ad51c745
   languageName: node
   linkType: hard
 
@@ -2422,21 +2351,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/shell@npm:^4.0.0-rc.48":
-  version: 4.0.0-rc.48
-  resolution: "@yarnpkg/shell@npm:4.0.0-rc.48"
+"@yarnpkg/shell@npm:^4.0.0-rc.51":
+  version: 4.0.0-rc.51
+  resolution: "@yarnpkg/shell@npm:4.0.0-rc.51"
   dependencies:
-    "@yarnpkg/fslib": ^3.0.0-rc.48
-    "@yarnpkg/parsers": ^3.0.0-rc.48
+    "@yarnpkg/fslib": ^3.0.0-rc.51
+    "@yarnpkg/parsers": ^3.0.0-rc.51
     chalk: ^3.0.0
-    clipanion: ^3.2.1
+    clipanion: ^4.0.0-rc.2
     cross-spawn: 7.0.3
     fast-glob: ^3.2.2
     micromatch: ^4.0.2
     tslib: ^2.4.0
   bin:
     shell: ./lib/cli.js
-  checksum: 7a5cc1e4718f0294eee80d085c6e7b2ccf794d196ecc885d2faff343a34f2f9aca1919266cdcd94b51ef5f33ad356a4e0dacb620c92a7716b12367b9d2aaf2c2
+  checksum: 2703a6fbfe9a8df44907028b0af9e5e8571759e8917c50f67fb49f47538fb741b7be94a0d323f67df1e11d0dabde4ec4fd58c2b01927a192fdf0978832c8bfa4
   languageName: node
   linkType: hard
 
@@ -2451,7 +2380,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"JSONStream@npm:^1.0.4":
+"JSONStream@npm:^1.0.4, JSONStream@npm:^1.3.5":
   version: 1.3.5
   resolution: "JSONStream@npm:1.3.5"
   dependencies:
@@ -3212,7 +3141,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"clipanion@npm:^3.2.0, clipanion@npm:^3.2.1":
+"clipanion@npm:^3.2.1":
   version: 3.2.1
   resolution: "clipanion@npm:3.2.1"
   dependencies:
@@ -3220,6 +3149,17 @@ __metadata:
   peerDependencies:
     typanion: "*"
   checksum: 448efd122ead3c802e61ba7a2002e2080c8cce01ce8a0a789d9b9e4f8fe70fd887dcf163ef8c778f5364a9e6f4b498b9f1853f709d7ed4291713e78bcfb88ee8
+  languageName: node
+  linkType: hard
+
+"clipanion@npm:^4.0.0-rc.2":
+  version: 4.0.0-rc.2
+  resolution: "clipanion@npm:4.0.0-rc.2"
+  dependencies:
+    typanion: ^3.8.0
+  peerDependencies:
+    typanion: "*"
+  checksum: 533a2a0fd2d18b0599afc8bb01452f87bdc3a6b5481c8c02d35821a01fba0a407a2057eb52168cb57c867a025adebe976d19327ce361390886d9850075805bb4
   languageName: node
   linkType: hard
 
@@ -3352,32 +3292,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"conventional-changelog-writer@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "conventional-changelog-writer@npm:5.0.1"
+"conventional-changelog-writer@npm:^7.0.0":
+  version: 7.0.1
+  resolution: "conventional-changelog-writer@npm:7.0.1"
   dependencies:
-    conventional-commits-filter: ^2.0.7
-    dateformat: ^3.0.0
+    conventional-commits-filter: ^4.0.0
     handlebars: ^4.7.7
     json-stringify-safe: ^5.0.1
-    lodash: ^4.17.15
-    meow: ^8.0.0
-    semver: ^6.0.0
-    split: ^1.0.0
-    through2: ^4.0.0
+    meow: ^12.0.1
+    semver: ^7.5.2
+    split2: ^4.0.0
   bin:
-    conventional-changelog-writer: cli.js
-  checksum: 5c0129db44577f14b1f8de225b62a392a9927ba7fe3422cb21ad71a771b8472bd03badb7c87cb47419913abc3f2ce3759b69f59550cdc6f7a7b0459015b3b44c
+    conventional-changelog-writer: cli.mjs
+  checksum: 6d1e2ef2d75752c74d87321b9e33562f37a0734bbdb69ed48ce6cf868168e7847d5cf5238402ebd612ac763f521ba063aab452766d39ee81f5748b93a79ae51f
   languageName: node
   linkType: hard
 
-"conventional-commits-filter@npm:^2.0.7":
-  version: 2.0.7
-  resolution: "conventional-commits-filter@npm:2.0.7"
-  dependencies:
-    lodash.ismatch: ^4.4.0
-    modify-values: ^1.0.0
-  checksum: feb567f680a6da1baaa1ef3cff393b3c56a5828f77ab9df5e70626475425d109a6fee0289b4979223c62bbd63bf9c98ef532baa6fcb1b66ee8b5f49077f5d46c
+"conventional-commits-filter@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "conventional-commits-filter@npm:4.0.0"
+  checksum: 46d2d90531f024d596f61d353876276e5357adb5c4684e042467bb7d159feb0a2831b74656bd3038ac9ec38d99b0b24ac39f319ad511861e1299c4cdfb5a119a
   languageName: node
   linkType: hard
 
@@ -3394,6 +3328,20 @@ __metadata:
   bin:
     conventional-commits-parser: cli.js
   checksum: 1627ff203bc9586d89e47a7fe63acecf339aba74903b9114e23d28094f79d4e2d6389bf146ae561461dcba8fc42e7bc228165d2b173f15756c43f1d32bc50bfd
+  languageName: node
+  linkType: hard
+
+"conventional-commits-parser@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "conventional-commits-parser@npm:5.0.0"
+  dependencies:
+    JSONStream: ^1.3.5
+    is-text-path: ^2.0.0
+    meow: ^12.0.1
+    split2: ^4.0.0
+  bin:
+    conventional-commits-parser: cli.mjs
+  checksum: bb92a0bfe41802330d2d14ddb0f912fd65dd355f1aa294e708f4891aac95c580919a70580b9f26563c24c3335baaed2ce003104394a8fa5ba61eeb3889e45df0
   languageName: node
   linkType: hard
 
@@ -3440,13 +3388,6 @@ __metadata:
   version: 1.0.8
   resolution: "damerau-levenshtein@npm:1.0.8"
   checksum: d240b7757544460ae0586a341a53110ab0a61126570ef2d8c731e3eab3f0cb6e488e2609e6a69b46727635de49be20b071688698744417ff1b6c1d7ccd03e0de
-  languageName: node
-  linkType: hard
-
-"dateformat@npm:^3.0.0":
-  version: 3.0.3
-  resolution: "dateformat@npm:3.0.3"
-  checksum: ca4911148abb09887bd9bdcd632c399b06f3ecad709a18eb594d289a1031982f441e08e281db77ffebcb2cbcbfa1ac578a7cbfbf8743f41009aa5adc1846ed34
   languageName: node
   linkType: hard
 
@@ -3604,13 +3545,6 @@ __metadata:
   version: 1.2.2
   resolution: "didyoumean@npm:1.2.2"
   checksum: d5d98719d58b3c2fa59663c4c42ba9716f1fd01245c31d5fce31915bd3aa26e6aac149788e007358f778ebbd68a2256eb5973e8ca6f221df221ba060115acf2e
-  languageName: node
-  linkType: hard
-
-"diff-sequences@npm:^29.4.3":
-  version: 29.4.3
-  resolution: "diff-sequences@npm:29.4.3"
-  checksum: 28b265e04fdddcf7f9f814effe102cc95a9dec0564a579b5aed140edb24fc345c611ca52d76d725a3cab55d3888b915b5e8a4702e0f6058968a90fa5f41fcde7
   languageName: node
   linkType: hard
 
@@ -4226,21 +4160,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"expect@npm:^29.0.0":
-  version: 29.6.1
-  resolution: "expect@npm:29.6.1"
-  dependencies:
-    "@jest/expect-utils": ^29.6.1
-    "@types/node": "*"
-    jest-get-type: ^29.4.3
-    jest-matcher-utils: ^29.6.1
-    jest-message-util: ^29.6.1
-    jest-util: ^29.6.1
-  checksum: 4e712e52c90f6c54e748fd2876be33c43ada6a59088ddf6a1acb08b18b3b97b3a672124684abe32599986d2f2a438d5afad148837ee06ea386d2a4bf0348de78
-  languageName: node
-  linkType: hard
-
-"expect@npm:^29.6.4":
+"expect@npm:^29.0.0, expect@npm:^29.6.4":
   version: 29.6.4
   resolution: "expect@npm:29.6.4"
   dependencies:
@@ -5094,16 +5014,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-core-module@npm:^2.11.0, is-core-module@npm:^2.12.0, is-core-module@npm:^2.5.0, is-core-module@npm:^2.9.0":
-  version: 2.12.0
-  resolution: "is-core-module@npm:2.12.0"
-  dependencies:
-    has: ^1.0.3
-  checksum: f7f7eb2ab71fd769ee9fb2385c095d503aa4b5ce0028c04557de03f1e67a87c85e5bac1f215945fc3c955867a139a415a3ec4c4234a0bffdf715232660f440a6
-  languageName: node
-  linkType: hard
-
-"is-core-module@npm:^2.13.0":
+"is-core-module@npm:^2.11.0, is-core-module@npm:^2.13.0, is-core-module@npm:^2.5.0, is-core-module@npm:^2.9.0":
   version: 2.13.0
   resolution: "is-core-module@npm:2.13.0"
   dependencies:
@@ -5291,6 +5202,15 @@ __metadata:
   dependencies:
     text-extensions: ^1.0.0
   checksum: fb5d78752c22b3f73a7c9540768f765ffcfa38c9e421e2b9af869565307fa1ae5e3d3a2ba016a43549742856846566d327da406e94a5846ec838a288b1704fd2
+  languageName: node
+  linkType: hard
+
+"is-text-path@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "is-text-path@npm:2.0.0"
+  dependencies:
+    text-extensions: ^2.0.0
+  checksum: 3a8725fc7c0d4c7741a97993bc2fecc09a0963660394d3ee76145274366c98ad57c6791d20d4ef829835f573b1137265051c05ecd65fbe72f69bb9ab9e3babbd
   languageName: node
   linkType: hard
 
@@ -5539,18 +5459,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-diff@npm:^29.6.1":
-  version: 29.6.1
-  resolution: "jest-diff@npm:29.6.1"
-  dependencies:
-    chalk: ^4.0.0
-    diff-sequences: ^29.4.3
-    jest-get-type: ^29.4.3
-    pretty-format: ^29.6.1
-  checksum: c6350178ca27d92c7fd879790fb2525470c1ff1c5d29b1834a240fecd26c6904fb470ebddb98dc96dd85389c56c3b50e6965a1f5203e9236d213886ed9806219
-  languageName: node
-  linkType: hard
-
 "jest-diff@npm:^29.6.4":
   version: 29.6.4
   resolution: "jest-diff@npm:29.6.4"
@@ -5596,13 +5504,6 @@ __metadata:
     jest-mock: ^29.6.3
     jest-util: ^29.6.3
   checksum: 518221505af4bd32c84f2af2c03f9d771de2711bd69fe7723b648fcc2e05d95b4e75f493afa9010209e26a4a3309ebee971f9b18c45b540891771d3b68c3a16e
-  languageName: node
-  linkType: hard
-
-"jest-get-type@npm:^29.4.3":
-  version: 29.4.3
-  resolution: "jest-get-type@npm:29.4.3"
-  checksum: 6ac7f2dde1c65e292e4355b6c63b3a4897d7e92cb4c8afcf6d397f2682f8080e094c8b0b68205a74d269882ec06bf696a9de6cd3e1b7333531e5ed7b112605ce
   languageName: node
   linkType: hard
 
@@ -5658,18 +5559,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-matcher-utils@npm:^29.6.1":
-  version: 29.6.1
-  resolution: "jest-matcher-utils@npm:29.6.1"
-  dependencies:
-    chalk: ^4.0.0
-    jest-diff: ^29.6.1
-    jest-get-type: ^29.4.3
-    pretty-format: ^29.6.1
-  checksum: d2efa6aed6e4820758b732b9fefd315c7fa4508ee690da656e1c5ac4c1a0f4cee5b04c9719ee1fda9aeb883b4209186c145089ced521e715b9fa70afdfa4a9c6
-  languageName: node
-  linkType: hard
-
 "jest-matcher-utils@npm:^29.6.4":
   version: 29.6.4
   resolution: "jest-matcher-utils@npm:29.6.4"
@@ -5679,23 +5568,6 @@ __metadata:
     jest-get-type: ^29.6.3
     pretty-format: ^29.6.3
   checksum: 9e17bce282e74bdbba2ce5475c490e0bba4f464cd42132bfc5df0337e0853af4dba925c7f4f61cbb0a4818fa121d28d7ff0196ec8829773a22fce59a822976d2
-  languageName: node
-  linkType: hard
-
-"jest-message-util@npm:^29.6.1":
-  version: 29.6.1
-  resolution: "jest-message-util@npm:29.6.1"
-  dependencies:
-    "@babel/code-frame": ^7.12.13
-    "@jest/types": ^29.6.1
-    "@types/stack-utils": ^2.0.0
-    chalk: ^4.0.0
-    graceful-fs: ^4.2.9
-    micromatch: ^4.0.4
-    pretty-format: ^29.6.1
-    slash: ^3.0.0
-    stack-utils: ^2.0.3
-  checksum: 3e7cb2ff087fe72255292e151d24e4fbb4cd6134885c0a67a4b302f233fe4110bf7580b176f427f05ad7550eb878ed94237209785d09d659a7d171ffa59c068f
   languageName: node
   linkType: hard
 
@@ -5860,21 +5732,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-util@npm:^29.0.0, jest-util@npm:^29.6.1":
-  version: 29.6.1
-  resolution: "jest-util@npm:29.6.1"
-  dependencies:
-    "@jest/types": ^29.6.1
-    "@types/node": "*"
-    chalk: ^4.0.0
-    ci-info: ^3.2.0
-    graceful-fs: ^4.2.9
-    picomatch: ^2.2.3
-  checksum: fc553556c1350c443449cadaba5fb9d604628e8b5ceb6ceaf4e7e08975b24277d0a14bf2e0f956024e03c23e556fcb074659423422a06fbedf2ab52978697ac7
-  languageName: node
-  linkType: hard
-
-"jest-util@npm:^29.6.3":
+"jest-util@npm:^29.0.0, jest-util@npm:^29.6.3":
   version: 29.6.3
   resolution: "jest-util@npm:29.6.3"
   dependencies:
@@ -6179,13 +6037,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.ismatch@npm:^4.4.0":
-  version: 4.4.0
-  resolution: "lodash.ismatch@npm:4.4.0"
-  checksum: a393917578842705c7fc1a30fb80613d1ac42d20b67eb26a2a6004d6d61ee90b419f9eb320508ddcd608e328d91eeaa2651411727eaa9a12534ed6ccb02fc705
-  languageName: node
-  linkType: hard
-
 "lodash.memoize@npm:4.x":
   version: 4.1.2
   resolution: "lodash.memoize@npm:4.1.2"
@@ -6310,6 +6161,13 @@ __metadata:
   version: 4.3.0
   resolution: "map-obj@npm:4.3.0"
   checksum: fbc554934d1a27a1910e842bc87b177b1a556609dd803747c85ece420692380827c6ae94a95cce4407c054fa0964be3bf8226f7f2cb2e9eeee432c7c1985684e
+  languageName: node
+  linkType: hard
+
+"meow@npm:^12.0.1":
+  version: 12.1.1
+  resolution: "meow@npm:12.1.1"
+  checksum: a6f3be85fbe53430ef53ab933dd790c39216eb4dbaabdbef593aa59efb40ecaa417897000175476bc33eed09e4cbce01df7ba53ba91e9a4bd84ec07024cb8914
   languageName: node
   linkType: hard
 
@@ -6517,28 +6375,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"modify-values@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "modify-values@npm:1.0.1"
-  checksum: 8296610c608bc97b03c2cf889c6cdf4517e32fa2d836440096374c2209f6b7b3e256c209493a0b32584b9cb32d528e99d0dd19dcd9a14d2d915a312d391cc7e9
-  languageName: node
-  linkType: hard
-
-"monodeploy@npm:^4.1.0":
-  version: 4.1.0
-  resolution: "monodeploy@npm:4.1.0"
+"monodeploy@npm:^4.3.0":
+  version: 4.3.0
+  resolution: "monodeploy@npm:4.3.0"
   dependencies:
-    "@monodeploy/logging": ^4.1.0
-    "@monodeploy/node": ^4.1.0
-    "@monodeploy/types": ^4.1.0
-    "@yarnpkg/core": ^3.5.2
+    "@monodeploy/logging": ^4.3.0
+    "@monodeploy/node": ^4.3.0
+    "@monodeploy/types": ^4.3.0
+    "@yarnpkg/core": ^3.5.3
     "@yarnpkg/fslib": ^2.10.3
     ajv: ^8.12.0
-    clipanion: ^3.2.0
-    typanion: ^3.12.1
+    clipanion: ^3.2.1
+    typanion: ^3.14.0
   bin:
     monodeploy: ./lib/index.js
-  checksum: b9aace590f8b579b51b44c53c5e6c8e346057c1a274f607bea32a63829ea3008ec3824b68a642ee986ce34494495a18b2b69dbb545d4f5fe0bf74f77af5f2890
+  checksum: 239ed8d9139841b1a9d48c19dd6c8c9aeaaef44368b9cf27f7618f4967cdec3fd3be7b091d983ca2a820961ede624d65f27fc743f4de50896de6dbf204455f40
   languageName: node
   linkType: hard
 
@@ -7098,18 +6949,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pretty-format@npm:^29.0.0, pretty-format@npm:^29.6.1":
-  version: 29.6.1
-  resolution: "pretty-format@npm:29.6.1"
-  dependencies:
-    "@jest/schemas": ^29.6.0
-    ansi-styles: ^5.0.0
-    react-is: ^18.0.0
-  checksum: 6f923a2379a37a425241dc223d76f671c73c4f37dba158050575a54095867d565c068b441843afdf3d7c37bed9df4bbadf46297976e60d4149972b779474203a
-  languageName: node
-  linkType: hard
-
-"pretty-format@npm:^29.6.3":
+"pretty-format@npm:^29.0.0, pretty-format@npm:^29.6.3":
   version: 29.6.3
   resolution: "pretty-format@npm:29.6.3"
   dependencies:
@@ -7393,20 +7233,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@npm:^1.10.0, resolve@npm:^1.20.0, resolve@npm:^1.22.1":
-  version: 1.22.3
-  resolution: "resolve@npm:1.22.3"
-  dependencies:
-    is-core-module: ^2.12.0
-    path-parse: ^1.0.7
-    supports-preserve-symlinks-flag: ^1.0.0
-  bin:
-    resolve: bin/resolve
-  checksum: fb834b81348428cb545ff1b828a72ea28feb5a97c026a1cf40aa1008352c72811ff4d4e71f2035273dc536dcfcae20c13604ba6283c612d70fa0b6e44519c374
-  languageName: node
-  linkType: hard
-
-"resolve@npm:^1.22.4":
+"resolve@npm:^1.10.0, resolve@npm:^1.20.0, resolve@npm:^1.22.1, resolve@npm:^1.22.4":
   version: 1.22.4
   resolution: "resolve@npm:1.22.4"
   dependencies:
@@ -7432,20 +7259,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>":
-  version: 1.22.3
-  resolution: "resolve@patch:resolve@npm%3A1.22.3#~builtin<compat/resolve>::version=1.22.3&hash=c3c19d"
-  dependencies:
-    is-core-module: ^2.12.0
-    path-parse: ^1.0.7
-    supports-preserve-symlinks-flag: ^1.0.0
-  bin:
-    resolve: bin/resolve
-  checksum: ad59734723b596d0891321c951592ed9015a77ce84907f89c9d9307dd0c06e11a67906a3e628c4cae143d3e44898603478af0ddeb2bba3f229a9373efe342665
-  languageName: node
-  linkType: hard
-
-"resolve@patch:resolve@^1.22.4#~builtin<compat/resolve>":
+"resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.4#~builtin<compat/resolve>":
   version: 1.22.4
   resolution: "resolve@patch:resolve@npm%3A1.22.4#~builtin<compat/resolve>::version=1.22.4&hash=c3c19d"
   dependencies:
@@ -7583,7 +7397,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.1.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.1, semver@npm:^7.5.3, semver@npm:^7.5.4":
+"semver@npm:^7.1.2, semver@npm:^7.3.4, semver@npm:^7.3.5, semver@npm:^7.3.7, semver@npm:^7.5.2, semver@npm:^7.5.3, semver@npm:^7.5.4":
   version: 7.5.4
   resolution: "semver@npm:7.5.4"
   dependencies:
@@ -7744,12 +7558,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"split@npm:^1.0.0":
-  version: 1.0.1
-  resolution: "split@npm:1.0.1"
-  dependencies:
-    through: 2
-  checksum: 12f4554a5792c7e98bb3e22b53c63bfa5ef89aa704353e1db608a55b51f5b12afaad6e4a8ecf7843c15f273f43cdadd67b3705cc43d48a75c2cf4641d51f7e7a
+"split2@npm:^4.0.0":
+  version: 4.2.0
+  resolution: "split2@npm:4.2.0"
+  checksum: 05d54102546549fe4d2455900699056580cca006c0275c334611420f854da30ac999230857a85fdd9914dc2109ae50f80fda43d2a445f2aa86eccdc1dfce779d
   languageName: node
   linkType: hard
 
@@ -8044,6 +7856,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"text-extensions@npm:^2.0.0":
+  version: 2.4.0
+  resolution: "text-extensions@npm:2.4.0"
+  checksum: 9bdbc9959e004ccc86a6ec076d6c5bb6765978263e9d0d5febb640d7675c09919ea912f3fe9d50b68c3c7c43cc865610a7cb24954343abb31f74c205fbae4e45
+  languageName: node
+  linkType: hard
+
 "text-table@npm:^0.2.0":
   version: 0.2.0
   resolution: "text-table@npm:0.2.0"
@@ -8060,7 +7879,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"through@npm:2, through@npm:>=2.2.7 <3, through@npm:^2.3.6":
+"through@npm:>=2.2.7 <3, through@npm:^2.3.6":
   version: 2.3.8
   resolution: "through@npm:2.3.8"
   checksum: a38c3e059853c494af95d50c072b83f8b676a9ba2818dcc5b108ef252230735c54e0185437618596c790bbba8fcdaef5b290405981ffa09dce67b1f1bf190cbd
@@ -8268,10 +8087,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typanion@npm:^3.12.1, typanion@npm:^3.3.0, typanion@npm:^3.3.1, typanion@npm:^3.8.0":
-  version: 3.12.1
-  resolution: "typanion@npm:3.12.1"
-  checksum: a2e26fa216f8a1dbd2ffbaacb75b1e2dc042a0356e9702fba05a968cad95d9f661b24e37f6c6d8c3adad2c8582c99fca4826ff26a2d07cd2ae617ea87e6187eb
+"typanion@npm:^3.14.0, typanion@npm:^3.3.0, typanion@npm:^3.3.1, typanion@npm:^3.8.0":
+  version: 3.14.0
+  resolution: "typanion@npm:3.14.0"
+  checksum: fc0590d02c13c659eb1689e8adf7777e6c00dc911377e44cd36fe1b1271cfaca71547149f12cdc275058c0de5562a14e5273adbae66d47e6e0320e36007f5912
   languageName: node
   linkType: hard
 
