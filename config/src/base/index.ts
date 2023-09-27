@@ -134,6 +134,9 @@ const rules: ESLint.ConfigData['rules'] = {
     '@typescript-eslint/prefer-string-starts-ends-with': 'warn',
     '@typescript-eslint/prefer-ts-expect-error': 'error',
 
+    // Added in typescript-eslint v6 and disabled to ease migration until properly evaluated.
+    '@typescript-eslint/prefer-function-type': 'off',
+
     // no-use-before-define can cause errors with typescript concepts, like types or enums
     'no-use-before-define': 'off',
     // functions can be called before they are defined because function declarations are hoisted
@@ -161,6 +164,7 @@ const config: ESLint.ConfigData = {
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/stylistic',
         // prettier must be the last item in this list to prevent conflicts
         'prettier',
     ],
