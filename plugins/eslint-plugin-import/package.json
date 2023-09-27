@@ -21,13 +21,15 @@
         "prepack": "rm -rf lib && run -T tsc -p ./tsconfig.build.json"
     },
     "devDependencies": {
-        "@types/eslint": "^8.44.0",
-        "@types/jest": "^29.5.3",
+        "@eslint/eslintrc": "^2.1.2",
+        "@types/eslint": "^8.44.3",
+        "@types/jest": "^29.5.5",
         "@types/node": "^18.15.11",
-        "eslint": "^8.48.0"
+        "@typescript-eslint/rule-tester": "^6.7.3",
+        "eslint": "^8.50.0"
     },
     "dependencies": {
-        "@typescript-eslint/utils": "^5.62.0"
+        "@typescript-eslint/utils": "^6.7.3"
     },
     "peerDependencies": {
         "eslint": "^8.38.0"

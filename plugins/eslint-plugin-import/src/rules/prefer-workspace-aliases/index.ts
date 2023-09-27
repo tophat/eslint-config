@@ -125,7 +125,7 @@ const rule = createRule({
         docs: {
             description:
                 'Do not use relative imports if an alias is available.',
-            recommended: 'error',
+            recommended: 'recommended',
         },
         messages: {
             'rewrite-import':

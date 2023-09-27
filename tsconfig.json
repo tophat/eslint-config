@@ -3,7 +3,7 @@
         "target": "ES2022",
         "noImplicitAny": true,
         "moduleResolution": "node16",
-        "module": "CommonJS",
+        "module": "node16",
         "allowJs": true,
         "noEmit": true,
         "strict": true,

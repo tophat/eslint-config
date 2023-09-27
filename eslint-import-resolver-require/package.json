@@ -21,10 +21,10 @@
         "prepack": "rm -rf lib && run -T tsc -p ./tsconfig.build.json"
     },
     "devDependencies": {
-        "@types/eslint": "^8.44.0",
-        "@types/jest": "^29.5.3",
+        "@types/eslint": "^8.44.3",
+        "@types/jest": "^29.5.5",
         "@types/node": "^18.15.11",
-        "eslint": "^8.48.0"
+        "eslint": "^8.50.0"
     },
     "peerDependencies": {
         "eslint-plugin-import": ">= 2.0.0"
