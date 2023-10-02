@@ -4,6 +4,25 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [9.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@8.0.1...@tophat/eslint-config@9.0.0) "@tophat/eslint-config" (2023-10-02)<a name="9.0.0"></a>
+
+### Breaking Changes
+
+* Min TypeScript version is now v5.2.2 and min. @typescript-eslint version is 6.7.3. The typescript-eslint v6 change may bring in other changes to the default rules. ([48bb6e0](https://github.com/tophat/eslint-config/commits/48bb6e0))
+
+### Bug Fixes
+
+* removed no-confusing-void-expressions rule (#314) ([c483dd1](https://github.com/tophat/eslint-config/commits/c483dd1))
+* simplify migration to v9 (#325) ([c36a3c4](https://github.com/tophat/eslint-config/commits/c36a3c4))
+* disable rules to ease v9 migration (#326) ([6b8063b](https://github.com/tophat/eslint-config/commits/6b8063b))
+
+### Dependencies
+
+* update min TypeScript version and TypeScript plugins (#318) ([48bb6e0](https://github.com/tophat/eslint-config/commits/48bb6e0))
+
+
+
+
 ## [8.0.1](https://github.com/tophat/eslint-config/compare/@tophat/eslint-config@8.0.0...@tophat/eslint-config@8.0.1) "@tophat/eslint-config" (2023-08-31)<a name="8.0.1"></a>
 
 ### Bug Fixes

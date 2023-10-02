@@ -4,6 +4,19 @@ All notable changes to this project will be documented using a format based on [
 
 <!-- MONODEPLOY:BELOW -->
 
+## [2.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-plugin-import@1.0.0...@tophat/eslint-plugin-import@2.0.0) "@tophat/eslint-plugin-import" (2023-10-02)<a name="2.0.0"></a>
+
+### Breaking Changes
+
+* Min TypeScript version is now v5.2.2 and min. @typescript-eslint version is 6.7.3. The typescript-eslint v6 change may bring in other changes to the default rules. ([48bb6e0](https://github.com/tophat/eslint-config/commits/48bb6e0))
+
+### Dependencies
+
+* update min TypeScript version and TypeScript plugins (#318) ([48bb6e0](https://github.com/tophat/eslint-config/commits/48bb6e0))
+
+
+
+
 ## [1.0.0](https://github.com/tophat/eslint-config/compare/@tophat/eslint-plugin-import@0.2.2...@tophat/eslint-plugin-import@1.0.0) "@tophat/eslint-plugin-import" (2023-07-17)<a name="1.0.0"></a>
 
 ### Breaking Changes
