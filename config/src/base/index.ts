@@ -138,6 +138,8 @@ const rules: ESLint.ConfigData['rules'] = {
     '@typescript-eslint/prefer-function-type': 'off',
     '@typescript-eslint/consistent-type-definitions': 'off',
     '@typescript-eslint/array-type': 'off',
+    '@typescript-eslint/consistent-indexed-object-style': 'off',
+    '@typescript-eslint/class-literal-property-style': 'off',
 
     // no-use-before-define can cause errors with typescript concepts, like types or enums
     'no-use-before-define': 'off',
