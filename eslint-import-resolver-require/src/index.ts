@@ -1,11 +1,12 @@
-import { builtinModules } from 'module'
+import module from 'module'
 import path from 'path'
 
-const builtins = new Set(builtinModules)
+const builtinModules = new Set(module.builtinModules)
+const isBuiltin = module.isBuiltin || builtinModules.has
 
 const resolve = (source: string, file: string) => {
-    if (builtins.has(source)) {
-        return { found: true }
+    if (isBuiltin(source)) {
+        return { found: true, path: null }
     }
 
     try {
